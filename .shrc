@@ -1,0 +1,48 @@
+#! /bin/sh
+### $Header: /usr/cvs/sol/.shrc,v 1.7 2005/04/11 18:14:54 sol Exp $
+
+### If interactive shows banner message
+if [ -n "${PS1}" ]; then
+	echo "[.shrc begin]"
+fi
+
+umask 002
+
+### PATH
+export PATH=~/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin
+
+### Show disk information in K-Blocks
+export BLOCKSIZE=K
+### Colorize ls output, unfortunately works for FreeBSD only
+export CLICOLOR=1
+
+### LESS config TODO ???
+# export LESS=-S
+
+### Activate Russian locale and OS specific ls
+### first default settings
+	export LANG=en_US.UTF-8
+	export LC_ALL=en_US.UTF-8
+    alias l='ls -lAF'
+    alias la='ls -laF'
+    alias ll='ls -lAF'
+if [ `uname` = "Linux" ]; then
+	export LANG=en_US.utf8
+	export LC_ALL=en_US.utf8
+    alias l='ls -lAF --color=auto'
+    alias la='ls -laF --color=auto'
+    alias ll='ls -lAF --color=auto'
+fi
+#export LANG=ru_RU.KOI8-R
+#export MM_CHARSET=KOI8-R
+#export LC_ALL=ru_RU.KOI8-R
+
+### Set default PAGER && EDITOR && VISUAL
+export PAGER=less
+export EDITOR=vim
+export VISUAL=vim
+
+### If interactive shows banner message
+if [ -n "${PS1}" ]; then
+	echo "[.shrc end]"
+fi

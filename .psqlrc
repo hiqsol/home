@@ -1,0 +1,20 @@
+\timing on
+\pset null ○
+\x auto
+
+-- PROMPT
+\set PROMPT1 '%[%033[0;32m%]%n@%/%R %[%033[0m%]%# '
+\set PROMPT2 '%[%033[0;32m%]%n@%/%R %[%033[0m%]%# '
+
+-- Autocomplete keywords in uppercase
+\set COMP_KEYWORD_CASE upper
+
+-- Verbose error reports.
+-- \set VERBOSITY verbose
+
+-- Use a separate history file per-database.
+\set HISTFILE ~/.psql_history- :DBNAME
+
+-- Store commands once in history
+\set HISTCONTROL ignoredups
+

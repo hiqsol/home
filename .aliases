@@ -1,0 +1,45 @@
+### $Header: /usr/cvs/sol/.aliases,v 1.9 2005/04/11 18:14:54 sol Exp $
+
+alias grep='grep --color=auto'
+
+alias -g G='| grep'
+alias -g Gi='| grep -i'
+alias -g J='2>&1'
+alias -g L='| less'
+alias g='git'
+alias gr='grep'
+alias gir='grep -IR'
+alias giri='grep -IRi'
+alias girl='grep -IRl'
+alias s='ssh'
+alias s2='ssh -p 222'
+alias T='tail -f'
+alias Z='zcalc'
+
+alias mv='nocorrect mv'         # no spelling correction on mv
+alias cp='nocorrect cp'         # no spelling correction on cp
+alias git='nocorrect git'       # no spelling correction on git
+alias mkdir='nocorrect mkdir'   # no spelling correction on mkdir
+
+alias vcat=~/bin/vimcat
+alias vless=~/prj/vimpager/vimpager
+alias nwget='wget --no-check-certificate'
+alias rmsshkey='ssh-keygen -f "/home/sol/.ssh/known_hosts" -R '
+
+alias .='cd ..'
+alias ..='cd ../..'
+alias ...='cd ../../..'
+alias ....='cd ../../../..'
+alias .....='cd ../../../../..'
+alias ......='cd ../../../../../..'
+
+[[ -f /usr/bin/grc || -f /usr/local/bin/grc ]] && {
+    alias cvs="grc --colour=auto cvs"
+    alias make="grc --colour=auto make"
+    alias diff="grc --colour=auto diff"
+    alias ping="grc --colour=auto ping"
+    alias tail="grc --colour=auto tail"
+    alias netstat="grc --colour=auto netstat"
+    alias traceroute="grc --colour=auto traceroute"
+}
+
