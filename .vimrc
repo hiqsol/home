@@ -16,7 +16,7 @@ filetype plugin indent off
 
 " GUI settings
 colorscheme pablo
-set guifont=Terminus\ 13
+set guifont=Monospace\ 12
 
 " Space formatting
 set tabstop=4
@@ -39,6 +39,7 @@ set showtabline=2       " always show tabline
 let mysyntaxfile    = "~/.mysyntax.vim"
 let myfiletypefile  = "~/.myfiletype.vim"
 let vimpager_passthrough = 1 " for vimpager
+let g:nerdtree_tabs_open_on_console_startup = 0
 
 " my keys
 map         <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
