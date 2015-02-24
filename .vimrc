@@ -75,3 +75,6 @@ hi TabLine      ctermfg=Black  ctermbg=White cterm=NONE
 hi TabLineFill  ctermfg=Black  ctermbg=White cterm=NONE
 hi TabLineSel   ctermfg=White  ctermbg=Blue  cterm=NONE
 
+" for crontab editing
+au FileType crontab setlocal bkc=yes
+
