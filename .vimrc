@@ -45,6 +45,7 @@ let mysyntaxfile    = "~/.mysyntax.vim"
 let myfiletypefile  = "~/.myfiletype.vim"
 let vimpager_passthrough = 1 " for vimpager
 let g:nerdtree_tabs_open_on_console_startup = 0
+let g:gitgutter_realtime = 0
 
 " my keys
 map         <F7>        :tabprev<CR>
