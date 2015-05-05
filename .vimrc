@@ -7,15 +7,15 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'        " The NerdTree
-Plugin 'jistr/vim-nerdtree-tabs'    " keeps NerdTree in left window all the time
-Plugin 'mkitt/tabline.vim'          " shows tab number, filename and [+]
-"Plugin 'bling/vim-airline'         " better status line
-"Plugin 'everzet/phpfolding.vim'    " folding of php code
-Plugin 'majutsushi/tagbar'          " right window with tags
-Plugin 'airblade/vim-gitgutter'     " shows git +/-/~
-Plugin 'scrooloose/syntastic'       " checks for syntax errors on saving
-Plugin 'tpope/vim-fugitive'         " git integration
+Plugin 'scrooloose/nerdtree'            " The NerdTree
+Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
+Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+"Plugin 'bling/vim-airline'             " better status line
+Plugin 'everzet/phpfolding.vim'         " folding of php code
+Plugin 'majutsushi/tagbar'              " right window with tags
+Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
+Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
+Plugin 'tpope/vim-fugitive'             " git integration
 call vundle#end()
 filetype plugin indent off
 
@@ -44,6 +44,7 @@ set showtabline=2       " always show tabline
 let mysyntaxfile    = "~/.mysyntax.vim"
 let myfiletypefile  = "~/.myfiletype.vim"
 let vimpager_passthrough = 1 " for vimpager
+let NERDTreeShowHidden = 1 " show dotfiles
 
 " my keys
 map         <F7>        :tabprev<CR>
