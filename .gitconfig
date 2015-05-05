@@ -5,12 +5,14 @@
 	interactive = auto
 	ui = true
 [user]
-	name = sol - Andrii Vasyliev
-	email = andrii.vasyliev@gmail.com
+	name = Andrii Vasyliev
+	email = sol@hiqdev.com
 [alias]
 	ci	= commit
+	cv	= commit -av
 	co	= checkout
 	st	= status
+	pu  = pull
 	di	= diff
 	dif	= diff
 	df	= diff -U0
