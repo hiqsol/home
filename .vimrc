@@ -56,6 +56,7 @@ map         <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-T>       :TagbarToggle<CR>
 nnoremap    <C-F>       :GitGutterToggle<CR>
 map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
+
 " testing
 nnoremap    *           *N
 
