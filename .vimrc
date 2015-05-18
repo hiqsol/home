@@ -7,21 +7,21 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'        " The NerdTree
-Plugin 'jistr/vim-nerdtree-tabs'    " keeps NerdTree in left window all the time
-Plugin 'mkitt/tabline.vim'          " shows tab number, filename and [+]
-"Plugin 'bling/vim-airline'         " better status line
-"Plugin 'everzet/phpfolding.vim'    " folding of php code
-Plugin 'majutsushi/tagbar'          " right window with tags
-Plugin 'airblade/vim-gitgutter'     " shows git +/-/~
-Plugin 'scrooloose/syntastic'       " checks for syntax errors on saving
-Plugin 'tpope/vim-fugitive'         " git integration
+Plugin 'scrooloose/nerdtree'            " The NerdTree
+Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
+Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+"Plugin 'bling/vim-airline'             " better status line
+Plugin 'everzet/phpfolding.vim'         " folding of php code
+Plugin 'majutsushi/tagbar'              " right window with tags
+Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
+Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
+Plugin 'tpope/vim-fugitive'             " git integration
 call vundle#end()
 filetype plugin indent off
 
 " GUI settings
 colorscheme pablo
-set guifont=Terminus\ 13
+set guifont=Monospace\ 12
 set background=dark
 
 " Space formatting
@@ -44,6 +44,9 @@ set showtabline=2       " always show tabline
 let mysyntaxfile    = "~/.mysyntax.vim"
 let myfiletypefile  = "~/.myfiletype.vim"
 let vimpager_passthrough = 1 " for vimpager
+let g:nerdtree_tabs_open_on_console_startup = 0
+let g:gitgutter_realtime = 0
+let NERDTreeShowHidden = 1 " show dotfiles
 
 " my keys
 map         <F7>        :tabprev<CR>
@@ -53,6 +56,7 @@ map         <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-T>       :TagbarToggle<CR>
 nnoremap    <C-F>       :GitGutterToggle<CR>
 map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
+
 " testing
 nnoremap    *           *N
 
@@ -84,4 +88,7 @@ hi      StatusLine ctermbg=grey ctermfg=black
 hi TabLine      ctermfg=Black  ctermbg=White cterm=NONE
 hi TabLineFill  ctermfg=Black  ctermbg=White cterm=NONE
 hi TabLineSel   ctermfg=White  ctermbg=Blue  cterm=NONE
+
+" for crontab editing
+au FileType crontab setlocal bkc=yes
 

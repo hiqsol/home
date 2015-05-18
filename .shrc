@@ -9,7 +9,7 @@ fi
 umask 002
 
 ### PATH
-export PATH=~/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin
+export PATH=~/bin:~/.composer/vendor/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin
 
 ### Show disk information in K-Blocks
 export BLOCKSIZE=K
@@ -46,3 +46,13 @@ export VISUAL=vim
 if [ -n "${PS1}" ]; then
 	echo "[.shrc end]"
 fi
+
+### Predictable SSH authentication socket location.
+SOCK="/tmp/ssh-agent-$USER-screen"
+if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
+then
+    rm -f /tmp/ssh-agent-$USER-screen
+    ln -sf $SSH_AUTH_SOCK $SOCK
+    export SSH_AUTH_SOCK=$SOCK
+fi
+
