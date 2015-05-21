@@ -13,6 +13,7 @@ alias giri='grep -IRi'
 alias girl='grep -IRl'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
 alias s2='ssh -p 222'
+alias sa='ssh-add ~/.ssh/id_rsa ~/.ssh/github_rsa'
 alias T='tail -f'
 alias Z='zcalc'
 
