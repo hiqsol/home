@@ -299,6 +299,16 @@
         <to>10</to>
       </action>
     </keybind>
+    <keybind key="W-minus">
+      <action name="GoToDesktop">
+        <to>11</to>
+      </action>
+    </keybind>
+    <keybind key="W-grave">
+      <action name="GoToDesktop">
+        <to>12</to>
+      </action>
+    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -454,10 +464,31 @@
         <command>lxsession-default file_manager</command>
       </action>
     </keybind>
-    <!-- Lock the screen on Ctrl + Alt + l-->
-    <keybind key="C-A-l">
+    <!-- Suspend -->
+    <keybind key="XF86Explorer">
       <action name="Execute">
-        <command>lxsession-default lock</command>
+        <command>lxsession-default quit</command>
+      </action>
+    </keybind>
+    <!-- Keybinding for Volume management -->
+    <keybind key="KP_Up">
+      <action name="Execute">
+        <command>amixer -q sset Master 3%+ unmute</command>
+      </action>
+    </keybind>
+    <keybind key="KP_Down">
+      <action name="Execute">
+        <command>amixer -q sset Master 3%- unmute</command>
+      </action>
+    </keybind>
+    <keybind key="KP_Delete">
+      <action name="Execute">
+        <command>amixer -q sset Master toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86Tools">
+      <action name="Execute">
+        <command>amixer -q sset Master toggle</command>
       </action>
     </keybind>
     <!-- Keybinding for Volume management -->
