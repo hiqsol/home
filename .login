@@ -12,5 +12,5 @@ if [ -d ~/.calendar ]; then
 fi
 if [ -d ~/src/some ]; then
 	echo
-	gmake -s -C ~/src/some some
+	make -s -C ~/src/some some
 fi
