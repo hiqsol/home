@@ -238,7 +238,7 @@
     <keybind key="W-F9">
       <action name="execute">
         <!-- command>/bin/sh -c '/usr/bin/xsel | /usr/bin/xvkbd -xsendevent -file - 2>/dev/null'</command -->
-        <command>sh -c 'xvkbd -no-jump-pointer -xsendevent -text "\D1`xsel`" 2>/dev/null'</command>
+        <command>sh -c 'xvkbd -no-jump-pointer -xsendevent -text "\D1`xsel`" 2&gt;/dev/null'</command>
       </action>
     </keybind>
     <keybind key="W-F11">
@@ -451,7 +451,7 @@
     <!-- Launch a terminal on Ctrl + Alt + T-->
     <keybind key="C-A-T">
       <action name="Execute">
-        <command>lxsession-default terminal</command>
+        <command>gnome-terminal</command>
       </action>
     </keybind>
     <!-- Launch a filemanager on Ctrl + Alt + D-->
