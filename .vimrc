@@ -16,6 +16,10 @@ Plugin 'majutsushi/tagbar'              " right window with tags
 Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
 Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plugin 'tpope/vim-fugitive'             " git integration
+"Plugin 'xolox/vim-misc'                 " required by vim-easytags
+"Plugin 'xolox/vim-easytags'             " create/update ctags
+Plugin 'kien/ctrlp.vim'                 " CtrlP
+Plugin 'joonty/vdebug'                  " xdebug
 call vundle#end()
 filetype plugin indent off
 
@@ -49,13 +53,12 @@ let g:gitgutter_realtime = 0
 let NERDTreeShowHidden = 1 " show dotfiles
 
 " my keys
-map         <F7>        :tabprev<CR>
-map         <F8>        :tabnext<CR>
 map         <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 map         <C-N>       :NERDTreeTabsToggle<CR>
-nnoremap    <C-T>       :TagbarToggle<CR>
+" nnoremap    <C-T>       :TagbarToggle<CR>
 nnoremap    <C-F>       :GitGutterToggle<CR>
-map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
+" map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
+map         <C-\>       "9yiw:CtrlP<CR><C-\>r9
 
 " testing
 nnoremap    *           *N
