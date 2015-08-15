@@ -10,6 +10,7 @@ alias h='hidev'
 alias gg='git grep'
 alias gir='grep -IR'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
+alias vpn="sudo openvpn ~/Dropbox/.dropbox.temp/.ovpn/sol.ovpn"
 alias T='tail -f'
 alias Z='zcalc'
 
