@@ -19,6 +19,7 @@
     br  = branch
     gl  = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative -n 30
     glf = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    ls  = ls-tree -r --name-only master
 [diff]
     tool    = vimdiff
 [merge]
