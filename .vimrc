@@ -20,6 +20,7 @@ Plugin 'tpope/vim-fugitive'             " git integration
 "Plugin 'xolox/vim-easytags'             " create/update ctags
 Plugin 'kien/ctrlp.vim'                 " CtrlP
 Plugin 'joonty/vdebug'                  " xdebug
+Plugin 'StanAngeloff/php.vim'           " better PHP syntax
 call vundle#end()
 filetype plugin indent off
 
@@ -45,8 +46,8 @@ set cursorline          " show cursor line
 set scrolloff=2         " keep 2 lines before scroll
 set showtabline=2       " always show tabline
 
-let mysyntaxfile    = "~/.mysyntax.vim"
-let myfiletypefile  = "~/.myfiletype.vim"
+let mysyntaxfile    = "~/.vim/mysyntax.vim"
+let myfiletypefile  = "~/.vim/myfiletype.vim"
 let vimpager_passthrough = 1 " for vimpager
 let g:nerdtree_tabs_open_on_console_startup = 0
 let g:gitgutter_realtime = 0
