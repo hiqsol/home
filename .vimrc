@@ -16,6 +16,7 @@ Plugin 'majutsushi/tagbar'              " right window with tags
 Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
 Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plugin 'tpope/vim-fugitive'             " git integration
+Plugin 'tpope/vim-surround'             " manipulate surroundings in pairs
 "Plugin 'xolox/vim-misc'                 " required by vim-easytags
 "Plugin 'xolox/vim-easytags'             " create/update ctags
 Plugin 'kien/ctrlp.vim'                 " CtrlP
