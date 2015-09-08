@@ -1,11 +1,11 @@
 [color]
-    diff = auto
-    status = auto
-    branch = auto
+    diff        = auto
+    status      = auto
+    branch      = auto
     interactive = auto
-    ui = true
+    ui          = true
 [user]
-    name = Andrii Vasyliev
+    name  = Andrii Vasyliev
     email = sol@hiqdev.com
 [alias]
     a   = add
@@ -14,6 +14,7 @@
     co  = checkout
     st  = status
     pu  = pull
+    d   = diff
     di  = diff
     dif = diff
     df  = diff -U0
