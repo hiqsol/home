@@ -8,20 +8,22 @@
     name  = Andrii Vasyliev
     email = sol@hiqdev.com
 [alias]
-    a   = add
-    ci  = commit
-    cv  = commit -av
-    co  = checkout
-    st  = status
-    pu  = pull
-    d   = diff
-    di  = diff
-    dif = diff
-    df  = diff -U0
-    br  = branch
-    gl  = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative -n 30
-    glf = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
-    ls  = ls-tree -r --name-only master
+    a       = add
+    ci      = commit
+    cv      = commit -av
+    co      = checkout
+    st      = status
+    pl      = pull
+    ps      = push
+    d       = diff
+    di      = diff
+    dif     = diff
+    df      = diff -U0
+    vimdiff = difftool
+    br      = branch
+    gl      = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative -n 30
+    glf     = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    ls      = ls-tree -r --name-only master
 [diff]
     tool    = vimdiff
 [merge]
