@@ -14,7 +14,7 @@
     co      = checkout
     st      = status
     pl      = pull
-    ps      = push
+    ph      = push
     d       = diff
     di      = diff
     dif     = diff
