@@ -312,6 +312,11 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+    <keybind key="W-k">
+      <action name="execute">
+        <command>~/bin/keepass</command>
+      </action>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
