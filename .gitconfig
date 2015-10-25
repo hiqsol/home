@@ -10,6 +10,7 @@
 [alias]
     a       = add
     ci      = commit
+    cm      = commit -am minor
     cv      = commit -av
     co      = checkout
     st      = status
