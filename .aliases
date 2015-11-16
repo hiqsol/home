@@ -14,6 +14,7 @@ alias gir='grep -IR'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
 alias v='vim'
 alias vpn="sudo openvpn ~/Dropbox/.dropbox.temp/.ovpn/sol.ovpn"
+alias x509="openssl x509 -text -noout -in"
 alias T='tail -f'
 alias Z='zcalc'
 
