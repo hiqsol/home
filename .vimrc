@@ -20,6 +20,7 @@ Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plugin 'tpope/vim-fugitive'             " git integration
 Plugin 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plugin 'tpope/vim-repeat'               " enable repeating with '.' for plugins
+Plugin 'tpope/vim-markdown'             " better markdown highlighting
 "Plugin 'xolox/vim-misc'                " required by vim-easytags
 "Plugin 'xolox/vim-easytags'            " create/update ctags
 Plugin 'kien/ctrlp.vim'                 " CtrlP
@@ -58,12 +59,14 @@ set wildmenu            " command-line completion with menu
 
 let mysyntaxfile    = "~/.vim/mysyntax.vim"
 let myfiletypefile  = "~/.vim/myfiletype.vim"
+source ~/.vim/myfiletype.vim
 let vimpager_passthrough = 1 " for vimpager
 let g:nerdtree_tabs_open_on_console_startup = 0
 let g:gitgutter_realtime = 0
 let NERDTreeShowHidden = 1 " show dotfiles
 let g:indentLine_color_term = 7
 let g:indentLine_char = '·' " ''  '︙'
+let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -91,16 +94,4 @@ map Q gq
 
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
-
-" Highlighting
-hi      MyUnwantedChars ctermbg=red   guibg=red
-match   MyUnwantedChars /\t\+ \+\| \+\t\+\|\s\+$/
-hi      StatusLine      ctermbg=grey  ctermfg=black
-" hi    CursorLine      ctermbg=DarkGrey
-hi      TabLine         ctermfg=Black ctermbg=White cterm=NONE
-hi      TabLineFill     ctermfg=Black ctermbg=White cterm=NONE
-hi      TabLineSel      ctermfg=White ctermbg=Blue  cterm=NONE
-
-" for crontab editing
-au FileType crontab setlocal bkc=yes
 
