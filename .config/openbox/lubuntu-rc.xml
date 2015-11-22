@@ -317,6 +317,11 @@
         <command>~/bin/keepass</command>
       </action>
     </keybind>
+    <keybind key="W-b">
+      <action name="execute">
+        <command>pkill -9 'chromium|chrome'</command>
+      </action>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
