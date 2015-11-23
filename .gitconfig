@@ -14,7 +14,7 @@
     cv      = commit -av
     co      = checkout
     st      = status
-    pl      = pull
+    pl      = pull --rebase
     ph      = push
     d       = diff
     di      = diff
@@ -35,5 +35,3 @@
     default = simple
 [core]
     autocrlf = false
-[branch "master"]
-    rebase = true
