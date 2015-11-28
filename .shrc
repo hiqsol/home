@@ -9,7 +9,7 @@ fi
 umask 002
 
 ### PATH
-export PATH=~/bin:~/.composer/vendor/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin
+export PATH=~/bin:~/.composer/vendor/bin:~/.gem/ruby/1.9.1/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin
 
 ### Show disk information in K-Blocks
 export BLOCKSIZE=K
