@@ -26,6 +26,7 @@ Plugin 'tpope/vim-markdown'             " better markdown highlighting
 Plugin 'kien/ctrlp.vim'                 " CtrlP
 Plugin 'joonty/vdebug'                  " xdebug
 Plugin 'StanAngeloff/php.vim'           " better PHP syntax
+Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
 "Plugin 'vim-scripts/LargeFile'         " better large files support
 "Plugin 'Yggdroot/indentLine'           " show indent levels
 call vundle#end()
@@ -82,6 +83,9 @@ map         <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-F>       :GitGutterToggle<CR>
 " map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
 map         <C-\>       "9yiw:CtrlP<CR><C-\>r9
+inoremap    <C-D>       <ESC>:call PhpDocSingle()<CR>i
+nnoremap    <C-D>       :call PhpDocSingle()<CR>
+vnoremap    <C-D>       :call PhpDocRange()<CR>
 
 " testing
 nnoremap    *           *N
