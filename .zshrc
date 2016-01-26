@@ -3,6 +3,7 @@
 
 . ${HOME}/.shrc
 . ${HOME}/.aliases
+. ${HOME}/.zaliases
 
 ### AUTOLOADS
 autoload -U colors compinit promptinit zfinit zcalc edit-command-line
