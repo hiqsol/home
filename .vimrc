@@ -25,6 +25,7 @@ Plugin 'tpope/vim-markdown'             " better markdown highlighting
 "Plugin 'xolox/vim-easytags'            " create/update ctags
 Plugin 'kien/ctrlp.vim'                 " CtrlP
 Plugin 'joonty/vdebug'                  " xdebug
+"Plugin 'joonty/vim-phpqa'               " show code coverage
 Plugin 'StanAngeloff/php.vim'           " better PHP syntax
 Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
 "Plugin 'vim-scripts/LargeFile'         " better large files support
