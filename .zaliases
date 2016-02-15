@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 clone() {
     echo git clone git@github.com:$*;
     git clone git@github.com:$*;
