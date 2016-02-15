@@ -1,9 +1,9 @@
 #! /usr/local/bin/zsh
 ### $Header: /usr/cvs/sol/.zshrc,v 1.9 2005/04/11 18:14:54 sol Exp $
 
-. ${HOME}/.shrc
-. ${HOME}/.aliases
-. ${HOME}/.zaliases
+source ${HOME}/.shrc
+source ${HOME}/.aliases
+source ${HOME}/.zaliases
 
 ### AUTOLOADS
 autoload -U colors compinit promptinit zfinit zcalc edit-command-line
