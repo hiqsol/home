@@ -84,9 +84,9 @@ map         <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-F>       :GitGutterToggle<CR>
 " map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
 map         <C-\>       "9yiw:CtrlP<CR><C-\>r9
-inoremap    <C-D>       <ESC>:call PhpDocSingle()<CR>i
-nnoremap    <C-D>       :call PhpDocSingle()<CR>
-vnoremap    <C-D>       :call PhpDocRange()<CR>
+inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
+nnoremap    <C-J>       :call PhpDocSingle()<CR>
+vnoremap    <C-J>       :call PhpDocRange()<CR>
 
 " testing
 nnoremap    *           *N
