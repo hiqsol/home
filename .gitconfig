@@ -5,33 +5,35 @@
     interactive = auto
     ui          = true
 [user]
-    name  = Andrii Vasyliev
-    email = sol@hiqdev.com
+    name        = Andrii Vasyliev
+    email       = sol@hiqdev.com
 [alias]
-    a       = add
-    ci      = commit
-    cm      = commit -am minor
-    cv      = commit -av
-    co      = checkout
-    st      = status
-    pl      = pull --rebase
-    ph      = push
-    d       = diff
-    di      = diff
-    dif     = diff
-    df      = diff -U0
-    vimdiff = difftool
-    br      = branch
-    gl      = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative -n 30
-    glf     = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
-    ls      = ls-tree -r --name-only master
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    a           = add
+    ci          = commit
+    cm          = commit -am minor
+    cv          = commit -av
+    co          = checkout
+    st          = status
+    pl          = pull --rebase
+    ph          = push
+    d           = diff
+    di          = diff
+    dif         = diff
+    df          = diff -U0
+    vimdiff     = difftool
+    br          = branch
+    gl          = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative -n 30
+    glf         = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    ls          = "!git ls-tree -r --name-only $(git branch-name)"
+    publish     = "!git push -u origin $(git branch-name)"
 [diff]
-    tool    = vimdiff
+    tool        = vimdiff
 [merge]
-    tool    = vimdiff2
+    tool        = vimdiff2
 [difftool]
-    prompt  = false
+    prompt      = false
 [push]
-    default = simple
+    default     = simple
 [core]
-    autocrlf = false
+    autocrlf    = false
