@@ -1,1 +1,1 @@
-/home/sol/bin/youtube-dl -t --max-quality 34 $@
+/home/sol/bin/youtube-dl -t $@
