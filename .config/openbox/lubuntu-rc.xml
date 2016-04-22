@@ -481,6 +481,31 @@
       </action>
     </keybind>
     <!-- Keybinding for Volume management -->
+    <keybind key="KP_Begin">
+      <action name="Execute">
+        <command>audtool playback-pause</command>
+      </action>
+    </keybind>
+    <keybind key="KP_Left">
+      <action name="Execute">
+        <command>audtool playlist-reverse</command>
+      </action>
+    </keybind>
+    <keybind key="KP_Right">
+      <action name="Execute">
+        <command>audtool playlist-advance</command>
+      </action>
+    </keybind>
+    <keybind key="KP_Home">
+      <action name="Execute">
+        <command>audtool playback-seek-relative -10</command>
+      </action>
+    </keybind>
+    <keybind key="KP_Prior">
+      <action name="Execute">
+        <command>audtool playback-seek-relative +10</command>
+      </action>
+    </keybind>
     <keybind key="KP_Up">
       <action name="Execute">
         <command>amixer -q sset Master 3%+ unmute</command>
