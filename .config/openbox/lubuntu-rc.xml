@@ -483,27 +483,27 @@
     <!-- Keybinding for Volume management -->
     <keybind key="KP_Begin">
       <action name="Execute">
-        <command>audtool playback-pause</command>
+        <command>rhythmbox-client --play-pause</command>
       </action>
     </keybind>
     <keybind key="KP_Left">
       <action name="Execute">
-        <command>audtool playlist-reverse</command>
+        <command>rhythmbox-client --previous</command>
       </action>
     </keybind>
     <keybind key="KP_Right">
       <action name="Execute">
-        <command>audtool playlist-advance</command>
+        <command>rhythmbox-client --next</command>
       </action>
     </keybind>
     <keybind key="KP_Home">
       <action name="Execute">
-        <command>audtool playback-seek-relative -10</command>
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Seek int64:-10000000</command>
       </action>
     </keybind>
     <keybind key="KP_Prior">
       <action name="Execute">
-        <command>audtool playback-seek-relative +10</command>
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Seek int64:10000000</command>
       </action>
     </keybind>
     <keybind key="KP_Up">
