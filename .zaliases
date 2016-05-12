@@ -4,3 +4,8 @@ clone() {
     echo git clone git@github.com:$*;
     git clone git@github.com:$*;
 }
+
+pclone() {
+    echo git clone ssh://git.solex.me:222/git/$*;
+    git clone ssh://git.solex.me:222/git/$*;
+}
