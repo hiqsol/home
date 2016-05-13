@@ -55,9 +55,9 @@ if [ $ID = "root" ]
     else delim="%{$fg_no_bold[white]%}@"
 fi
 prompt_git() {
-    git_br=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
-    if [ ! -z $git_br ]; then
-        echo -n "%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${git_br}"
+    branch=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
+    if [ ! -z $branch ]; then
+        echo -n "%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${branch}"
         changes=`git status -suno;git log origin..HEAD`
         if [ ! -z $changes ]
             then echo -n "%{$fg_bold[yellow]%}*"
