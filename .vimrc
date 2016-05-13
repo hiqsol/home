@@ -47,6 +47,8 @@ set expandtab
 set smarttab
 
 " Other
+set t_kb=
+fixdel
 set bs=2                " allow backspacing over everything in insert mode
 set nobackup            " don't keep a backup file
 set viminfo='20,\"50    " read/write a .viminfo file, don't store >50 lines of registers
