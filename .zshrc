@@ -58,8 +58,8 @@ prompt_git() {
     git_br=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
     if [ ! -z $git_br ]; then
         echo -n "%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${git_br}"
-        git_st=`git status -suno`
-        if [ ! -z $git_st ]
+        changes=`git status -suno;git log origin..HEAD`
+        if [ ! -z $changes ]
             then echo -n "%{$fg_bold[yellow]%}*"
         fi
     fi
