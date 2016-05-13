@@ -54,10 +54,6 @@ if [ $ID = "root" ]
     then delim="%{$fg_bold[red]%}@"
     else delim="%{$fg_no_bold[white]%}@"
 fi
-if [ -z $WINDOW ]
-    then scr_no=""
-    else scr_no="%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${WINDOW}"
-fi
 prompt_git() {
     git_br=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
     if [ ! -z $git_br ]; then
@@ -68,6 +64,6 @@ prompt_git() {
         fi
     fi
 }
-PROMPT='%B%{$fg_bold[cyan]%}%*%b ${login}${delim}%{$fg_bold[white]%}%m${scr_no} > %{$reset_color%}'
+PROMPT='%B%{$fg_bold[green]%}%*%b ${login}${delim}%{$fg_bold[white]%}%m > %{$reset_color%}'
 RPROMPT=$'%{$fg_bold[cyan]%}%~$(prompt_git)%{$reset_color%}'
 
