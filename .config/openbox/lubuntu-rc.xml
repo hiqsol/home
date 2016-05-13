@@ -461,7 +461,7 @@
     <!-- Launch a terminal on Ctrl + Alt + T-->
     <keybind key="C-A-T">
       <action name="Execute">
-        <command>gnome-terminal</command>
+        <command>x-terminal-emulator</command>
       </action>
     </keybind>
     <!-- Launch a filemanager on Ctrl + Alt + D-->

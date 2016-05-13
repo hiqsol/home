@@ -1,5 +1,4 @@
 #! /usr/local/bin/zsh
-### $Header: /usr/cvs/sol/.zshrc,v 1.9 2005/04/11 18:14:54 sol Exp $
 
 source ${HOME}/.shrc
 source ${HOME}/.aliases
@@ -65,10 +64,10 @@ prompt_git() {
         echo -n "%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${git_br}"
         git_st=`git status -suno`
         if [ ! -z $git_st ]
-            then echo -n "%{$fg_no_bold[yellow]%}*"
+            then echo -n "%{$fg_bold[yellow]%}*"
         fi
     fi
 }
-PROMPT='%B%{$fg_bold[blue]%}%*%b ${login}${delim}%{$fg_bold[white]%}%m${scr_no} > %{$reset_color%}'
-RPROMPT=$'%{$fg_bold[blue]%}%~$(prompt_git)%{$reset_color%}'
+PROMPT='%B%{$fg_bold[cyan]%}%*%b ${login}${delim}%{$fg_bold[white]%}%m${scr_no} > %{$reset_color%}'
+RPROMPT=$'%{$fg_bold[cyan]%}%~$(prompt_git)%{$reset_color%}'
 
