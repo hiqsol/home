@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dropbox stop
+dbus-launch ~/.dropbox-dist/dropboxd &
