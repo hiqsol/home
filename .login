@@ -6,10 +6,6 @@ stty -ixon
 
 mesg y
 
-if [ -d ~/.calendar ]; then
-	echo
-	test -x /usr/bin/calendar && /usr/bin/calendar -A 3
-fi
 if [ -d ~/src/some ]; then
 	echo
 	make -s -C ~/src/some some
