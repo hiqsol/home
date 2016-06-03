@@ -458,6 +458,12 @@
         <command>lxsession-default tasks</command>
       </action>
     </keybind>
+    <!-- Lock screen -->
+    <keybind key="C-A-L">
+      <action name="Execute">
+        <command>lxlock</command>
+      </action>
+    </keybind>
     <!-- Launch a terminal on Ctrl + Alt + T-->
     <keybind key="C-A-T">
       <action name="Execute">
