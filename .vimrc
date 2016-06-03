@@ -45,11 +45,15 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+set bs=2                " allow backspacing over everything in insert mode
 
-" Other
+" fix backspace
 set t_kb=
 fixdel
-set bs=2                " allow backspacing over everything in insert mode
+
+" Other
+set undofile            " allows undo after reopen file
+set undodir=/home/sol/.vim/undo
 set nobackup            " don't keep a backup file
 set viminfo='20,\"50    " read/write a .viminfo file, don't store >50 lines of registers
 set history=50          " keep 50 lines of command line history
