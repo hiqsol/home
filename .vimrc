@@ -13,23 +13,29 @@ Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the 
 Plugin 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
 Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
 "Plugin 'bling/vim-airline'             " better status line
-Plugin 'everzet/phpfolding.vim'         " folding of php code
 Plugin 'majutsushi/tagbar'              " right window with tags
 Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
 Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plugin 'tpope/vim-fugitive'             " git integration
 Plugin 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plugin 'tpope/vim-repeat'               " enable repeating with '.' for plugins
-Plugin 'hiqsol/vim-markdown'            " better markdown highlighting
 "Plugin 'xolox/vim-misc'                " required by vim-easytags
 "Plugin 'xolox/vim-easytags'            " create/update ctags
 Plugin 'kien/ctrlp.vim'                 " CtrlP
 Plugin 'joonty/vdebug'                  " xdebug
-"Plugin 'joonty/vim-phpqa'               " show code coverage
-Plugin 'StanAngeloff/php.vim'           " better PHP syntax
-Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
 "Plugin 'vim-scripts/LargeFile'         " better large files support
 "Plugin 'Yggdroot/indentLine'           " show indent levels
+
+" SYNTAX highlighting
+Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
+Plugin 'hiqsol/vim-markdown'            " better syntax highlighting for Markdown
+Plugin 'hiqsol/pgsql.vim'               " better syntax highlighting for PostgreSQL
+
+" PHP
+Plugin 'everzet/phpfolding.vim'         " folding of php code
+Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
+"Plugin 'joonty/vim-phpqa'              " show code coverage
+"
 call vundle#end()
 filetype plugin on
 "filetype plugin indent off
@@ -65,9 +71,8 @@ set sidescrolloff=5     " keep 2 lines before scroll
 set showtabline=2       " always show tabline
 set wildmenu            " command-line completion with menu
 
-let mysyntaxfile    = "~/.vim/mysyntax.vim"
-let myfiletypefile  = "~/.vim/myfiletype.vim"
-source ~/.vim/myfiletype.vim
+let mysyntaxfile    = "~/.vim/syntax.vim"
+let myfiletypefile  = "~/.vim/filetype.vim"
 let vimpager_passthrough = 1 " for vimpager
 let g:nerdtree_tabs_open_on_console_startup = 0
 let g:gitgutter_realtime = 0
