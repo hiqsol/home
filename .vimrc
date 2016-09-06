@@ -78,6 +78,7 @@ let vimpager_passthrough = 1 " for vimpager
 let g:nerdtree_tabs_open_on_console_startup = 0
 let g:gitgutter_realtime = 0
 let NERDTreeShowHidden = 1 " show dotfiles
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.swp$']
 let g:indentLine_color_term = 7
 let g:indentLine_char = '·' " ''  '︙'
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
