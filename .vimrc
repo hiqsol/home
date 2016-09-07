@@ -70,6 +70,7 @@ set cursorline          " show cursor line
 set scrolloff=2         " keep 2 lines before scroll
 set sidescrolloff=5     " keep 2 lines before scroll
 set showtabline=2       " always show tabline
+set laststatus=2        " always show status line
 set wildmenu            " command-line completion with menu
 
 let mysyntaxfile    = "~/.vim/syntax.vim"
