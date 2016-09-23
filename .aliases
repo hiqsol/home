@@ -28,6 +28,7 @@ alias vcat=~/bin/vimcat
 alias vless=~/prj/vimpager/vimpager
 alias nwget='wget --no-check-certificate'
 alias rmsshkey='ssh-keygen -f "/home/sol/.ssh/known_hosts" -R '
+alias inithome='curl https://raw.githubusercontent.com/hiqdev/rehome/master/rehome | python - ssh://sol@git.solex.me:222/git/sol/sol'
 
 alias .='cd ..'
 alias ..='cd ../..'
