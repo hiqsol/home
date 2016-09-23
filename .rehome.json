@@ -1,0 +1,6 @@
+{
+    "shell": "zsh",
+    "dependencies": {
+        "VundleVim/Vundle.vim": ".vim/bundle/Vundle.vim"
+    }
+}
