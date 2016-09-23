@@ -1,6 +1,7 @@
 {
     "shell": "zsh",
     "dependencies": {
-        "VundleVim/Vundle.vim": ".vim/bundle/Vundle.vim"
+        "VundleVim/Vundle.vim": ".vim/bundle/Vundle.vim",
+        "git@github.com:hiqsol/quotes": "src/quotes"
     }
 }
