@@ -1,7 +1,27 @@
 {
     "shell": "zsh",
-    "dependencies": {
-        "VundleVim/Vundle.vim": ".vim/bundle/Vundle.vim",
-        "git@github.com:hiqsol/quotes": "src/quotes"
+    "checks": {
+        "which zsh": "apt-get install zsh",
+        "which vim": "apt-get install vim",
+        "which tmux": "apt-get install tmux"
+    },
+    "repos": {
+        ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
+        "src/quotes": "git@github.com:hiqsol/quotes"
+    },
+    "installs": {
+        "bin/composer": [
+            "wget https://getcomposer.org/installer -O composer-setup.php",
+            "php composer-setup.php --install-dir=bin --filename=composer",
+            "rm composer-setup.php"
+        ]
+    },
+    "updates": {
+        "bin/composer": [
+            "bin/composer self-update"
+        ],
+        "prj/hiqdev/hidev/vendor": [
+            "composer update -d prj/hiqdev/hidev"
+        ]
     }
 }
