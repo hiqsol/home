@@ -7,7 +7,11 @@
     },
     "repos": {
         ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
-        "src/quotes": "git@github.com:hiqsol/quotes"
+        "src/quotes": "git@github.com:hiqsol/quotes",
+        "prj/hiqdev/hidev": "git@github.com:hiqdev/hidev",
+        "prj/hiqdev/rehome": "git@github.com:hiqdev/rehome",
+        "prj/hiqdev/chkipper": "git@github.com:hiqdev/chkipper",
+        "prj/hiqdev/rewatcher": "git@github.com:hiqdev/rewatcher"
     },
     "installs": {
         "bin/composer": [
@@ -22,6 +26,9 @@
         ],
         "prj/hiqdev/hidev/vendor": [
             "composer update -d prj/hiqdev/hidev"
+        ],
+        "prj/hiqdev/chkipper/vendor": [
+            "composer update -d prj/hiqdev/chkipper"
         ]
     }
 }
