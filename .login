@@ -6,7 +6,8 @@ stty -ixon
 
 mesg y
 
-if [ -d ~/src/some ]; then
+if [ -f ~/prj/hiqsol/quotes/bin/random ]; then
 	echo
-	make -s -C ~/src/some some
+    ~/prj/hiqsol/quotes/bin/random
+    echo
 fi
