@@ -6,8 +6,6 @@ stty -ixon
 
 mesg y
 
-if [ -f ~/prj/hiqsol/quotes/bin/random ]; then
-	echo
-    ~/prj/hiqsol/quotes/bin/random
-    echo
-fi
+echo
+~/prj/hiqsol/quotes/bin/random
+echo
