@@ -7,7 +7,7 @@
     },
     "repos": {
         ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
-        "src/quotes": "git@github.com:hiqsol/quotes",
+        "prj/hiqsol/quotes": "git@github.com:hiqsol/quotes",
         "prj/hiqdev/hidev": "git@github.com:hiqdev/hidev",
         "prj/hiqdev/rehome": "git@github.com:hiqdev/rehome",
         "prj/hiqdev/chkipper": "git@github.com:hiqdev/chkipper",
