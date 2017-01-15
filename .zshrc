@@ -62,8 +62,13 @@ prompt_git() {
     branch=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
     if [ ! -z $branch ]; then
         echo -n "%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${branch}"
-        changes=`git status -suno;git log -n1 origin/${branch}..HEAD`
-        if [ ! -z $changes ]
+        TMP=`mktemp`
+        changes=`git status -suno;git log -n1 origin/${branch}..HEAD 2> "$TMP"`
+        errors=`cat "$TMP"`
+        rm $TMP
+        if [ ! -z $errors ]
+            then echo -n "%{$fg_bold[red]%}?"
+        elif [ ! -z $changes ]
             then echo -n "%{$fg_bold[yellow]%}*"
         fi
     fi
