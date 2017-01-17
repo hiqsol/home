@@ -29,6 +29,7 @@ alias vless=~/prj/vimpager/vimpager
 alias nwget='wget --no-check-certificate'
 alias rmsshkey='ssh-keygen -f "/home/sol/.ssh/known_hosts" -R '
 alias inithome='wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init ssh://sol@git.solex.me:222/git/sol/sol ; rm rehome'
+alias tmux-ls="tmux list-panes -aF '#{session_name}:#{window_index}:#{pane_index}	#{pane_tty}	#{pane_pid}	#{pane_current_command}'"
 
 alias .='cd ..'
 alias ..='cd ../..'
