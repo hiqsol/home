@@ -26,6 +26,7 @@ Plugin 'kien/ctrlp.vim'                 " CtrlP
 Plugin 'joonty/vdebug'                  " xdebug
 "Plugin 'vim-scripts/LargeFile'         " better large files support
 "Plugin 'Yggdroot/indentLine'           " show indent levels
+Plugin 'rkitover/vimpager'              " Vimpager
 
 " SYNTAX highlighting
 Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP

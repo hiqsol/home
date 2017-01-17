@@ -1,4 +1,4 @@
-### $Header: /usr/cvs/sol/.aliases,v 1.9 2005/04/11 18:14:54 sol Exp $
+### sol's aliases
 
 alias grep='grep --color=auto'
 
@@ -24,8 +24,8 @@ alias cp='nocorrect cp'         # no spelling correction on cp
 alias git='nocorrect git'       # no spelling correction on git
 alias mkdir='nocorrect mkdir'   # no spelling correction on mkdir
 
-alias vcat=~/bin/vimcat
-alias vless=~/prj/vimpager/vimpager
+alias vcat=~/.vim/bundle/vimpager/vimcat
+alias vless=~/.vim/bundle/vimpager/vimpager
 alias nwget='wget --no-check-certificate'
 alias rmsshkey='ssh-keygen -f "/home/sol/.ssh/known_hosts" -R '
 alias inithome='wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init ssh://sol@git.solex.me:222/git/sol/sol ; rm rehome'
