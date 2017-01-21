@@ -9,3 +9,8 @@ pclone() {
     echo git clone ssh://git.solex.me:222/git/$*;
     git clone ssh://git.solex.me:222/git/$*;
 }
+
+md() {
+    mkdir $1
+    cd $1
+}
