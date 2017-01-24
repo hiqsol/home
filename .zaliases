@@ -14,3 +14,8 @@ md() {
     mkdir $1
     cd $1
 }
+
+rehash() {
+    source ~/.zshrc
+    builtin rehash
+}
