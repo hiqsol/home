@@ -63,7 +63,7 @@ prompt_git() {
     if [ ! -z $branch ]; then
         echo -n "%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${branch}"
         TMP=`mktemp`
-        changes=`git status -suno;git log -n1 origin/${branch}..HEAD 2> "$TMP"`
+        changes=`git status -s;git log -n1 origin/${branch}..HEAD 2> "$TMP"`
         errors=`cat "$TMP"`
         rm $TMP
         if [ ! -z $errors ]
