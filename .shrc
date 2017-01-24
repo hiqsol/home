@@ -1,11 +1,6 @@
 #! /bin/sh
 ### $Header: /usr/cvs/sol/.shrc,v 1.7 2005/04/11 18:14:54 sol Exp $
 
-### If interactive shows banner message
-if [ -n "${PS1}" ]; then
-	echo "[.shrc begin]"
-fi
-
 umask 002
 
 ### PATH
@@ -41,11 +36,6 @@ fi
 export PAGER=less
 export EDITOR=vim
 export VISUAL=vim
-
-### If interactive shows banner message
-if [ -n "${PS1}" ]; then
-	echo "[.shrc end]"
-fi
 
 ### Predictable SSH authentication socket location.
 SOCK="/tmp/ssh-agent-$USER-screen"
