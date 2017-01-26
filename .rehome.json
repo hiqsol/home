@@ -7,11 +7,9 @@
     },
     "repos": {
         ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
+        "prj/sol/home": "ssh://git.solex.me:222/git/sol/home",
         "prj/hiqsol/quotes": "git@github.com:hiqsol/quotes",
-        "prj/hiqdev/hidev": "git@github.com:hiqdev/hidev",
-        "prj/hiqdev/rehome": "git@github.com:hiqdev/rehome",
-        "prj/hiqdev/chkipper": "git@github.com:hiqdev/chkipper",
-        "prj/hiqdev/rewatcher": "git@github.com:hiqdev/rewatcher"
+        "prj/hiqdev/rehome": "git@github.com:hiqdev/rehome"
     },
     "installs": {
         "bin/composer": [
@@ -22,13 +20,8 @@
     },
     "updates": {
         "bin/composer": [
-            "bin/composer self-update"
-        ],
-        "prj/hiqdev/hidev/vendor": [
-            "composer update -d prj/hiqdev/hidev"
-        ],
-        "prj/hiqdev/chkipper/vendor": [
-            "composer update -d prj/hiqdev/chkipper"
+            "bin/composer self-update",
+            "bin/composer global update"
         ]
     }
 }

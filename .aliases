@@ -1,5 +1,3 @@
-### sol's aliases
-
 alias grep='grep --color=auto'
 
 alias -g G='| grep'
@@ -31,6 +29,9 @@ alias rmsshkey='ssh-keygen -f "/home/sol/.ssh/known_hosts" -R '
 alias inithome='wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init ssh://sol@git.solex.me:222/git/sol/sol ; rm rehome'
 alias tmux-ls="tmux list-panes -aF '#{session_name}:#{window_index}:#{pane_index}	#{pane_tty}	#{pane_pid}	#{pane_current_command}'"
 
+alias quotes=~/prj/hiqsol/quotes/bin/quotes
+alias rehome=~/prj/hiqsol/rehome/rehome
+
 alias .='cd ..'
 alias ..='cd ../..'
 alias ...='cd ../../..'
@@ -47,4 +48,3 @@ alias ......='cd ../../../../../..'
     alias netstat="grc --colour=auto netstat"
     alias traceroute="grc --colour=auto traceroute"
 }
-
