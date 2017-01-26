@@ -72,7 +72,9 @@ set scrolloff=2         " keep 2 lines before scroll
 set sidescrolloff=5     " keep 2 lines before scroll
 set showtabline=2       " always show tabline
 set laststatus=2        " always show status line
+set path+=**            " `:find` down into subfolders
 set wildmenu            " command-line completion with menu
+set wildmode=longest:full,full
 
 let mysyntaxfile    = "~/.vim/syntax.vim"
 let myfiletypefile  = "~/.vim/filetype.vim"
