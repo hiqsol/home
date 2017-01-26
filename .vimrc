@@ -97,6 +97,7 @@ endif
 " my keys
 map         <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 map         <C-N>       :NERDTreeTabsToggle<CR>
+map         \f          :NERDTreeFind<CR>
 " nnoremap    <C-T>       :TagbarToggle<CR>
 nnoremap    <C-F>       :GitGutterToggle<CR>
 " map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
