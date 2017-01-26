@@ -1,0 +1,18 @@
+{
+    "require": {
+        "hirak/prestissimo": "*",
+        "hiqdev/chkipper": "dev-master",
+        "hiqdev/hidev": "dev-master",
+        "hiqdev/rewatcher": "dev-master",
+        "phpmd/phpmd": "^2.6",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpunit/phpunit": "^5.3",
+        "phploc/phploc": "^3.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
