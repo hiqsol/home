@@ -1,0 +1,23 @@
+package:
+    type:           project
+    name:           home
+    title:          Sol's Home
+    license:        MIT
+    keywords:       sol, home
+
+vendor:
+    name:           hiqsol
+    authors:
+        sol:
+            name:       Andrii Vasyliev
+            email:      sol@hiqdev.com
+
+plugins:
+    hiqdev/hidev-readme: "*"
+    hiqdev/hidev-license: "*"
+
+default:
+    before:
+        - README.md
+        - LICENSE
+        - .gitignore

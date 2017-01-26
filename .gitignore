@@ -1,1 +1,21 @@
+# hidev internals
+.hidev/composer.json
+.hidev/composer.lock
+.hidev/config-local.yml
+.hidev/vendor
+
+# IDE & OS files
+.*.swp
+.DS_Store
+.buildpath
+.idea
+.project
+.settings
+Thumbs.db
+nbproject
+
+# Binaries
+composer.phar
+
+# there could be too many files in home to list all
 *
