@@ -44,7 +44,7 @@ filetype plugin on
 
 " GUI settings
 colorscheme pablo
-set guifont=Monospace\ 12
+set guifont="Monospace 11"
 set background=dark
 
 " Indending
