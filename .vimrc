@@ -66,7 +66,8 @@ set nobackup            " don't keep a backup file
 set viminfo='20,\"50    " read/write a .viminfo file, don't store >50 lines of registers
 set history=50          " keep 50 lines of command line history
 set ruler               " show the cursor position all the time
-set nonumber            " don't show line numbers
+"set nonumber            " don't show line numbers
+set relativenumber      " show relative line numbers
 set cursorline          " show cursor line
 set scrolloff=2         " keep 2 lines before scroll
 set sidescrolloff=5     " keep 2 lines before scroll
