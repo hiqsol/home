@@ -9,6 +9,9 @@
         "phpunit/phpunit": "^5.3",
         "phploc/phploc": "^3.0"
     },
+    "require-dev": {
+        "yiisoft/yii2": "dev-master"
+    },
     "repositories": [
         {
             "type": "composer",
