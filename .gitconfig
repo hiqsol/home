@@ -20,7 +20,7 @@
     d           = diff
     di          = diff
     dif         = diff
-    df          = diff -U0
+    df          = diff -U0 --
     vimdiff     = difftool
     br          = branch
     ib          = init --bare --shared=group
