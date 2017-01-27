@@ -2,10 +2,16 @@
 hi      MyUnwantedChars ctermbg=red   guibg=red
 match   MyUnwantedChars /\t\+ \+\| \+\t\+\|\s\+$/
 hi      StatusLine      ctermbg=gray  ctermfg=black
-" hi    CursorLine      ctermbg=DarkGrey
-hi      TabLine         ctermfg=Black ctermbg=White cterm=NONE
-hi      TabLineFill     ctermfg=Black ctermbg=White cterm=NONE
-hi      TabLineSel      ctermfg=White ctermbg=Blue  cterm=NONE
+" hi    CursorLine      ctermbg=darkgrey
+hi      TabLine         ctermfg=black ctermbg=white cterm=NONE
+hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
+hi      TabLineSel      ctermfg=white ctermbg=blue  cterm=NONE
+
+" GitGutter colors
+hi      GitGutterAdd          ctermbg=darkgreen
+hi      GitGutterChange       ctermbg=yellow
+hi      GitGutterDelete       ctermbg=red
+hi      GitGutterChangeDelete ctermbg=red
 
 " aliases
 hi def link markdownCode                String
