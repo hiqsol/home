@@ -67,7 +67,7 @@ set viminfo='20,\"50    " read/write a .viminfo file, don't store >50 lines of r
 set history=50          " keep 50 lines of command line history
 set ruler               " show the cursor position all the time
 set relativenumber      " show relative line numbers
-set number              " hybrid line numbers
+set nonumber            " don't show absolute line
 set cursorline          " show cursor line
 set scrolloff=2         " keep 2 lines before scroll
 set sidescrolloff=5     " keep 2 lines before scroll
@@ -101,7 +101,7 @@ map         <C-N>       :NERDTreeTabsToggle<CR>
 map         \f          :NERDTreeFind<CR>
 map         \g          :echo expand('%:p')<CR>
 " nnoremap    <C-T>       :TagbarToggle<CR>
-nnoremap    <C-F>       :set number!<CR>:set relativenumber!<CR>:GitGutterToggle<CR>
+nnoremap    <C-F>       :Windo set relativenumber!<CR>:GitGutterToggle<CR>:NERDTreeTabsToggle<CR>
 " map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
 map         <C-\>       "9yiw:CtrlP<CR><C-\>r9
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
@@ -120,3 +120,9 @@ map Q gq
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
+function! WinPerform(command)
+  let currwin=winnr()
+  execute 'windo ' . a:command
+  execute currwin . 'wincmd w'
+endfunction
+com! -nargs=+ -complete=command Windo call WinPerform(<q-args>)
