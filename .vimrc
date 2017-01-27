@@ -66,8 +66,8 @@ set nobackup            " don't keep a backup file
 set viminfo='20,\"50    " read/write a .viminfo file, don't store >50 lines of registers
 set history=50          " keep 50 lines of command line history
 set ruler               " show the cursor position all the time
-"set nonumber            " don't show line numbers
 set relativenumber      " show relative line numbers
+set number              " hybrid line numbers
 set cursorline          " show cursor line
 set scrolloff=2         " keep 2 lines before scroll
 set sidescrolloff=5     " keep 2 lines before scroll
@@ -101,7 +101,7 @@ map         <C-N>       :NERDTreeTabsToggle<CR>
 map         \f          :NERDTreeFind<CR>
 map         \g          :echo expand('%:p')<CR>
 " nnoremap    <C-T>       :TagbarToggle<CR>
-nnoremap    <C-F>       :GitGutterToggle<CR>
+nnoremap    <C-F>       :set number!<CR>:set relativenumber!<CR>:GitGutterToggle<CR>
 " map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
 map         <C-\>       "9yiw:CtrlP<CR><C-\>r9
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
