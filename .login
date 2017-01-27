@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 #stty -istrip crt erase 
 stty -ixon
@@ -6,5 +6,5 @@ stty -ixon
 mesg y
 
 echo
-~/bin/random
+quotes
 echo

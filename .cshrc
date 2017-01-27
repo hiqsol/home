@@ -1,4 +1,4 @@
-# $Header$
+#!/bin/csh
 
 alias l     ls -loFG
 alias ll	ls -loFG

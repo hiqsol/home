@@ -1,5 +1,4 @@
-#! /bin/sh
-### $Header: /usr/cvs/sol/.shrc,v 1.7 2005/04/11 18:14:54 sol Exp $
+#!/bin/sh
 
 umask 002
 
