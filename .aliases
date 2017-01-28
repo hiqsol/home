@@ -1,3 +1,5 @@
+#!/bin/sh
+
 alias grep='grep --color=auto'
 
 alias -g G='| grep'
@@ -17,10 +19,11 @@ alias x509="openssl x509 -text -noout -in"
 alias T='tail -f'
 alias Z='zcalc'
 
-alias mv='nocorrect mv'         # no spelling correction on mv
-alias cp='nocorrect cp'         # no spelling correction on cp
-alias git='nocorrect git'       # no spelling correction on git
-alias mkdir='nocorrect mkdir'   # no spelling correction on mkdir
+# no spelling correction on mv
+alias mv='nocorrect mv'
+alias cp='nocorrect cp'
+alias git='nocorrect git'
+alias mkdir='nocorrect mkdir -p'
 
 alias vcat=~/.vim/bundle/vimpager/vimcat
 alias vless=~/.vim/bundle/vimpager/vimpager
