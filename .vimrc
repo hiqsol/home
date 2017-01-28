@@ -7,37 +7,49 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdcommenter'       " The Nerd Commenter
-Plugin 'scrooloose/nerdtree'            " The Nerd Tree
-Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
-Plugin 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
-Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
-"Plugin 'bling/vim-airline'             " better status line
-Plugin 'majutsushi/tagbar'              " right window with tags
-Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
-Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
-Plugin 'tpope/vim-fugitive'             " git integration
+
+" Editing
 Plugin 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
 Plugin 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plugin 'tpope/vim-repeat'               " enable repeating with '.' for plugins
+
+" Nerd Tree
+Plugin 'scrooloose/nerdtree'            " The Nerd Tree
+Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
+
+" GIT
+Plugin 'tpope/vim-fugitive'             " git integration
+Plugin 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
+Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
+
+" Programming
+Plugin 'joonty/vdebug'                  " xdebug
+Plugin 'scrooloose/nerdcommenter'       " commenting shortcuts
+Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
+
+" CTAGS automation
 "Plugin 'xolox/vim-misc'                " required by vim-easytags
 "Plugin 'xolox/vim-easytags'            " create/update ctags
-Plugin 'kien/ctrlp.vim'                 " CtrlP
-Plugin 'joonty/vdebug'                  " xdebug
-"Plugin 'vim-scripts/LargeFile'         " better large files support
-"Plugin 'Yggdroot/indentLine'           " show indent levels
-Plugin 'rkitover/vimpager'              " Vimpager
 
 " SYNTAX highlighting
-Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
 Plugin 'hiqsol/vim-markdown'            " better syntax highlighting for Markdown
 Plugin 'hiqsol/pgsql.vim'               " better syntax highlighting for PostgreSQL
 
 " PHP
+Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
 Plugin 'everzet/phpfolding.vim'         " folding of php code
 Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
 "Plugin 'joonty/vim-phpqa'              " show code coverage
-"
+
+" Diff
+Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+Plugin 'majutsushi/tagbar'              " right window with tags
+Plugin 'kien/ctrlp.vim'                 " CtrlP
+Plugin 'rkitover/vimpager'              " Vimpager
+"Plugin 'bling/vim-airline'             " better status line
+"Plugin 'vim-scripts/LargeFile'         " better large files support
+"Plugin 'Yggdroot/indentLine'           " show indent levels
+
 call vundle#end()
 filetype plugin on
 "filetype plugin indent off
