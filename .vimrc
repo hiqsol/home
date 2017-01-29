@@ -71,26 +71,33 @@ set bs=2                " allow backspacing over everything in insert mode
 set t_kb=
 fixdel
 
-" Other
-set undofile            " allows undo after reopen file
+" Undo & backup
+set undofile                    " allows undo after reopen file
 set undodir=/home/sol/.vim/undo
-set nobackup            " don't keep a backup file
-set viminfo='20,\"50    " read/write a .viminfo file, don't store >50 lines of registers
-set history=50          " keep 50 lines of command line history
-set ruler               " show the cursor position all the time
-set relativenumber      " show relative line numbers
-set nonumber            " don't show absolute line
-set cursorline          " show cursor line
-set scrolloff=2         " keep 2 lines before scroll
-set sidescrolloff=5     " keep 2 lines before scroll
-set showtabline=2       " always show tabline
-set laststatus=2        " always show status line
-set path+=**            " `:find` down into subfolders
-set wildmenu            " command-line completion with menu
+set nobackup                    " don't keep a backup file
+set viminfo='20,\"50            " read/write a .viminfo file, don't store >50 lines of registers
+set history=99                  " keep 50 lines of command line history
+
+" HUD
+set ruler                       " show the cursor position all the time
+set relativenumber              " show relative line numbers
+set nonumber                    " don't show absolute line
+set cursorline                  " show cursor line
+set showtabline=2               " always show tabline
+set laststatus=2                " always show status line
+set scrolloff=2                 " keep 2 lines before scroll
+set sidescrolloff=5             " keep 5 columns before horizontal scroll
+
+" Search
+set path+=**                    " `:find` down into subfolders
+set wildmenu                    " command-line completion with menu
 set wildmode=longest:full,full
+set hlsearch                    " highlight search
 
 let mysyntaxfile    = "~/.vim/syntax.vim"
 let myfiletypefile  = "~/.vim/filetype.vim"
+
+" Plugin options
 let vimpager_passthrough = 1 " for vimpager
 let g:nerdtree_tabs_open_on_console_startup = 0
 let g:gitgutter_realtime = 0
@@ -100,14 +107,9 @@ let g:indentLine_color_term = 7
 let g:indentLine_char = '·' " ''  '︙'
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-    syntax on
-    set hlsearch
-endif
+syntax on
 
-" my keys
+" KEYS
 map         <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 map         <C-N>       :NERDTreeTabsToggle<CR>
 map         \f          :NERDTreeFind<CR>
@@ -131,6 +133,8 @@ map Q gq
 
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+
+" FUNCTIONS
 
 function! WinPerform(command)
   let currwin=winnr()
