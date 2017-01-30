@@ -12,6 +12,7 @@ alias g='git'
 alias h='hidev'
 alias gg='git grep'
 alias gir='grep -IR'
+alias girp='grep -IR --include=\*.php --exclude-dir=vendor'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
 alias v='vim'
 alias vpn="ovpn default"
