@@ -109,26 +109,29 @@ let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', '
 
 syntax on
 
-" Basic keys
-nnoremap    *           *N
+" KEYS
+
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
-" Fn keys
+" mouse paste without auto indenting
+nnoremap    \R          :r! cat<CR>
+
+" Search keys
+nnoremap    *           *N
 nnoremap    <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 
-" Control keys
+" Files keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-F>       :NERDTreeTabsClose<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
+nnoremap    \f          :NERDTreeFind<CR>
+nnoremap    \g          :echo expand('%:p')<CR>
+
+" PHP
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
 nnoremap    <C-J>       :call PhpDocSingle()<CR>
 vnoremap    <C-J>       :call PhpDocRange()<CR>
-
-" Backslash keys
-map         \f          :NERDTreeFind<CR>
-map         \g          :echo expand('%:p')<CR>
-nnoremap    \R          :r! cat<CR>
 
 " FUNCTIONS
 
