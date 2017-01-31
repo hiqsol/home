@@ -13,17 +13,19 @@ Plugin 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
 Plugin 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plugin 'tpope/vim-repeat'               " enable repeating with '.' for plugins
 
-" Nerd Tree
+" HUD
 Plugin 'scrooloose/nerdtree'            " The Nerd Tree
 Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
+Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+Plugin 'valloric/listtoggle'            " toggles display of quickfix and location list
 
 " GIT
 Plugin 'tpope/vim-fugitive'             " git integration
 Plugin 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
-Plugin 'airblade/vim-gitgutter'         " shows git +/-/~
+Plugin 'airblade/vim-gitgutter'         " shows git diff in signs column
 
 " Programming
-Plugin 'joonty/vdebug'                  " xdebug
+Plugin 'joonty/vdebug'                  " debugger
 Plugin 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 
@@ -41,8 +43,7 @@ Plugin 'everzet/phpfolding.vim'         " folding of php code
 Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
 "Plugin 'joonty/vim-phpqa'              " show code coverage
 
-" Diff
-Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+" Other
 Plugin 'majutsushi/tagbar'              " right window with tags
 Plugin 'kien/ctrlp.vim'                 " CtrlP
 Plugin 'rkitover/vimpager'              " Vimpager
@@ -72,7 +73,8 @@ set bs=2                        " allow backspacing over everything in insert mo
 set t_kb=
 fixdel
 
-" Undo & backup
+" save, undo & backup
+set autowrite
 set undofile                    " allows undo after reopen file
 set undodir=/home/sol/.vim/undo
 set nobackup                    " don't keep a backup file
@@ -117,6 +119,8 @@ vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><
 
 " mouse paste without auto indenting
 nnoremap    \R          :r! cat<CR>
+
+nnoremap    \t          :TagbarToggle<CR>
 
 " Search keys
 nnoremap    *           *N
