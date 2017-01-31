@@ -61,11 +61,12 @@ set background=dark
 
 " Indending
 set autoindent
+set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
-set bs=2                " allow backspacing over everything in insert mode
+set bs=2                        " allow backspacing over everything in insert mode
 
 " Keyboard
 set t_kb=
