@@ -120,7 +120,7 @@ nnoremap    <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " Control keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
-nnoremap    <C-F>       :Windo set relativenumber!<CR>:GitGutterToggle<CR>:NERDTreeTabsToggle<CR>
+nnoremap    <C-F>       :NERDTreeTabsClose<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
 nnoremap    <C-J>       :call PhpDocSingle()<CR>
 vnoremap    <C-J>       :call PhpDocRange()<CR>
