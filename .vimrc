@@ -8,43 +8,43 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
-" Editing
+" Editing plugins
 Plugin 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
 Plugin 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plugin 'tpope/vim-repeat'               " enable repeating with '.' for plugins
 
-" HUD
+" HUD plugins
 Plugin 'scrooloose/nerdtree'            " The Nerd Tree
 Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
 Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
 Plugin 'valloric/listtoggle'            " toggles display of quickfix and location list
 
-" GIT
+" Git plugins
 Plugin 'tpope/vim-fugitive'             " git integration
 Plugin 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
 Plugin 'airblade/vim-gitgutter'         " shows git diff in signs column
 
-" Programming
+" Programming plugins
 Plugin 'joonty/vdebug'                  " debugger
 Plugin 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
+Plugin 'majutsushi/tagbar'              " right window with tags
 
 " CTAGS automation
 "Plugin 'xolox/vim-misc'                " required by vim-easytags
 "Plugin 'xolox/vim-easytags'            " create/update ctags
 
-" SYNTAX highlighting
+" Syntax highlighting plugins
 Plugin 'hiqsol/vim-markdown'            " better syntax highlighting for Markdown
 Plugin 'hiqsol/pgsql.vim'               " better syntax highlighting for PostgreSQL
 
-" PHP
+" PHP plugins
 Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
 Plugin 'everzet/phpfolding.vim'         " folding of php code
 Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
 "Plugin 'joonty/vim-phpqa'              " show code coverage
 
-" Other
-Plugin 'majutsushi/tagbar'              " right window with tags
+" Other plugins
 Plugin 'kien/ctrlp.vim'                 " CtrlP
 Plugin 'rkitover/vimpager'              " Vimpager
 "Plugin 'bling/vim-airline'             " better status line
@@ -120,8 +120,6 @@ vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><
 " mouse paste without auto indenting
 nnoremap    \R          :r! cat<CR>
 
-nnoremap    \t          :TagbarToggle<CR>
-
 " Search keys
 nnoremap    *           *N
 nnoremap    <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
@@ -132,11 +130,19 @@ nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
+nnoremap    \T          :tabnew<CR>
 
-" PHP keys
+" Git keys
+nnoremap    gl          :Glog<CR>
+nnoremap    gb          :Gblame<CR>
+nnoremap    gd          :Gdiff<CR>
+nnoremap    ge          :Gedit<CR>
+
+" Programming keys
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
 nnoremap    <C-J>       :call PhpDocSingle()<CR>
 vnoremap    <C-J>       :call PhpDocRange()<CR>
+nnoremap    \t          :TagbarToggle<CR>
 
 " FUNCTIONS
 
