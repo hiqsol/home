@@ -126,14 +126,14 @@ nnoremap    \t          :TagbarToggle<CR>
 nnoremap    *           *N
 nnoremap    <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 
-" Files keys
+" HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
-nnoremap    <C-F>       :NERDTreeTabsClose<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
+nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 
-" PHP
+" PHP keys
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
 nnoremap    <C-J>       :call PhpDocSingle()<CR>
 vnoremap    <C-J>       :call PhpDocRange()<CR>
