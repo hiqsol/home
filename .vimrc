@@ -67,7 +67,7 @@ set expandtab
 set smarttab
 set bs=2                " allow backspacing over everything in insert mode
 
-" fix backspace
+" Keyboard
 set t_kb=
 fixdel
 
@@ -109,30 +109,26 @@ let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', '
 
 syntax on
 
-" KEYS
-map         <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
-map         <C-N>       :NERDTreeTabsToggle<CR>
-map         \f          :NERDTreeFind<CR>
-map         \g          :echo expand('%:p')<CR>
-" nnoremap    <C-T>       :TagbarToggle<CR>
+" Basic keys
+nnoremap    *           *N
+" Make p in Visual mode replace the selected text with the "" register.
+vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+
+" Fn keys
+nnoremap    <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
+
+" Control keys
+nnoremap    <C-S>       :update<CR>
+nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-F>       :Windo set relativenumber!<CR>:GitGutterToggle<CR>:NERDTreeTabsToggle<CR>
-" map         <F5>        :set foldmethod=marker<CR>:set foldmarker=\/**,*\/<CR>
-map         <C-\>       "9yiw:CtrlP<CR><C-\>r9
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
 nnoremap    <C-J>       :call PhpDocSingle()<CR>
 vnoremap    <C-J>       :call PhpDocRange()<CR>
 
-" testing
-nnoremap    *           *N
-
-"  " tmux fix http://superuser.com/questions/237751
-"  map <Esc>[B <Down>
-
-" Don't use Ex mode, use Q for formatting
-map Q gq
-
-" Make p in Visual mode replace the selected text with the "" register.
-vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+" Backslash keys
+map         \f          :NERDTreeFind<CR>
+map         \g          :echo expand('%:p')<CR>
+nnoremap    \R          :r! cat<CR>
 
 " FUNCTIONS
 
