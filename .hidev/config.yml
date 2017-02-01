@@ -1,23 +1,15 @@
 package:
     type:           project
-    name:           home
-    title:          Sol's Home
-    license:        MIT
-    keywords:       sol, home
+    name:           dotfiles
+    title:          Sol's dotfiles
+    keywords:       sol, home, dotfiles
+    description:    |
+        I use [rehome](https://github.com/hiqdev/rehome) to setup and maintain my home.
 
-vendor:
-    name:           hiqsol
-    authors:
-        sol:
-            name:       Andrii Vasyliev
-            email:      sol@hiqdev.com
+        Other tools I use:
+
+        - [hidev](https://github.com/hiqdev/hidev) to create and maintain packages
+        - [rewatcher](https://github.com/hiqdev/rewatcher) to watch changed repos
 
 plugins:
-    hiqdev/hidev-readme: "*"
-    hiqdev/hidev-license: "*"
-
-default:
-    before:
-        - README.md
-        - LICENSE
-        - .gitignore
+    hiqsol/hidev-hiqsol: "<2.0"
