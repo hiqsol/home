@@ -29,6 +29,7 @@ Plugin 'joonty/vdebug'                  " debugger
 Plugin 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plugin 'majutsushi/tagbar'              " right window with tags
+Plugin 'foosoft/vim-argwrap'            " wrap and unwrap arguments
 
 " CTAGS automation
 "Plugin 'xolox/vim-misc'                " required by vim-easytags
@@ -143,6 +144,7 @@ inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
 nnoremap    <C-J>       :call PhpDocSingle()<CR>
 vnoremap    <C-J>       :call PhpDocRange()<CR>
 nnoremap    \t          :TagbarToggle<CR>
+nnoremap    \w          :ArgWrap<CR>
 
 " FUNCTIONS
 
