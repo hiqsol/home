@@ -36,8 +36,9 @@ Plugin 'foosoft/vim-argwrap'            " wrap and unwrap arguments
 "Plugin 'xolox/vim-easytags'            " create/update ctags
 
 " Syntax highlighting plugins
-Plugin 'hiqsol/vim-markdown'            " better syntax highlighting for Markdown
-Plugin 'hiqsol/pgsql.vim'               " better syntax highlighting for PostgreSQL
+Plugin 'hiqsol/vim-markdown'            " better Markdown
+Plugin 'hiqsol/pgsql.vim'               " better PostgreSQL
+Plugin 'elzr/vim-json'                  " better JSON
 
 " PHP plugins
 Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
