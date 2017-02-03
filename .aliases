@@ -34,7 +34,7 @@ alias inithome='wget https://raw.githubusercontent.com/hiqdev/rehome/master/reho
 alias tmux-ls="tmux list-panes -aF '#{session_name}:#{window_index}:#{pane_index}	#{pane_tty}	#{pane_pid}	#{pane_current_command}'"
 
 alias quotes=~/prj/hiqsol/quotes/bin/quotes
-alias rehome=~/prj/hiqsol/rehome/rehome
+alias rehome=~/prj/hiqdev/rehome/rehome
 
 alias .='cd ..'
 alias ..='cd ../..'
