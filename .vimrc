@@ -131,7 +131,7 @@ nnoremap    <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
-nnoremap    \f          :NERDTreeFind<CR>
+nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    \T          :tabnew<CR>
 
