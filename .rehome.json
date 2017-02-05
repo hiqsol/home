@@ -1,20 +1,19 @@
 {
     "dotfiles": "hiqsol/dotfiles",
     "shell": "zsh",
-    "shadows": [
-        "ssh://git.solex.me:222/git/sol/shadow-home"
-    ],
-    "checks": {
-        "which zsh": "apt-get install zsh",
-        "which vim": "apt-get install vim",
-        "which tmux": "apt-get install tmux"
-    },
     "repos": {
+        "prj/sol/shadow-home": "ssh://git.solex.me:222/git/sol/shadow-home",
         ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
         "prj/hiqsol/quotes": "hiqsol/quotes",
         "prj/hiqdev/rehome": "hiqdev/rehome"
     },
+    "symlinks": {
+        "prj/sol/shadow-home": ""
+    },
     "installs": {
+        "bin/zsh": "which zsh || echo apt-get install zsh",
+        "bin/vim": "which vim || echo apt-get install vim",
+        "bin/tmux": "which tmux || echo apt-get install tmux",
         "bin/composer": [
             "wget https://getcomposer.org/installer -O composer-setup.php",
             "php composer-setup.php --install-dir=bin --filename=composer",
@@ -26,6 +25,9 @@
         "bin/composer": [
             "bin/composer self-update",
             "bin/composer global update"
+        ],
+        "prj/hiqdev/hidev/vendor": [
+            "cd prj/hiqdev/hidev; composer update"
         ]
     }
 }
