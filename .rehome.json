@@ -14,6 +14,7 @@
         "bin/zsh": "which zsh || echo apt-get install zsh",
         "bin/vim": "which vim || echo apt-get install vim",
         "bin/tmux": "which tmux || echo apt-get install tmux",
+        ".vim/do_plugins": "vim +PluginInstall +qall",
         "bin/composer": [
             "wget https://getcomposer.org/installer -O composer-setup.php",
             "php composer-setup.php --install-dir=bin --filename=composer",
@@ -22,6 +23,7 @@
         ]
     },
     "updates": {
+        ".vim/do_plugins": "vim +PluginUpdate +qall",
         "bin/composer": [
             "bin/composer self-update",
             "bin/composer global update"
