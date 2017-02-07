@@ -30,6 +30,7 @@ Plugin 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plugin 'majutsushi/tagbar'              " right window with tags
 Plugin 'foosoft/vim-argwrap'            " wrap and unwrap arguments
+Plugin 'michaeljsmith/vim-indent-object' " move identation level
 
 " CTAGS automation
 "Plugin 'xolox/vim-misc'                " required by vim-easytags
