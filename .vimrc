@@ -66,11 +66,12 @@ set background=dark
 " Indending
 set autoindent
 set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set tabstop=4           " number of spaces that a <Tab> in the file counts for
+set softtabstop=-1      " number of spaces that a <Tab> counts for while performing editing operations
+set shiftwidth=0        " number of spaces to use for each step of (auto)indent
+set expandtab           " use the appropriate number of spaces to insert a <Tab>
 set smarttab
-set bs=2                        " allow backspacing over everything in insert mode
+set bs=2                " allow backspacing over everything in insert mode
 
 " Keyboard
 set t_kb=
