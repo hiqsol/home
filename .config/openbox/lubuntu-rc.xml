@@ -309,6 +309,36 @@
         <to>12</to>
       </action>
     </keybind>
+    <keybind key="W-q">
+      <action name="GoToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="W-w">
+      <action name="GoToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="GoToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="W-r">
+      <action name="GoToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+    <keybind key="W-t">
+      <action name="GoToDesktop">
+        <to>11</to>
+      </action>
+    </keybind>
+    <keybind key="W-y">
+      <action name="GoToDesktop">
+        <to>12</to>
+      </action>
+    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -412,8 +442,8 @@
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
     </keybind>
-    <!-- Keybindings for running applications on Home + E -->
-    <keybind key="W-e">
+    <!-- Keybindings for running file manager on Win + F -->
+    <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -422,12 +452,7 @@
         <command>lxsession-default file_manager</command>
       </action>
     </keybind>
-    <!-- Keybindings for running Run menu from Lxpanel on Home + R-->
-    <keybind key="W-r">
-      <action name="Execute">
-        <command>lxsession-default launcher</command>
-      </action>
-    </keybind>
+    <!-- Keybindings for running Run menu from Lxpanel on A-F2 -->
     <keybind key="A-F2">
       <action name="Execute">
         <command>lxsession-default launcher</command>
