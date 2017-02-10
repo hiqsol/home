@@ -2,7 +2,7 @@
     "shell": "zsh",
     "repos": {
         ".": "hiqsol/dotfiles",
-        ".shadow-home": "ssh://git.solex.me:222/git/sol/shadow-home",
+        ".shadow-home": "ssh://sol@git.solex.me:222/git/sol/shadow-home",
         ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
         "prj/hiqsol/quotes": "hiqsol/quotes",
         "prj/hiqdev/rehome": "hiqdev/rehome"
