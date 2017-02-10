@@ -1,1 +1,10 @@
-/home/sol/bin/youtube-dl -t $@
+#!/bin/sh
+
+file="$HOME/bin/youtube-dl"
+
+if [ ! -e "$file" ]; then
+    wget https://yt-dl.org/downloads/latest/youtube-dl -O $file
+    chmod a+rx $file
+fi
+
+$file -t $@
