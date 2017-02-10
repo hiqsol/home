@@ -2,17 +2,18 @@
     "shell": "zsh",
     "repos": {
         ".": "hiqsol/dotfiles",
-        "prj/sol/shadow-home": "ssh://git.solex.me:222/git/sol/shadow-home",
+        ".shadow-home": "ssh://git.solex.me:222/git/sol/shadow-home",
         ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
         "prj/hiqsol/quotes": "hiqsol/quotes",
         "prj/hiqdev/rehome": "hiqdev/rehome"
     },
     "installs": {
         "shadow-home": [
-            "chmod og-rwx ~/prj/sol",
-            "chmod -R og-rwx ~/prj/sol/shadow-home",
-            "cd prj/sol/shadow-home; ln -srf .ssh .calendar src ~",
-            "cd prj/sol/shadow-home; ln -srf bin/* ~/bin"
+            "chmod -R og-rwx .shadow-home",
+            "ln -srf .shadow-home/.calendar ~",
+            "ln -srf .shadow-home/src ~",
+            "ln -srf .shadow-home/bin/* ~/bin",
+            "ln -srf .shadow-home/.ssh/* ~/.ssh"
         ],
         "checks": [
             "which zsh || echo apt-get install zsh",
