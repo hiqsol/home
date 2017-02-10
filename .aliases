@@ -30,7 +30,7 @@ alias vcat=~/.vim/bundle/vimpager/vimcat
 alias vless=~/.vim/bundle/vimpager/vimpager
 alias nwget='wget --no-check-certificate'
 alias rmsshkey='ssh-keygen -f "/home/sol/.ssh/known_hosts" -R '
-alias inithome='wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init ssh://sol@git.solex.me:222/git/sol/sol ; rm rehome'
+alias inithome='wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init https://github.com/hiqsol/dotfiles ; rm rehome'
 alias tmux-ls="tmux list-panes -aF '#{session_name}:#{window_index}:#{pane_index}	#{pane_tty}	#{pane_pid}	#{pane_current_command}'"
 
 alias quotes=~/prj/hiqsol/quotes/bin/quotes
