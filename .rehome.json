@@ -33,9 +33,6 @@
         "bin/composer": [
             "bin/composer self-update",
             "bin/composer global update"
-        ],
-        "prj/hiqdev/hidev/vendor": [
-            "cd prj/hiqdev/hidev; composer update"
         ]
     }
 }
