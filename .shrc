@@ -13,23 +13,16 @@ export CLICOLOR=1
 ### LESS config TODO ???
 # export LESS=-S
 
-### Activate Russian locale and OS specific ls
+### Activate Russian locale and OS specific ls_options
 ### first default settings
 	export LANG=en_US.UTF-8
 	export LC_ALL=en_US.UTF-8
-    alias l='ls -lAF'
-    alias la='ls -laF'
-    alias ll='ls -lAF'
+    ls_options=''
 if [ `uname` = "Linux" ]; then
 	export LANG=en_US.utf8
 	export LC_ALL=en_US.utf8
-    alias l='ls -lAF --color=auto'
-    alias la='ls -laF --color=auto'
-    alias ll='ls -lAF --color=auto'
+    ls_options='--color=auto'
 fi
-#export LANG=ru_RU.KOI8-R
-#export MM_CHARSET=KOI8-R
-#export LC_ALL=ru_RU.KOI8-R
 
 ### Set default PAGER && EDITOR && VISUAL
 export PAGER=less
