@@ -11,6 +11,7 @@
     branch-name = "!git rev-parse --abbrev-ref HEAD"
     a           = add
     ci          = commit
+    cf          = commit -am csfixed
     cm          = commit -am minor
     cv          = commit -av
     co          = checkout
