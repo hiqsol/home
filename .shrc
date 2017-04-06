@@ -15,12 +15,12 @@ export CLICOLOR=1
 
 ### Activate Russian locale and OS specific ls_options
 ### first default settings
-	export LANG=en_US.UTF-8
-	export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
+    export LC_ALL=en_US.UTF-8
     ls_options=''
 if [ `uname` = "Linux" ]; then
-	export LANG=en_US.utf8
-	export LC_ALL=en_US.utf8
+    export LANG=en_US.utf8
+    export LC_ALL=en_US.utf8
     ls_options='--color=auto'
 fi
 
