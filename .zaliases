@@ -27,3 +27,13 @@ zc() {
 z2() {
     bc <<< "scale=2;$@"
 }
+
+cdp() {
+    pts=(${(s:/:)PWD})
+    cd "/$pts[1]/$pts[2]/$pts[3]/$pts[4]/$pts[5]"
+}
+
+cdv() {
+    pts=(${(s:/:)PWD})
+    cd "/$pts[1]/$pts[2]/$pts[3]/$pts[4]"
+}
