@@ -19,3 +19,11 @@ rehash() {
     source ~/.zshrc
     builtin rehash
 }
+
+zc() {
+    bc <<< "scale=5;$@"
+}
+
+z2() {
+    bc <<< "scale=2;$@"
+}

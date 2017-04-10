@@ -15,15 +15,16 @@ alias c='composer'
 alias h='hidev'
 alias g='git'
 alias h='hidev'
+alias s='chmod -R og-rwx ~/.ssh;ssh'
+alias v='vim'
+alias z='zc'
+alias T='tail -f'
+alias Z='zcalc'
 alias gg='git grep'
 alias gir='grep -IR'
 alias girp='grep -IR --include=\*.php --exclude-dir=vendor'
-alias s='chmod -R og-rwx ~/.ssh;ssh'
-alias v='vim'
 alias vpn="ovpn default"
 alias x509="openssl x509 -text -noout -in"
-alias T='tail -f'
-alias Z='zcalc'
 
 # no spelling correction on mv
 alias mv='nocorrect mv'
