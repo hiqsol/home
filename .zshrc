@@ -5,9 +5,10 @@ source ${HOME}/.aliases
 source ${HOME}/.zaliases
 
 ### AUTOLOADS
-autoload -U colors compinit promptinit zfinit zcalc edit-command-line
+autoload -U colors compinit promptinit zfinit zcalc edit-command-line select-word-style
 colors;compinit;promptinit;zfinit
 zle -N edit-command-line
+select-word-style bash
 
 ### KEYS
 bindkey -e                              # emacs key bindings
