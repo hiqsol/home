@@ -4,6 +4,7 @@
         ".": "hiqsol/dotfiles",
         ".shadow-home": "ssh://sol@git.solex.me:222/git/sol/shadow-home",
         ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
+        "prj/joeyh/myrepos": "git://myrepos.branchable.com/",
         "prj/hiqsol/quotes": "hiqsol/quotes",
         "prj/hiqdev/rehome": "hiqdev/rehome"
     },
