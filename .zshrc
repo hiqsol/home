@@ -30,6 +30,8 @@ setopt CORRECT AUTO_MENU EXTENDED_GLOB
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 ### COMPLETION
+# Allow key-driven interface, highlight active option
+zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 # Use caching so that commands like apt and dpkg complete are useable
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path ~/.zsh-cache/
