@@ -10,12 +10,15 @@
 [alias]
     branch-name = "!git rev-parse --abbrev-ref HEAD"
     a           = add
+    ca          = commit --amend
     ci          = commit
     cf          = commit -am csfixed
     cm          = commit -am minor
     cv          = commit -av
     co          = checkout
+    s           = status
     st          = status
+    sh          = show
     pb          = pull --rebase
     ph          = push
     d           = diff
