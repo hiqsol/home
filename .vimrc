@@ -149,6 +149,9 @@ vnoremap    <C-J>       :call PhpDocRange()<CR>
 nnoremap    \t          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
 
+" Alias to save file with sudo
+cmap w!! w !sudo tee > /dev/null %
+
 " FUNCTIONS
 
 function! WinPerform(command)
