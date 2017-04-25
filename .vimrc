@@ -43,8 +43,9 @@ Plugin 'elzr/vim-json'                  " better JSON
 
 " PHP plugins
 Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
-Plugin 'everzet/phpfolding.vim'         " folding of php code
-Plugin 'PDV--phpDocumentor-for-Vim'     " phpdoc generator
+Plugin 'everzet/phpfolding.vim'         " folding of PHP code
+Plugin 'PDV--phpDocumentor-for-Vim'     " PHPdoc generator
+Plugin 'alvan/vim-php-manual'           " PHP manual
 "Plugin 'joonty/vim-phpqa'              " show code coverage
 
 " Other plugins
