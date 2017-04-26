@@ -151,7 +151,8 @@ nnoremap    \t          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
 
 " Alias to save file with sudo
-cmap w!! w !sudo tee > /dev/null %
+" cmap w!! w !sudo tee > /dev/null %
+command W :w !sudo tee > /dev/null %
 
 " FUNCTIONS
 
