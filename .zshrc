@@ -6,7 +6,7 @@ source ${HOME}/.zaliases
 
 ### AUTOLOADS
 autoload -U colors compinit promptinit zfinit zcalc edit-command-line select-word-style
-colors;compinit;promptinit;zfinit
+colors;compinit -i;promptinit;zfinit
 zle -N edit-command-line
 select-word-style bash
 
@@ -30,6 +30,7 @@ setopt CORRECT AUTO_MENU EXTENDED_GLOB
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 ### COMPLETION
+fpath=(~/.zsh/completion $fpath)
 # Allow key-driven interface, highlight active option
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 # Use caching so that commands like apt and dpkg complete are useable
