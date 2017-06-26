@@ -115,6 +115,7 @@ let g:indentLine_color_term = 7
 let g:indentLine_char = '·' " ''  '︙'
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
 let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_working_path_mode = 0
 
 syntax on
 
@@ -137,6 +138,8 @@ nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set rela
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    \T          :tabnew<CR>
+
+map         gp          <C-P><C-\>w
 
 " Git keys
 nnoremap    gl          :Glog<CR>
