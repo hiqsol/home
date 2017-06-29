@@ -114,7 +114,7 @@ let NERDTreeIgnore = ['\~$', '\.pyc$', '\.swp$']
 let g:indentLine_color_term = 7
 let g:indentLine_char = '·' " ''  '︙'
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
-let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 0
 
 syntax on
