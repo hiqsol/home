@@ -1,8 +1,12 @@
 # hidev internals
-.hidev/composer.json
-.hidev/composer.lock
-.hidev/config-local.yml
-.hidev/vendor
+/.hidev/composer.json
+/.hidev/composer.lock
+/.hidev/runtime
+/.hidev/vendor
+
+# local config
+/.env
+/hidev-local.yml
 
 # IDE & OS files
 .*.swp

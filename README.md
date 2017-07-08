@@ -1,5 +1,4 @@
-Sol's dotfiles
-==============
+# Sol's dotfiles
 
 I use [rehome](https://github.com/hiqdev/rehome) to setup and maintain my home.
 

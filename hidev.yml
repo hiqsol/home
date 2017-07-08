@@ -12,4 +12,4 @@ package:
         - [rewatcher](https://github.com/hiqdev/rewatcher) to watch changed repos
 
 plugins:
-    hiqsol/hidev-hiqsol: "<2.0"
+    hiqsol/hidev-hiqsol: "<2.0 || dev-master"
