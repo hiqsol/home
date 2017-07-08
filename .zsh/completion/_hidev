@@ -35,4 +35,3 @@ _hidev() {
 }
 
 compdef _hidev hidev
-
