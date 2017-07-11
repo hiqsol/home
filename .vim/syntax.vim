@@ -1,11 +1,17 @@
 " my additional highlighting
 hi      MyUnwantedChars ctermbg=red   guibg=red
 match   MyUnwantedChars /\t\+ \+\| \+\t\+\|\s\+$/
+
+" GUI colors
 hi      StatusLine      ctermbg=gray  ctermfg=black
-" hi    CursorLine      ctermbg=darkgrey
+" hi    CursorLine      ctermbg=darkgray
 hi      TabLine         ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineSel      ctermfg=white ctermbg=blue  cterm=NONE
+
+" vimdiff colors
+hi      DiffChange      ctermbg=yellow
+hi      DiffText        ctermbg=red
 
 " GitGutter colors
 hi      GitGutterAdd          ctermbg=darkgreen
@@ -13,7 +19,7 @@ hi      GitGutterChange       ctermbg=yellow
 hi      GitGutterDelete       ctermbg=red
 hi      GitGutterChangeDelete ctermbg=red
 
-" aliases
+" markdown colors
 hi def link markdownCode                String
 hi def link markdownUrl                 Function
 hi def link markdownGreedyId            Operator
@@ -22,7 +28,7 @@ hi def link markdownHeadingDelimiter    htmlH1
 " HTML colors
 hi      htmlLink        ctermfg=green
 
-" my colors
+" programming languages syntax colors
 hi      Normal          ctermfg=white
 hi      Comment         ctermfg=red
     hi  phpDocTags      ctermfg=darkcyan
