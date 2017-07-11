@@ -10,7 +10,7 @@
     },
     "installs": {
         "shadow-home": [
-            "chmod -R og-rwx .shadow-home",
+            "chmod -R og-rwx .shadow-home .ssh .zsh",
             "ln -srf .shadow-home/.calendar ~",
             "ln -srf .shadow-home/src ~",
             "ln -srf .shadow-home/bin/* ~/bin",
