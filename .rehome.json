@@ -11,10 +11,10 @@
     "installs": {
         "shadow-home": [
             "chmod -R og-rwx .shadow-home .ssh .zsh",
-            "ln -srf .shadow-home/.calendar ~",
-            "ln -srf .shadow-home/src ~",
-            "ln -srf .shadow-home/bin/* ~/bin",
-            "ln -srf .shadow-home/.ssh/* ~/.ssh"
+            "ln -sf .shadow-home/.calendar ~",
+            "ln -sf .shadow-home/src ~",
+            "cd ~/bin;ln -sf ../.shadow-home/bin/* ~/bin",
+            "cd ~/.ssh;ln -sf ../.shadow-home/.ssh/* ~/.ssh"
         ],
         "checks": [
             "which zsh || echo apt-get install zsh",
