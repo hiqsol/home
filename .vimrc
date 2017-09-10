@@ -139,6 +139,7 @@ nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set rela
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    \T          :tabnew<CR>
+nnoremap    <C-W>o      :Only<CR>
 
 map         gp          <C-P><C-\>w
 
@@ -167,3 +168,11 @@ function! WinPerform(command)
   execute currwin . 'wincmd w'
 endfunction
 com! -nargs=+ -complete=command Windo call WinPerform(<q-args>)
+
+function! OnlyAndNerdtree()
+    let currentWindowNo = win_getid()
+
+    windo if win_getid() != currentWindowNo && &filetype != 'nerdtree' | close | endif
+endfunction
+
+command! Only call OnlyAndNerdtree()
