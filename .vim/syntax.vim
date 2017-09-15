@@ -16,9 +16,9 @@ hi      DiffText        ctermbg=red
 
 " GitGutter colors
 hi      GitGutterAdd          ctermbg=darkgreen
-hi      GitGutterChange       ctermbg=yellow
-hi      GitGutterDelete       ctermbg=red
-hi      GitGutterChangeDelete ctermbg=red
+hi      GitGutterChange       ctermbg=darkblue
+hi      GitGutterDelete       ctermbg=yellow
+hi      GitGutterChangeDelete ctermbg=yellow
 
 " markdown colors
 hi def link markdownCode                String
