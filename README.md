@@ -3,7 +3,7 @@
 I use [rehome] to setup and maintain my home:
 
 ```sh
-    wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init hiqsol/dotfiles
+wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome; python rehome init hiqsol/dotfiles
 ```
 
 Other tools I use:
