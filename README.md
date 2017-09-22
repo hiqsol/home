@@ -1,11 +1,19 @@
 # Sol's dotfiles
 
-I use [rehome](https://github.com/hiqdev/rehome) to setup and maintain my home.
+I use [rehome] to setup and maintain my home:
+
+```sh
+    wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init hiqsol/dotfiles
+```
 
 Other tools I use:
 
-- [hidev](https://github.com/hiqdev/hidev) to create and maintain packages
-- [rewatcher](https://github.com/hiqdev/rewatcher) to watch changed repos
+- [hidev] to create and maintain packages
+- [rewatcher] to watch changes in repos
+
+[hidev]:        https://github.com/hiqdev/hidev
+[rehome]:       https://github.com/hiqdev/rehome
+[rewatcher]:    https://github.com/hiqdev/rewatcher
 
 ## License
 
