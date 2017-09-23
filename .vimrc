@@ -120,7 +120,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 
-" KEYS. Available ctrls for later use: <C-Y>, <C-J>, <C-E>
+" KEYS. Available ctrls for later use: <C-Y>, <C-J>
 
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
@@ -135,7 +135,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
-"nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
+nnoremap    <C-E>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    <C-W>o      :Only<CR>
