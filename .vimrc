@@ -120,8 +120,6 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 
-syntax on
-
 " KEYS. Available ctrls for later use: <C-Y>, <C-J>, <C-E>
 
 " Make p in Visual mode replace the selected text with the "" register.
@@ -175,3 +173,5 @@ function! OnlyAndNerdtree()
 endfunction
 
 command! Only call OnlyAndNerdtree()
+
+syntax on
