@@ -31,6 +31,8 @@ Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plugin 'majutsushi/tagbar'              " right window with tags
 Plugin 'foosoft/vim-argwrap'            " wrap and unwrap arguments
 Plugin 'michaeljsmith/vim-indent-object' " move identation level
+Plugin 'diepm/vim-rest-console'         " REST client
+Plugin 'aquach/vim-http-client'         " another REST client
 
 " CTAGS automation
 "Plugin 'xolox/vim-misc'                " required by vim-easytags
