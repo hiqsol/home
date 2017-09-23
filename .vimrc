@@ -122,7 +122,7 @@ let g:ctrlp_max_files=0
 
 syntax on
 
-" KEYS
+" KEYS. Available ctrls for later use: <C-Y>, <C-J>, <C-E>
 
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
@@ -132,31 +132,28 @@ nnoremap    \R          :r! cat<CR>
 
 " Search keys
 nnoremap    *           *N
-nnoremap    <F9>        /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
+nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
-nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
+"nnoremap    <C-F>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
-nnoremap    \T          :tabnew<CR>
 nnoremap    <C-W>o      :Only<CR>
 
-map         gp          <C-P><C-\>w
-
-" Git keys
+" Fugitive keys
 nnoremap    gl          :Glog<CR>
 nnoremap    gb          :Gblame<CR>
 nnoremap    gd          :Gdiff<CR>
 nnoremap    ge          :Gedit<CR>
 
 " Programming keys
-inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
-nnoremap    <C-J>       :call PhpDocSingle()<CR>
-vnoremap    <C-J>       :call PhpDocRange()<CR>
+nnoremap    \d          :call PhpDocSingle()<CR>
+vnoremap    \d          :call PhpDocRange()<CR>
 nnoremap    \T          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
+map         gp          <C-P><C-\>w
 
 " Alias to save file with sudo
 " cmap w!! w !sudo tee > /dev/null %
