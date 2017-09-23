@@ -153,7 +153,7 @@ nnoremap    ge          :Gedit<CR>
 inoremap    <C-J>       <ESC>:call PhpDocSingle()<CR>i
 nnoremap    <C-J>       :call PhpDocSingle()<CR>
 vnoremap    <C-J>       :call PhpDocRange()<CR>
-nnoremap    \t          :TagbarToggle<CR>
+nnoremap    \T          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
 
 " Alias to save file with sudo
