@@ -2,6 +2,8 @@
 hi      MyUnwantedChars ctermbg=red   guibg=red
 match   MyUnwantedChars /\t\+ \+\| \+\t\+\|\s\+$/
 
+match   Todo /???/
+
 " GUI colors
 hi      Search          ctermbg=magenta ctermfg=white
 hi      StatusLine      ctermbg=gray  ctermfg=black
