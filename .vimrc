@@ -17,7 +17,7 @@ Plugin 'tpope/vim-repeat'               " enable repeating with '.' for plugins
 Plugin 'scrooloose/nerdtree'            " The Nerd Tree
 Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
 Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
-Plugin 'valloric/listtoggle'            " toggles display of quickfix and location list
+"Plugin 'valloric/listtoggle'            " toggles display of quickfix and location list
 
 " Git plugins
 Plugin 'tpope/vim-fugitive'             " git integration
