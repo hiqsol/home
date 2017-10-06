@@ -139,6 +139,7 @@ nnoremap    <C-E>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set rela
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    <C-W>o      :Only<CR>
+nnoremap    <C-B>       :CtrlPMRU<CR>
 
 " Fugitive keys
 nnoremap    gl          :Glog<CR>
