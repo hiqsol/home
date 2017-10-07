@@ -116,7 +116,6 @@ let NERDTreeIgnore = ['\~$', '\.pyc$', '\.swp$']
 let g:indentLine_color_term = 7
 let g:indentLine_char = '·' " ''  '︙'
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
-let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 
@@ -139,7 +138,8 @@ nnoremap    <C-E>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set rela
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    <C-W>o      :Only<CR>
-nnoremap    <C-B>       :CtrlPMRU<CR>
+nnoremap    <C-P>       :CtrlP<CR>
+nnoremap    <C-M>       :CtrlPMRU<CR>
 
 " Fugitive keys
 nnoremap    gl          :Glog<CR>
