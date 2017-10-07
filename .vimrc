@@ -78,7 +78,9 @@ set bs=2                        " allow backspacing over everything in insert mo
 
 " Keyboard
 set t_kb=
-fixdel
+" if ! has('nvim')
+"     fixdel
+" endif
 
 " save, undo & backup
 set autowrite
