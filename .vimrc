@@ -2,64 +2,65 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" VUNDLE
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+" PLUG
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
 
 " Editing plugins
-Plugin 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
-Plugin 'tpope/vim-surround'             " manipulate surroundings in pairs
-Plugin 'tpope/vim-repeat'               " enable repeating with '.' for plugins
+Plug 'tpope/vim-repeat'               " enable repeating with '.' for plugins
+Plug 'tpope/vim-surround'             " manipulate surroundings in pairs
+Plug 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
 
 " HUD plugins
-Plugin 'scrooloose/nerdtree'            " The Nerd Tree
-Plugin 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
-Plugin 'mkitt/tabline.vim'              " shows tab number, filename and [+]
-"Plugin 'valloric/listtoggle'            " toggles display of quickfix and location list
+Plug 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
+Plug 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+Plug 'scrooloose/nerdtree'            " The Nerd Tree
+"Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
 
 " Git plugins
-Plugin 'tpope/vim-fugitive'             " git integration
-Plugin 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
-Plugin 'airblade/vim-gitgutter'         " shows git diff in signs column
+Plug 'airblade/vim-gitgutter'         " shows git diff in signs column
+Plug 'tpope/vim-fugitive'             " git integration
+Plug 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
 
 " Programming plugins
-Plugin 'joonty/vdebug'                  " debugger
-Plugin 'scrooloose/nerdcommenter'       " commenting shortcuts
-Plugin 'scrooloose/syntastic'           " checks for syntax errors on saving
-Plugin 'majutsushi/tagbar'              " right window with tags
-Plugin 'foosoft/vim-argwrap'            " wrap and unwrap arguments
-Plugin 'michaeljsmith/vim-indent-object' " move identation level
-Plugin 'diepm/vim-rest-console'         " REST client
-Plugin 'aquach/vim-http-client'         " another REST client
+Plug 'aquach/vim-http-client'         " another REST client
+Plug 'diepm/vim-rest-console'         " REST client
+Plug 'foosoft/vim-argwrap'            " wrap and unwrap arguments
+Plug 'joonty/vdebug'                  " debugger
+Plug 'majutsushi/tagbar'              " right window with tags
+Plug 'michaeljsmith/vim-indent-object' " move identation level
+Plug 'scrooloose/nerdcommenter'       " commenting shortcuts
+Plug 'scrooloose/syntastic'           " checks for syntax errors on saving
 
 " CTAGS automation
-"Plugin 'xolox/vim-misc'                " required by vim-easytags
-"Plugin 'xolox/vim-easytags'            " create/update ctags
+"Plug 'xolox/vim-easytags'            " create/update ctags
+"Plug 'xolox/vim-misc'                " required by vim-easytags
 
 " Syntax highlighting plugins
-Plugin 'hiqsol/vim-markdown'            " better Markdown
-Plugin 'hiqsol/pgsql.vim'               " better PostgreSQL
-Plugin 'elzr/vim-json'                  " better JSON
+Plug 'elzr/vim-json'                  " better JSON
+Plug 'hiqsol/pgsql.vim'               " better PostgreSQL
+Plug 'hiqsol/vim-markdown'            " better Markdown
 
 " PHP plugins
-Plugin 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
-Plugin 'everzet/phpfolding.vim'         " folding of PHP code
-Plugin 'PDV--phpDocumentor-for-Vim'     " PHPdoc generator
-Plugin 'alvan/vim-php-manual'           " PHP manual
-"Plugin 'joonty/vim-phpqa'              " show code coverage
+Plug 'alvan/vim-php-manual'           " PHP manual
+Plug 'everzet/phpfolding.vim'         " folding of PHP code
+"Plug 'joonty/vim-phpqa'              " show code coverage
+Plug 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
+Plug 'vim-scripts/PDV--phpDocumentor-for-Vim' " PHPdoc generator
 
 " Other plugins
-Plugin 'kien/ctrlp.vim'                 " CtrlP
-Plugin 'rkitover/vimpager'              " Vimpager
-"Plugin 'bling/vim-airline'             " better status line
-"Plugin 'vim-scripts/LargeFile'         " better large files support
-"Plugin 'Yggdroot/indentLine'           " show indent levels
+"Plug 'bling/vim-airline'             " better status line
+Plug 'kien/ctrlp.vim'                 " CtrlP
+Plug 'rkitover/vimpager'              " Vimpager
+"Plug 'vim-scripts/LargeFile'         " better large files support
+"Plug 'Yggdroot/indentLine'           " show indent levels
 
-call vundle#end()
-filetype plugin on
-"filetype plugin indent off
+call plug#end()
 
 " GUI settings
 colorscheme pablo
