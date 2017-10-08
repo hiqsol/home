@@ -9,6 +9,8 @@ export PATH=./vendor/bin:~/bin:~/.config/composer/vendor/bin:~/.local/bin:~/.gem
 export BLOCKSIZE=K
 ### Colorize ls output, unfortunately works for FreeBSD only
 export CLICOLOR=1
+### Proper TERM
+export TERM=xterm
 
 ### LESS config TODO ???
 # export LESS=-S
