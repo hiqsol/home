@@ -36,10 +36,8 @@ Plug 'majutsushi/tagbar'              " right window with tags
 Plug 'michaeljsmith/vim-indent-object' " move identation level
 Plug 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plug 'scrooloose/syntastic'           " checks for syntax errors on saving
-
-" CTAGS automation
-"Plug 'xolox/vim-easytags'            " create/update ctags
-"Plug 'xolox/vim-misc'                " required by vim-easytags
+Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
+"Plug 'roxma/nvim-completion-manager'
 
 " Syntax highlighting plugins
 Plug 'elzr/vim-json'                  " better JSON
@@ -52,6 +50,7 @@ Plug 'everzet/phpfolding.vim'         " folding of PHP code
 "Plug 'joonty/vim-phpqa'              " show code coverage
 Plug 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim' " PHPdoc generator
+Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
 " Other plugins
 "Plug 'bling/vim-airline'             " better status line
@@ -90,6 +89,7 @@ set undodir=/home/sol/.vim/undo
 set nobackup                    " don't keep a backup file
 set viminfo='20,\"50            " read/write a .viminfo file, don't store >50 lines of registers
 set history=99                  " keep 50 lines of command line history
+set hidden                      " required for operations modifying multiple buffers like rename
 
 " HUD
 set ruler                       " show the cursor position all the time
@@ -121,8 +121,9 @@ let g:indentLine_char = '·' " ''  '︙'
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
+let g:LanguageClient_autoStart = 1
 
-" KEYS. Available ctrls for later use: <C-Y>, <C-J>
+" KEYS. Available ctrls for later use: <C-Y>, <C-J>, <C-[>
 
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
@@ -151,11 +152,15 @@ nnoremap    gd          :Gdiff<CR>
 nnoremap    ge          :Gedit<CR>
 
 " Programming keys
-nnoremap    \d          :call PhpDocSingle()<CR>
-vnoremap    \d          :call PhpDocRange()<CR>
+nnoremap    \cd         :call PhpDocSingle()<CR>
+vnoremap    \cd         :call PhpDocRange()<CR>
 nnoremap    \T          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
 map         gp          <C-P><C-\>w
+
+nnoremap    \k          :call LanguageClient_textDocument_hover()<CR>
+nnoremap    <C-]>       :call LanguageClient_textDocument_definition()<CR>
+nnoremap    <F2>        :call LanguageClient_textDocument_rename()<CR>
 
 " Alias to save file with sudo
 " cmap w!! w !sudo tee > /dev/null %

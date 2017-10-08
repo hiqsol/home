@@ -11,3 +11,5 @@ au! BufNewFile,BufRead composer.lock            set filetype=json
 
 autocmd FileType php let b:syntastic_php_phpmd_args =
     \ @% . ' text /home/sol/.vim/phpmd.xml'
+
+autocmd FileType php LanguageClientStart
