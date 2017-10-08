@@ -37,6 +37,7 @@ Plug 'michaeljsmith/vim-indent-object' " move identation level
 Plug 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plug 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
+Plug 'roxma/python-support.nvim'
 "Plug 'roxma/nvim-completion-manager'
 
 " Syntax highlighting plugins
