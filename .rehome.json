@@ -22,6 +22,10 @@
             "which tmux || echo apt-get install tmux"
         ],
         "vim-plugins": "vim +PluginInstall +qall",
+        "certbot-auto": [
+            "wget https://dl.eff.org/certbot-auto -O ~/bin/certbot-auto",
+            "chmod a+x ~/bin/certbot-auto"
+        ],
         "bin/composer": [
             "wget https://getcomposer.org/installer -O composer-setup.php",
             "php composer-setup.php --install-dir=bin --filename=composer",
