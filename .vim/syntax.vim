@@ -13,7 +13,7 @@ hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineSel      ctermfg=white ctermbg=blue  cterm=NONE
 
 " vimdiff colors
-hi      DiffChange      ctermbg=yellow
+hi      DiffChange      ctermbg=brown
 hi      DiffText        ctermbg=red
 
 " GitGutter colors
