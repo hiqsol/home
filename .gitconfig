@@ -27,7 +27,7 @@
     vimdiff     = difftool
     br          = branch
     ib          = init --bare --shared=group
-    lf          = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)(%ad)%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    lf          = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)%ai%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
     l           = "!git lf -n 30"
     ls          = "!git ls-tree -r --name-only $(git branch-name)"
     ls-all      = "!git log --pretty=format: --name-status | cut -f2- | sort -u"
