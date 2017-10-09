@@ -163,6 +163,8 @@ nnoremap    \k          :call LanguageClient_textDocument_hover()<CR>
 nnoremap    <C-]>       :call LanguageClient_textDocument_definition()<CR>
 nnoremap    <F2>        :call LanguageClient_textDocument_rename()<CR>
 
+nnoremap    \e          :HTTPClientDoRequest<CR><C-W>W
+
 " Alias to save file with sudo
 " cmap w!! w !sudo tee > /dev/null %
 command W :w !sudo tee > /dev/null %
