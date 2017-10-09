@@ -12,6 +12,7 @@
     a           = add
     ca          = commit --amend
     ci          = commit
+    cu          = commit -am 'updated deps'
     cf          = commit -am csfixed
     cm          = commit -am minor
     cv          = commit -av
