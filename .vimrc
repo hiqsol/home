@@ -94,13 +94,14 @@ set hidden                      " required for operations modifying multiple buf
 
 " HUD
 set ruler                       " show the cursor position all the time
-set relativenumber              " show relative line numbers
+set norelativenumber            " don't show relative line numbers
 set nonumber                    " don't show absolute line
 set cursorline                  " show cursor line
 set showtabline=2               " always show tabline
 set laststatus=2                " always show status line
 set scrolloff=2                 " keep 2 lines before scroll
 set sidescrolloff=5             " keep 5 columns before horizontal scroll
+set signcolumn=yes              " always show sign column
 
 " Search
 set path+=**                    " `:find` down into subfolders

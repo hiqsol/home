@@ -13,3 +13,5 @@ autocmd FileType php let b:syntastic_php_phpmd_args =
     \ @% . ' text /home/sol/.vim/phpmd.xml'
 
 autocmd FileType php LanguageClientStart
+
+au FileType tagbar,nerdtree setlocal signcolumn=no
