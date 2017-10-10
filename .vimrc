@@ -147,7 +147,7 @@ nnoremap    <C-W>e      :e!<CR>
 nnoremap    <C-W>o      :Only<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
-nnoremap    <C-W>Q      :tabclose<CR>
+nnoremap    <C-W>x      :tabclose<CR>
 nnoremap    <C-P>       :CtrlP<CR>
 nnoremap    <C-M>       :CtrlPMRU<CR>
 
