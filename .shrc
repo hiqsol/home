@@ -28,8 +28,8 @@ fi
 
 ### Set default PAGER && EDITOR && VISUAL
 export PAGER=less
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 
 ### Predictable SSH authentication socket location.
 SOCK="/tmp/ssh-agent-$USER-screen"
