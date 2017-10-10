@@ -11,11 +11,10 @@
     branch-name = "!git rev-parse --abbrev-ref HEAD"
     a           = add
     ca          = commit --amend
-    ci          = commit
+    ci          = commit -v
     cu          = commit -am 'updated deps'
     cf          = commit -am csfixed
     cm          = commit -am minor
-    cv          = commit -av
     co          = checkout
     s           = status
     st          = status
