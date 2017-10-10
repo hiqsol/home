@@ -144,6 +144,9 @@ nnoremap    <C-E>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set rela
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    <C-W>o      :Only<CR>
+nnoremap    <C-W>u      <C-W>t<C-W>l
+nnoremap    <C-W><Tab>  :tabnew<CR>
+nnoremap    <C-W>Q      :tabclose<CR>
 nnoremap    <C-P>       :CtrlP<CR>
 nnoremap    <C-M>       :CtrlPMRU<CR>
 
