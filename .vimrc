@@ -140,7 +140,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
-nnoremap    <C-E>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:Windo set relativenumber!<CR>:GitGutterToggle<CR>
+nnoremap    <C-Y>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    <C-W>o      :Only<CR>
@@ -174,6 +174,14 @@ nnoremap    \e          :HTTPClientDoRequest<CR><C-W>W
 command W :w !sudo tee > /dev/null %
 
 " FUNCTIONS
+
+function! SignColumnToggle()
+    if &signcolumn == "yes"
+        set signcolumn=no
+    else
+        set signcolumn=yes
+    endif
+endfunction
 
 function! WinPerform(command)
   let currwin=winnr()
