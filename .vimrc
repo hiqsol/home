@@ -54,7 +54,7 @@ Plug 'vim-scripts/PDV--phpDocumentor-for-Vim' " PHPdoc generator
 Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
 " Other plugins
-"Plug 'bling/vim-airline'             " better status line
+Plug 'bling/vim-airline'             " better status line
 Plug 'kien/ctrlp.vim'                 " CtrlP
 Plug 'rkitover/vimpager'              " Vimpager
 "Plug 'vim-scripts/LargeFile'         " better large files support
