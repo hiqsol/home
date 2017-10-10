@@ -143,6 +143,7 @@ nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-Y>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
+nnoremap    <C-W>e      :e!<CR>
 nnoremap    <C-W>o      :Only<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
