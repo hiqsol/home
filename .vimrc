@@ -79,7 +79,7 @@ set smarttab
 set bs=2                        " allow backspacing over everything in insert mode
 set textwidth=120
 
-" Keyboard
+" Keyboard options, remove later if ok
 " set t_kb=
 " if ! has('nvim')
 "     fixdel
@@ -104,7 +104,7 @@ set laststatus=2                " always show status line
 set scrolloff=2                 " keep 2 lines before scroll
 set sidescrolloff=5             " keep 5 columns before horizontal scroll
 set signcolumn=yes              " always show sign column
-set diffopt+=vertical
+set diffopt+=vertical           " allows vertical diff
 
 " Search
 set path+=**                    " `:find` down into subfolders
