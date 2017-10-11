@@ -18,7 +18,7 @@ Plug 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
 
 " HUD plugins
 Plug 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
-Plug 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+"Plug 'mkitt/tabline.vim'              " shows tab number, filename and [+]
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
 "Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
 
@@ -124,6 +124,8 @@ let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', '
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 let g:LanguageClient_autoStart = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " KEYS. Available ctrls for later use: <C-Y>, <C-J>, <C-[>
 
