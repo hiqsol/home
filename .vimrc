@@ -147,7 +147,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
-nnoremap    <C-D>       :close<CR>
+nnoremap    <C-X>       :close<CR>
 nnoremap    <C-Y>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
