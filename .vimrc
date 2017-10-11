@@ -17,10 +17,12 @@ Plug 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plug 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
 
 " HUD plugins
+Plug 'bling/vim-airline'              " better status line
 Plug 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
-"Plug 'mkitt/tabline.vim'              " shows tab number, filename and [+]
+Plug 'kien/ctrlp.vim'                 " CtrlP
+Plug 'rkitover/vimpager'              " Vimpager
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
-"Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
+Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
 
 " Git plugins
 Plug 'airblade/vim-gitgutter'         " shows git diff in signs column
@@ -41,24 +43,23 @@ Plug 'roxma/python-support.nvim'
 "Plug 'roxma/nvim-completion-manager'
 
 " Syntax highlighting plugins
-Plug 'elzr/vim-json'                  " better JSON
-Plug 'hiqsol/pgsql.vim'               " better PostgreSQL
-Plug 'hiqsol/vim-markdown'            " better Markdown
+Plug 'elzr/vim-json'                  " JSON
+Plug 'hiqsol/pgsql.vim'               " PostgreSQL
+Plug 'hiqsol/vim-markdown'            " Markdown
+Plug 'lumiliet/vim-twig'              " TWIG
 
 " PHP plugins
 Plug 'alvan/vim-php-manual'           " PHP manual
 Plug 'everzet/phpfolding.vim'         " folding of PHP code
-"Plug 'joonty/vim-phpqa'              " show code coverage
 Plug 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim' " PHPdoc generator
 Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
-" Other plugins
-Plug 'bling/vim-airline'             " better status line
-Plug 'kien/ctrlp.vim'                 " CtrlP
-Plug 'rkitover/vimpager'              " Vimpager
+" Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support
-"Plug 'Yggdroot/indentLine'           " show indent levels
+"Plug 'Yggdroot/indentLine'           " show indent levels, slows down inteface
+"Plug 'mkitt/tabline.vim'             " shows tab number, filename and [+], substituted with vim-airline
+"Plug 'joonty/vim-phpqa'              " show code coverage
 
 call plug#end()
 
@@ -103,6 +104,7 @@ set laststatus=2                " always show status line
 set scrolloff=2                 " keep 2 lines before scroll
 set sidescrolloff=5             " keep 5 columns before horizontal scroll
 set signcolumn=yes              " always show sign column
+set diffopt+=vertical
 
 " Search
 set path+=**                    " `:find` down into subfolders
@@ -127,6 +129,8 @@ let g:ctrlp_max_files=0
 let g:LanguageClient_autoStart = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:lt_location_list_toggle_map = '<leader>l'
+let g:lt_quickfix_list_toggle_map = '<leader>q'
 
 " KEYS. Available ctrls for later use: <C-Y>, <C-J>, <C-[>
 
@@ -143,6 +147,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
+nnoremap    <C-D>       :close<CR>
 nnoremap    <C-Y>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
@@ -152,13 +157,16 @@ nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
 nnoremap    <C-P>       :CtrlP<CR>
-nnoremap    <C-M>       :CtrlPMRU<CR>
+nnoremap    <C-J>       :CtrlPMRU<CR>
 
 " Fugitive keys
 nnoremap    gl          :Glog<CR>
 nnoremap    gb          :Gblame<CR>
 nnoremap    gd          :Gdiff<CR>
 nnoremap    ge          :Gedit<CR>
+nnoremap    gs          :Gstatus<CR>
+nnoremap    gc          :Gcommit --verbose<CR>
+nnoremap    gh          :Gpush<CR>
 
 " Programming keys
 nnoremap    \cd         :call PhpDocSingle()<CR>
