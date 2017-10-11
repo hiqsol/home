@@ -17,11 +17,10 @@ Plug 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plug 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
 
 " HUD plugins
-Plug 'bling/vim-airline'              " better status line
 Plug 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
-Plug 'kien/ctrlp.vim'                 " CtrlP
-Plug 'rkitover/vimpager'              " Vimpager
+"Plug 'mkitt/tabline.vim'              " shows tab number, filename and [+]
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
+"Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
 
 " Git plugins
 Plug 'airblade/vim-gitgutter'         " shows git diff in signs column
@@ -42,24 +41,24 @@ Plug 'roxma/python-support.nvim'
 "Plug 'roxma/nvim-completion-manager'
 
 " Syntax highlighting plugins
-Plug 'elzr/vim-json'                  " JSON
-Plug 'hiqsol/pgsql.vim'               " PostgreSQL
-Plug 'hiqsol/vim-markdown'            " Markdown
-Plug 'lumiliet/vim-twig'              " TWIG
+Plug 'elzr/vim-json'                  " better JSON
+Plug 'hiqsol/pgsql.vim'               " better PostgreSQL
+Plug 'hiqsol/vim-markdown'            " better Markdown
 
 " PHP plugins
 Plug 'alvan/vim-php-manual'           " PHP manual
 Plug 'everzet/phpfolding.vim'         " folding of PHP code
+"Plug 'joonty/vim-phpqa'              " show code coverage
 Plug 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim' " PHPdoc generator
 Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
-" Rejected plugins
+" Other plugins
+Plug 'bling/vim-airline'             " better status line
+Plug 'kien/ctrlp.vim'                 " CtrlP
+Plug 'rkitover/vimpager'              " Vimpager
 "Plug 'vim-scripts/LargeFile'         " better large files support
-"Plug 'Yggdroot/indentLine'           " show indent levels, slows down inteface
-"Plug 'mkitt/tabline.vim'             " shows tab number, filename and [+], substituted with vim-airline
-"Plug 'valloric/listtoggle'           " toggles display of quickfix and location list
-"Plug 'joonty/vim-phpqa'              " show code coverage
+"Plug 'Yggdroot/indentLine'           " show indent levels
 
 call plug#end()
 
@@ -144,7 +143,6 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
-nnoremap    <C-X>       :close<CR>
 nnoremap    <C-Y>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
