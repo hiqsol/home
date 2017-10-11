@@ -42,9 +42,10 @@ Plug 'roxma/python-support.nvim'
 "Plug 'roxma/nvim-completion-manager'
 
 " Syntax highlighting plugins
-Plug 'elzr/vim-json'                  " better JSON
-Plug 'hiqsol/pgsql.vim'               " better PostgreSQL
-Plug 'hiqsol/vim-markdown'            " better Markdown
+Plug 'elzr/vim-json'                  " JSON
+Plug 'hiqsol/pgsql.vim'               " PostgreSQL
+Plug 'hiqsol/vim-markdown'            " Markdown
+Plug 'lumiliet/vim-twig'              " TWIG
 
 " PHP plugins
 Plug 'alvan/vim-php-manual'           " PHP manual
