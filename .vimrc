@@ -80,7 +80,7 @@ set bs=2                        " allow backspacing over everything in insert mo
 set textwidth=120
 
 " Keyboard
-set t_kb=
+" set t_kb=
 " if ! has('nvim')
 "     fixdel
 " endif
