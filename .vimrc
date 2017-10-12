@@ -149,7 +149,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-X>       :close<CR>
-nnoremap    <C-W>e      :e!<CR>
+nnoremap    <C-W>e      :e<CR>
 nnoremap    <C-W>o      :Only<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
@@ -169,6 +169,7 @@ nnoremap    ge          :Gedit<CR>
 nnoremap    gs          :Gstatus<CR>
 nnoremap    gc          :Gcommit --verbose<CR>
 nnoremap    gh          :Gpush<CR>
+nnoremap    gw          :Gwrite<CR>
 
 " Programming keys
 nnoremap    \cd         :call PhpDocSingle()<CR>
@@ -178,7 +179,7 @@ nnoremap    \w          :ArgWrap<CR>
 
 nnoremap    \k          :call LanguageClient_textDocument_hover()<CR>
 nnoremap    <C-]>       :call LanguageClient_textDocument_definition()<CR>
-nnoremap    <C-Y>       :call LanguageClient_textDocument_documentSymbol()<CR>
+nnoremap    <C-\>       :call LanguageClient_textDocument_documentSymbol()<CR>
 nnoremap    <F2>        :call LanguageClient_textDocument_rename()<CR>
 
 nnoremap    \e          :HTTPClientDoRequest<CR><C-W>W
