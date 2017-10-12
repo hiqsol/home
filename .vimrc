@@ -40,7 +40,7 @@ Plug 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plug 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
 Plug 'roxma/python-support.nvim'
-"Plug 'roxma/nvim-completion-manager'
+Plug 'roxma/nvim-completion-manager'
 
 " Syntax highlighting plugins
 Plug 'elzr/vim-json'                  " JSON
