@@ -132,7 +132,7 @@ let g:airline_powerline_fonts = 1
 let g:lt_location_list_toggle_map = '<leader>l'
 let g:lt_quickfix_list_toggle_map = '<leader>q'
 
-" KEYS. Available ctrls for later use: <C-Y>, <C-J>, <C-[>
+" KEYS. Available ctrls for later use: <C-[>, <C-H>, <C-N>
 
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
@@ -146,9 +146,9 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 
 " HUD keys
 nnoremap    <C-S>       :update<CR>
-nnoremap    <C-N>       :NERDTreeTabsToggle<CR>
 nnoremap    <C-X>       :close<CR>
 nnoremap    <C-Y>       :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
+nnoremap    \n          :NERDTreeTabsToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    <C-W>e      :e!<CR>
