@@ -627,6 +627,11 @@
         <command>lxsession-default quit</command>
       </action>
     </keybind>
+    <keybind key="W-F12">
+      <action name="Execute">
+        <command>lxsession-default quit</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>
