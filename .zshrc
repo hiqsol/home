@@ -48,32 +48,4 @@ setopt HIST_NO_STORE HIST_IGNORE_SPACE HIST_REDUCE_BLANKS HIST_VERIFY
 setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_SAVE_NO_DUPS HIST_FIND_NO_DUPS HIST_EXPIRE_DUPS_FIRST
 
 ### PROMPT
-setopt PROMPT_SUBST
-login=`id -un`
-hostname=`cat ~/hostname`
-if [ $login = "sol" ]
-then
-    fg_color="%{$fg_no_bold[blue]%}"
-    bg_color="%{$bg_bold[blue]%}"
-else
-    fg_color="%{$fg_no_bold[yellow]%}"
-    bg_color="%{$bg_bold[yellow]%}"
-fi
-prompt_git() {
-    branch=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
-    if [ ! -z $branch ]; then
-        echo -n "%{$fg_no_bold[white]%}:%{$fg_bold[white]%}${branch}"
-        TMP=`mktemp /tmp/zshXXXXX`
-        changes=`git status -s;git log -n1 origin/${branch}..HEAD 2> "$TMP"`
-        errors=`cat "$TMP"`
-        rm $TMP
-        if [ ! -z $errors ]
-            then echo -n "%{$fg_bold[red]%}?"
-        elif [ ! -z $changes ]
-            then echo -n "%{$fg_bold[yellow]%}*"
-        fi
-    fi
-}
-PROMPT='${bg_color}%{$fg_no_bold[black]%}${login}@${hostname} %m %{$fg_bold[white]%}%* %{$bg_bold[black]%}${fg_color} %{$reset_color%}'
-RPROMPT=$'%{$fg_bold[cyan]%}%~$(prompt_git)%{$reset_color%}'
-
+source ~/.shell_prompt.sh

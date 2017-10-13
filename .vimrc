@@ -24,6 +24,9 @@ Plug 'rkitover/vimpager'              " Vimpager
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
 Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
 
+" Prompts plugins
+Plug 'edkolev/promptline.vim'
+
 " Git plugins
 Plug 'airblade/vim-gitgutter'         " shows git diff in signs column
 Plug 'tpope/vim-fugitive'             " git integration
@@ -131,6 +134,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:lt_location_list_toggle_map = '<leader>l'
 let g:lt_quickfix_list_toggle_map = '<leader>q'
+
+source ~/.vim/shell_prompt.vim
 
 " KEYS. Available ctrls for later use: <C-N>
 " unusable: CTRL-[, CTRL-H, CTRL-M
