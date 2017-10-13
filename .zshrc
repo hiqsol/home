@@ -49,18 +49,15 @@ setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_SAVE_NO_DUPS HIST_FIND_NO_DUPS
 
 ### PROMPT
 setopt PROMPT_SUBST
-id=`id -un`
+login=`id -un`
 hostname=`cat ~/hostname`
-if [ $id = "sol" ]
-    then login="%{$fg_bold[white]%}%n"
-    else login="%{$fg_bold[yellow]%}%n"
-fi
-if [ $id = "root" ]
-    then delim="%{$fg_bold[red]%}@"
-    else delim="%{$fg_no_bold[white]%}@"
-fi
-if [ ! -z $hostname ]
-    then hostname="%{$fg_bold[white]%}$hostname "
+if [ $login = "sol" ]
+then
+    fg_color="%{$fg_no_bold[blue]%}"
+    bg_color="%{$bg_bold[blue]%}"
+else
+    fg_color="%{$fg_no_bold[yellow]%}"
+    bg_color="%{$bg_bold[yellow]%}"
 fi
 prompt_git() {
     branch=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
@@ -77,6 +74,6 @@ prompt_git() {
         fi
     fi
 }
-PROMPT='%B%{$fg_bold[green]%}%*%b ${login}${delim}${hostname}%{$fg_bold[white]%}%m > %{$reset_color%}'
+PROMPT='${bg_color}%{$fg_no_bold[black]%}${login}@${hostname} %m %{$fg_bold[white]%}%* %{$bg_bold[black]%}${fg_color} %{$reset_color%}'
 RPROMPT=$'%{$fg_bold[cyan]%}%~$(prompt_git)%{$reset_color%}'
 
