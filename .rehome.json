@@ -3,7 +3,6 @@
     "repos": {
         ".": "hiqsol/dotfiles",
         ".shadow-home": "ssh://sol@git.solex.me:222/git/sol/shadow-home",
-        ".vim/bundle/Vundle.vim": "VundleVim/Vundle.vim",
         "prj/joeyh/myrepos": "git://myrepos.branchable.com/",
         "prj/hiqsol/quotes": "hiqsol/quotes",
         "prj/hiqdev/rehome": "hiqdev/rehome"
@@ -21,7 +20,7 @@
             "which vim || echo apt-get install vim",
             "which tmux || echo apt-get install tmux"
         ],
-        "vim-plugins": "vim +PluginInstall +qall",
+        "vim-plugins": "vim +PlugInstall +qall",
         "certbot-auto": [
             "wget https://dl.eff.org/certbot-auto -O ~/bin/certbot-auto",
             "chmod a+x ~/bin/certbot-auto"
@@ -34,7 +33,7 @@
         ]
     },
     "updates": {
-        "vim-plugins": "vim +PluginUpdate +qall",
+        "vim-plugins": "vim +PlugUpdate +qall",
         "bin/composer": [
             "bin/composer self-update",
             "bin/composer global update"
