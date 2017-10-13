@@ -24,6 +24,7 @@ Plug 'kien/ctrlp.vim'                 " CtrlP
 Plug 'rkitover/vimpager'              " Vimpager
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
 Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
+Plug 'ervandew/supertab'              " 
 
 " Prompts plugins
 Plug 'edkolev/promptline.vim'
