@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-repeat'               " enable repeating with '.' for plugins
 Plug 'tpope/vim-surround'             " manipulate surroundings in pairs
 Plug 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
+Plug 'jiangmiao/auto-pairs'           " brackets, parens, quotes
 
 " HUD plugins
 Plug 'bling/vim-airline'              " better status line
