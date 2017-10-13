@@ -149,6 +149,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-X>       :close<CR>
+nnoremap    <C-W>a      :tabnew<Space>
 nnoremap    <C-W>e      :e<CR>
 nnoremap    <C-W>o      :Only<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
