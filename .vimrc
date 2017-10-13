@@ -24,7 +24,7 @@ Plug 'kien/ctrlp.vim'                 " CtrlP
 Plug 'rkitover/vimpager'              " Vimpager
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
 Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
-Plug 'ervandew/supertab'              " 
+Plug 'ervandew/supertab'              " <Tab> for completion
 
 " Prompts plugins
 Plug 'edkolev/promptline.vim'
@@ -136,6 +136,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:lt_location_list_toggle_map = '<leader>l'
 let g:lt_quickfix_list_toggle_map = '<leader>q'
+let g:SuperTabDefaultCompletionType = '<C-N>'
 
 source ~/.vim/shell_prompt.vim
 
