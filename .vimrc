@@ -180,6 +180,7 @@ nnoremap    gs          :Gstatus<CR>
 nnoremap    gc          :Gcommit --verbose<CR>
 nnoremap    gh          :Gpush<CR>
 nnoremap    gw          :Gwrite<CR>
+nnoremap    gr          :Gread<CR>
 
 " Programming keys
 nnoremap    \cd         :call PhpDocSingle()<CR>
