@@ -13,7 +13,7 @@ nnoremap    *           *N
 nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 
 " Input keys
-inoremap    <C-Space>   <Esc>A
+inoremap    <C-E>       <End>
 
 " HUD keys
 nnoremap    <C-S>       :update<CR>sdfsd
