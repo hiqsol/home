@@ -15,6 +15,13 @@ md() {
     cd $1
 }
 
+cdls() {
+    'cd' $1
+    if [ $PWD != $HOME ]; then
+        'ls' -F ${ls_options}
+    fi
+}
+
 rehash() {
     source ~/.zshrc
     builtin rehash
