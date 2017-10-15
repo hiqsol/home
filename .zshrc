@@ -1,8 +1,8 @@
 #! /usr/local/bin/zsh
 
-source ${HOME}/.shrc
-source ${HOME}/.aliases
-source ${HOME}/.zaliases
+source ~/.shrc
+source ~/.aliases
+source ~/.zsh/aliases.sh
 
 ### AUTOLOADS
 fpath=(~/.zsh/completion $fpath)
