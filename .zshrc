@@ -1,7 +1,8 @@
 #! /usr/local/bin/zsh
 
+export ZDOTDIR=~/.zsh
+
 source ~/.shrc
-source ~/.login
 source ~/.aliases
 source ~/.zsh/aliases.sh
 
