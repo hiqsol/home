@@ -1,5 +1,6 @@
 #!/bin/sh
 
+### allow group write
 umask 002
 
 ### PATH
