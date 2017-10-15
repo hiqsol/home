@@ -38,8 +38,8 @@ alias cp='nocorrect cp'
 alias git='nocorrect git'
 alias mkdir='nocorrect mkdir -p'
 
-alias vcat=~/.vim/bundle/vimpager/vimcat
-alias vless=~/.vim/bundle/vimpager/vimpager
+alias vcat=~/.vim/plugged/vimpager/vimcat
+alias vless=~/.vim/plugged/vimpager/vimpager
 alias nwget='wget --no-check-certificate'
 alias rmsshkey='ssh-keygen -f "/home/sol/.ssh/known_hosts" -R '
 alias inithome='wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome ; python rehome init https://github.com/hiqsol/dotfiles ; rm rehome'
