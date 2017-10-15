@@ -50,4 +50,4 @@ setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_SAVE_NO_DUPS HIST_FIND_NO_DUPS
 ### PROMPT
 ZLE_RPROMPT_INDENT=0
 source ~/.vim/plugged/promptline.vim/autoload/promptline/slices/git_status.sh
-source ~/.shell_prompt.sh
+source ~/.zsh/prompt.sh
