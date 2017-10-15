@@ -10,6 +10,8 @@ export PATH=./vendor/bin:~/sbin:~/bin:~/.config/composer/vendor/bin:~/.local/bin
 export BLOCKSIZE=K
 ### Colorize ls output, unfortunately works for FreeBSD only
 export CLICOLOR=1
+### See later: https://github.com/trapd00r/LS_COLORS
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
 ### Proper TERM
 export TERM=screen-256color
 

@@ -30,7 +30,6 @@ bindkey '^xe'   edit-command-line
 setopt AUTO_CD CDABLE_VARS
 setopt MULTIOS ### multi redirection: echo > 1 > 2
 setopt CORRECT AUTO_MENU EXTENDED_GLOB
-export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 ### COMPLETION
 # Allow key-driven interface, highlight active option
