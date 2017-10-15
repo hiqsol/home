@@ -1,6 +1,7 @@
 #! /usr/local/bin/zsh
 
 source ~/.shrc
+source ~/.login
 source ~/.aliases
 source ~/.zsh/aliases.sh
 
