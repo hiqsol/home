@@ -2,7 +2,7 @@
 
 source ~/.shrc
 source ~/.aliases
-source ~/.config/zsh/aliases.sh
+source ~/.config/zsh/functions.sh
 
 ### AUTOLOADS
 fpath=(~/.config/zsh/completion $fpath)
