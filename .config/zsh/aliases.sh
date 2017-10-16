@@ -23,7 +23,7 @@ cdls() {
 }
 
 rehash() {
-    source ~/.zshrc
+    source ~/.config/zsh/.zshrc
     builtin rehash
 }
 

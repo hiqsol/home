@@ -2,10 +2,10 @@
 
 source ~/.shrc
 source ~/.aliases
-source ~/.zsh/aliases.sh
+source ~/.config/zsh/aliases.sh
 
 ### AUTOLOADS
-fpath=(~/.zsh/completion $fpath)
+fpath=(~/.config/zsh/completion $fpath)
 autoload -U colors compinit promptinit zfinit zcalc edit-command-line select-word-style
 colors;compinit -i;promptinit;zfinit
 zle -N edit-command-line
@@ -34,12 +34,12 @@ setopt CORRECT AUTO_MENU EXTENDED_GLOB
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 # Use caching so that commands like apt and dpkg complete are useable
 zstyle ':completion::complete:*' use-cache 1
-zstyle ':completion::complete:*' cache-path ~/.zsh-cache/
+zstyle ':completion::complete:*' cache-path ~/.config/zsh/cache/
 # Remove 'proxy' completion
 zstyle ':completion:*:cd:*' tag-order local-directories path-directories
 
 ### HISTORY
-HISTFILE=~/.zsh-history
+HISTFILE=~/.config/zsh/.history
 HISTSIZE=100000
 SAVEHIST=100000
 setopt SHARE_HISTORY APPEND_HISTORY INC_APPEND_HISTORY
@@ -49,4 +49,4 @@ setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_SAVE_NO_DUPS HIST_FIND_NO_DUPS
 ### PROMPT
 ZLE_RPROMPT_INDENT=0
 source ~/.vim/plugged/promptline.vim/autoload/promptline/slices/git_status.sh
-source ~/.zsh/prompt.sh
+source ~/.config/zsh/prompt.sh
