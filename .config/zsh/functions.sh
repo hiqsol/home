@@ -52,3 +52,12 @@ p() {
     fi
     command psql $a
 }
+
+composer() {
+    if ! [ -x ~/sbin/composer ]; then
+        wget https://getcomposer.org/installer -O ~/tmp/composer-setup.php
+        php ~/tmp/composer-setup.php --install-dir=$HOME/sbin --filename=composer
+        rm ~/tmp/composer-setup.php
+    fi
+    ~/sbin/composer $@
+}
