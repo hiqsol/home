@@ -31,6 +31,7 @@ nnoremap    \N          :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColum
 nnoremap    \n          :NERDTreeTabsToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
+nnoremap    \u          :UndotreeToggle<CR>
 
 " Fugitive keys
 nnoremap    gl          :Glog<CR>

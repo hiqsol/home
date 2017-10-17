@@ -21,6 +21,11 @@ Plug 'rkitover/vimpager'              " Vimpager
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
 Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
 Plug 'ervandew/supertab'              " <Tab> for completion
+Plug 'mbbill/undotree'                " undo history visualizer
+
+" Snippets
+Plug 'SirVer/ultisnips'               " snippet runner
+Plug 'honza/vim-snippets'             " snippets library
 
 " Prompts plugins
 Plug 'edkolev/promptline.vim'
