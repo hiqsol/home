@@ -40,7 +40,8 @@
 
     # submodule aliases
     sum         = submodule foreach git co master
-    sup         = submodule foreach git pull
+    sup         = submodule foreach git pull --rebase
+    up          = "!git sum;git sup"
 [diff]
     tool        = vimdiff
 [merge]
