@@ -16,7 +16,9 @@ Plug 'jiangmiao/auto-pairs'           " brackets, parens, quotes
 " HUD plugins
 Plug 'bling/vim-airline'              " better status line
 Plug 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
-Plug 'kien/ctrlp.vim'                 " CtrlP
+Plug 'junegunn/fzf', { 'dir': '~/.config/fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'pbogut/fzf-mru.vim'
 Plug 'rkitover/vimpager'              " Vimpager
 Plug 'scrooloose/nerdtree'            " The Nerd Tree
 Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
@@ -66,6 +68,7 @@ Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && comp
 "Plug 'Yggdroot/indentLine'           " show indent levels, slows down inteface
 "Plug 'mkitt/tabline.vim'             " shows tab number, filename and [+], substituted with vim-airline
 "Plug 'joonty/vim-phpqa'              " show code coverage
+"Plug 'kien/ctrlp.vim'                " substituted with FZF
 
 call plug#end()
 

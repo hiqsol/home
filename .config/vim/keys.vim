@@ -25,8 +25,8 @@ nnoremap    <C-W>o      :Only<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
-nnoremap    <C-P>       :CtrlP<CR>
-nnoremap    <C-K>       :CtrlPMRU<CR>
+nnoremap    <C-P>       :FZF<CR>
+nnoremap    <C-K>       :FZFMru<CR>
 nnoremap    \N          :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
 nnoremap    \n          :NERDTreeTabsToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
