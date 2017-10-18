@@ -1,8 +1,3 @@
-" GUI settings
-colorscheme pablo
-set guifont="Monospace 11"
-set background=dark
-
 " Indending
 set autoindent
 set smartindent
@@ -14,19 +9,13 @@ set smarttab
 set bs=2                        " allow backspacing over everything in insert mode
 set textwidth=120
 
-" Keyboard options, remove later if ok
-" set t_kb=
-" if ! has('nvim')
-"     fixdel
-" endif
-
 " save, undo & backup
 set autowrite
 set undofile                    " allows undo after reopen file
-set undodir=/home/sol/.vim/undo
+set undodir=~/.vim/undo
 set nobackup                    " don't keep a backup file
 set viminfo='20,\"50            " read/write a .viminfo file, don't store >50 lines of registers
-set history=99                  " keep 50 lines of command line history
+set history=999                 " keep given lines of command line history
 set hidden                      " required for operations modifying multiple buffers like rename
 
 " HUD
@@ -46,3 +35,8 @@ set path+=**                    " `:find` down into subfolders
 set wildmenu                    " command-line completion with menu
 set wildmode=longest:full,full
 set hlsearch                    " highlight search
+
+" GUI settings
+colorscheme pablo
+set guifont="Monospace 11"
+set background=dark
