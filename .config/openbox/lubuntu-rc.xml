@@ -344,7 +344,7 @@
     </keybind>
     <keybind key="W-k">
       <action name="execute">
-        <command>~/bin/keepass</command>
+        <command>~/sbin/keepass</command>
       </action>
     </keybind>
     <keybind key="W-b">
