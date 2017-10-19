@@ -14,6 +14,9 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 
 " Input keys
 inoremap    <C-E>       <End>
+inoremap    <C-J>       <Down>
+inoremap    <C-K>       <Up>
+inoremap    <C-L>       <Right>
 
 " HUD keys
 nnoremap    <C-S>       :update<CR>sdfsd
