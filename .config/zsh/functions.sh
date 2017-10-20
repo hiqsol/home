@@ -61,3 +61,10 @@ composer() {
     fi
     ~/sbin/composer $@
 }
+certbot-auto() {
+    if ! [ -x ~/sbin/certbot-auto ]; then
+        wget https://dl.eff.org/certbot-auto -O ~/sbin/certbot-auto
+        chmod a+x ~/sbin/certbot-auto
+    fi
+    ~/sbin/certbot-auto $@
+}
