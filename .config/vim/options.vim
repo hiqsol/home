@@ -27,7 +27,6 @@ set showtabline=2               " always show tabline
 set laststatus=2                " always show status line
 set scrolloff=2                 " keep 2 lines before scroll
 set sidescrolloff=5             " keep 5 columns before horizontal scroll
-set signcolumn=yes              " always show sign column
 set diffopt+=vertical           " allows vertical diff
 
 " Search
