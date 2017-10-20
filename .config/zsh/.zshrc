@@ -44,3 +44,6 @@ fzf_plug=~/.fzf.zsh
 [ -f $fzf_plug ] && source $fzf_plug
 aus_plug=~/prj/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f $aus_plug ] && source $aus_plug
+
+### LOCAL CONFIG
+[ -f ~/.config/zsh/local.sh ] && source ~/.config/zsh/local.sh
