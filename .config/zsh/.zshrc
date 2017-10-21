@@ -3,6 +3,7 @@
 source ~/.shrc
 source ~/.aliases
 source ~/.config/zsh/functions.sh
+source ~/.config/zsh/keys.zsh
 
 ### AUTOLOADS
 fpath=(~/.config/zsh/completion $fpath)
@@ -10,19 +11,6 @@ autoload -U colors compinit promptinit zfinit zcalc edit-command-line select-wor
 colors;compinit -i;promptinit;zfinit
 zle -N edit-command-line
 select-word-style bash
-
-### KEYS
-bindkey -e                              # emacs key bindings
-bindkey ' '     magic-space             # also do history expansion on space
-
-bindkey '\e[2~' quoted-insert           \
-        '\e[3~' delete-char             \
-        '\e[5~' beginning-of-history    \
-        '\e[6~' end-of-history          \
-        '\e[1~' beginning-of-line       \
-        '\e[4~' end-of-line
-
-bindkey '^xe'   edit-command-line
 
 ### DIFFERENT OPTIONS
 setopt AUTO_CD CDABLE_VARS
@@ -50,7 +38,6 @@ setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_SAVE_NO_DUPS HIST_FIND_NO_DUPS
 ZLE_RPROMPT_INDENT=0
 source ~/.vim/plugged/promptline.vim/autoload/promptline/slices/git_status.sh
 source ~/.config/zsh/promptline.sh
-
 
 ### PLUGINS
 fzf_plug=~/.fzf.zsh
