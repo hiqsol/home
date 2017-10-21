@@ -51,5 +51,9 @@ ZLE_RPROMPT_INDENT=0
 source ~/.vim/plugged/promptline.vim/autoload/promptline/slices/git_status.sh
 source ~/.config/zsh/promptline.sh
 
+
 ### PLUGINS
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+fzf_plug=~/.fzf.zsh
+[ -f $fzf_plug ] && source $fzf_plug
+aus_plug=~/prj/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f $aus_plug ] && source $aus_plug
