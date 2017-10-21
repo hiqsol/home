@@ -13,3 +13,14 @@ bindkey '\e[5~' beginning-of-history    # PageUp
 bindkey '\e[6~' end-of-history          # PageDown
 
 bindkey '^xe'   edit-command-line
+
+bindkey "^s"    add_sudo
+
+# widgets
+
+function add_sudo() {
+    [ -z $BUFFER ] && zle up-history
+    BUFFER="sudo "$BUFFER
+    zle end-of-line
+}
+zle -N add_sudo
