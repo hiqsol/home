@@ -12,8 +12,7 @@ bindkey '\e[4~' end-of-line             # End
 bindkey '\e[5~' beginning-of-history    # PageUp
 bindkey '\e[6~' end-of-history          # PageDown
 
-bindkey '^xe'   edit-command-line
-
+bindkey '^n'    edit_line
 bindkey "^s"    add_sudo
 
 # widgets
@@ -24,3 +23,9 @@ function add_sudo() {
     zle end-of-line
 }
 zle -N add_sudo
+
+function edit_line() {
+    [ -z $BUFFER ] && zle up-history
+    zle edit-command-line
+}
+zle -N edit_line
