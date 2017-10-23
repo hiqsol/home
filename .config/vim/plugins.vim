@@ -15,15 +15,18 @@ Plug 'jiangmiao/auto-pairs'           " brackets, parens, quotes
 
 " HUD plugins
 Plug 'bling/vim-airline'              " better status line
-Plug 'jistr/vim-nerdtree-tabs'        " keeps NerdTree in left window all the time
 Plug 'junegunn/fzf', { 'dir': '~/.config/fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'pbogut/fzf-mru.vim'
 Plug 'rkitover/vimpager'              " Vimpager
-Plug 'scrooloose/nerdtree'            " The Nerd Tree
 Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
 Plug 'ervandew/supertab'              " <Tab> for completion
 Plug 'mbbill/undotree'                " undo history visualizer
+
+" NerdTree
+Plug 'jistr/vim-nerdtree-tabs',     { 'on': ['NERDTreeTabsToggle', 'NERDTreeFind'] }
+Plug 'scrooloose/nerdtree',         { 'on': ['NERDTreeTabsToggle', 'NERDTreeFind'] }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': ['NERDTreeTabsToggle', 'NERDTreeFind'] }
 
 " Snippets
 Plug 'SirVer/ultisnips'               " snippet runner
@@ -35,7 +38,6 @@ Plug 'edkolev/promptline.vim'
 " Git plugins
 Plug 'airblade/vim-gitgutter'         " shows git diff in signs column
 Plug 'tpope/vim-fugitive'             " git integration
-Plug 'Xuyuanp/nerdtree-git-plugin'    " git status flags in nerdtree
 
 " Programming plugins
 Plug 'aquach/vim-http-client'         " another REST client
