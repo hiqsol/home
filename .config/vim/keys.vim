@@ -19,7 +19,7 @@ inoremap    <C-K>       <Up>
 inoremap    <C-L>       <Right>
 
 " HUD keys
-nnoremap    <C-S>       :update<CR>sdfsd
+nnoremap    <C-S>       :update<CR>
 nnoremap    <C-X>       :close<CR>
 nnoremap    <C-W>a      :tabnew<Space>
 nnoremap    <C-W>e      :e<CR>
