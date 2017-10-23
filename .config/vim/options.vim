@@ -35,7 +35,6 @@ set wildmenu                    " command-line completion with menu
 set wildmode=longest:full,full
 set hlsearch                    " highlight search
 
-" GUI settings
-colorscheme pablo
-set guifont="Monospace 11"
-set background=dark
+if has('gui_running')
+    source gui.vim
+endif
