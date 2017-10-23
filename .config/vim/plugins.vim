@@ -43,7 +43,7 @@ Plug 'tpope/vim-fugitive'             " git integration
 Plug 'aquach/vim-http-client'         " another REST client
 Plug 'diepm/vim-rest-console'         " REST client
 Plug 'foosoft/vim-argwrap'            " wrap and unwrap arguments
-Plug 'joonty/vdebug'                  " debugger
+Plug 'joonty/vdebug',                       {'on': 'VdebugRun'}
 Plug 'majutsushi/tagbar'              " right window with tags
 Plug 'michaeljsmith/vim-indent-object' " move identation level
 Plug 'scrooloose/nerdcommenter'       " commenting shortcuts

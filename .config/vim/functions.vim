@@ -26,3 +26,5 @@ function! OnlyAndNerdtree()
 endfunction
 
 command! Only call OnlyAndNerdtree()
+
+command! VdebugRun python debugger.run()
