@@ -27,10 +27,6 @@ Plug 'valloric/listtoggle'
 Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
-" Snippets
-Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips'
-
 " Shell helpers
 Plug 'edkolev/promptline.vim'
 Plug 'rkitover/vimpager'
@@ -64,6 +60,10 @@ Plug 'elzr/vim-json'
 Plug 'hiqsol/pgsql.vim'
 Plug 'hiqsol/vim-markdown'
 Plug 'lumiliet/vim-twig'
+
+" Snippets, rejected for the moment
+"Plug 'SirVer/ultisnips'               " snippet runner
+"Plug 'honza/vim-snippets'             " snippets library
 
 " Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
