@@ -29,6 +29,7 @@
     lf          = log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold green)%ai%C(reset) %C(red)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
     l           = "!git lf -n 30"
     ls          = "!git ls-tree -r --name-only $(git branch-name)"
+    li          = ls-files . --ignored --exclude-standard --others
     ls-all      = "!git log --pretty=format: --name-status | cut -f2- | sort -u"
     publish     = "!git push -u origin $(git branch-name)"
     filter-out  = "!f() { git filter-branch --force --index-filter \
