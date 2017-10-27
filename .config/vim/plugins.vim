@@ -49,7 +49,6 @@ Plug 'michaeljsmith/vim-indent-object' " move identation level
 Plug 'scrooloose/nerdcommenter'       " commenting shortcuts
 Plug 'scrooloose/syntastic'           " checks for syntax errors on saving
 Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
-Plug 'roxma/python-support.nvim'
 Plug 'roxma/nvim-completion-manager'
 
 " Syntax highlighting plugins
@@ -71,6 +70,7 @@ Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && comp
 "Plug 'mkitt/tabline.vim'             " shows tab number, filename and [+], substituted with vim-airline
 "Plug 'joonty/vim-phpqa'              " show code coverage
 "Plug 'kien/ctrlp.vim'                " substituted with FZF
+"Plug 'roxma/python-support.nvim'     " configured manually
 
 call plug#end()
 
