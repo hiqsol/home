@@ -8,75 +8,76 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Editing plugins
-Plug 'tpope/vim-repeat'               " enable repeating with '.' for plugins
-Plug 'tpope/vim-surround'             " manipulate surroundings in pairs
-Plug 'tpope/vim-unimpaired'           " pairs of handy bracket mappings
-Plug 'jiangmiao/auto-pairs'           " brackets, parens, quotes
+Plug 'foosoft/vim-argwrap'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 
 " HUD plugins
-Plug 'bling/vim-airline'              " better status line
-Plug 'junegunn/fzf', { 'dir': '~/.config/fzf', 'do': './install --all' }
+Plug 'bling/vim-airline'
+Plug 'ervandew/supertab'
+Plug 'junegunn/fzf',                            {'dir': '~/.config/fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
+Plug 'mbbill/undotree'
 Plug 'pbogut/fzf-mru.vim'
-Plug 'rkitover/vimpager'              " Vimpager
-Plug 'valloric/listtoggle'            " toggles display of quickfix and location list
-Plug 'ervandew/supertab'              " <Tab> for completion
-Plug 'mbbill/undotree'                " undo history visualizer
+Plug 'valloric/listtoggle'
 
 " NerdTree
-Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeTabsToggle', 'NERDTreeFind']}
-Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeTabsToggle', 'NERDTreeFind']}
+Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
+Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
 " Snippets
-Plug 'SirVer/ultisnips'               " snippet runner
-Plug 'honza/vim-snippets'             " snippets library
+Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
 
-" Prompts plugins
+" Shell helpers
 Plug 'edkolev/promptline.vim'
+Plug 'rkitover/vimpager'
 
 " Git plugins
-Plug 'airblade/vim-gitgutter'         " shows git diff in signs column
-Plug 'tpope/vim-fugitive'             " git integration
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" REST
+Plug 'aquach/vim-http-client'
+Plug 'diepm/vim-rest-console'
 
 " Programming plugins
-Plug 'aquach/vim-http-client'         " another REST client
-Plug 'diepm/vim-rest-console'         " REST client
-Plug 'foosoft/vim-argwrap'            " wrap and unwrap arguments
-Plug 'joonty/vdebug',                       {'on': 'VdebugRun'}
-Plug 'majutsushi/tagbar'              " right window with tags
-Plug 'michaeljsmith/vim-indent-object' " move identation level
-Plug 'scrooloose/nerdcommenter'       " commenting shortcuts
-Plug 'scrooloose/syntastic'           " checks for syntax errors on saving
-Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
+Plug 'autozimu/LanguageClient-neovim',          {'do': ':UpdateRemotePlugins'}
+Plug 'joonty/vdebug',                           {'on': 'VdebugRun'}
+Plug 'majutsushi/tagbar'
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'roxma/nvim-completion-manager'
-
-" Syntax highlighting plugins
-Plug 'elzr/vim-json'                  " JSON
-Plug 'hiqsol/pgsql.vim'               " PostgreSQL
-Plug 'hiqsol/vim-markdown'            " Markdown
-Plug 'lumiliet/vim-twig'              " TWIG
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
 
 " PHP plugins
-Plug 'alvan/vim-php-manual'           " PHP manual
-Plug 'everzet/phpfolding.vim'         " folding of PHP code
-Plug 'StanAngeloff/php.vim'           " better syntax highlighting for PHP
-Plug 'vim-scripts/PDV--phpDocumentor-for-Vim' " PHPdoc generator
+Plug 'alvan/vim-php-manual'
+Plug 'everzet/phpfolding.vim'
+Plug 'StanAngeloff/php.vim'
+Plug 'vim-scripts/PDV--phpDocumentor-for-Vim'
 Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
+" Syntax highlighting plugins
+Plug 'elzr/vim-json'
+Plug 'hiqsol/pgsql.vim'
+Plug 'hiqsol/vim-markdown'
+Plug 'lumiliet/vim-twig'
+
 " Rejected plugins
-"Plug 'vim-scripts/LargeFile'         " better large files support
+"Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
 "Plug 'Yggdroot/indentLine'           " show indent levels, slows down inteface
 "Plug 'mkitt/tabline.vim'             " shows tab number, filename and [+], substituted with vim-airline
 "Plug 'joonty/vim-phpqa'              " show code coverage
 "Plug 'kien/ctrlp.vim'                " substituted with FZF
-"Plug 'roxma/python-support.nvim'     " configured manually
+"Plug 'roxma/python-support.nvim'     " doesn't help, seems to make worse
 "Plug 'jistr/vim-nerdtree-tabs',      " no need with FZF
 
 call plug#end()
 
 " Plugin options
 let g:vimpager_passthrough = 1
-let g:nerdtree_tabs_open_on_console_startup = 0
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeIgnore = ['\~$', '\.pyc$', '\.swp$']
 let g:indentLine_color_term = 7
