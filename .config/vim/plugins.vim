@@ -24,9 +24,8 @@ Plug 'ervandew/supertab'              " <Tab> for completion
 Plug 'mbbill/undotree'                " undo history visualizer
 
 " NerdTree
-Plug 'jistr/vim-nerdtree-tabs',     { 'on': ['NERDTreeTabsToggle', 'NERDTreeFind'] }
-Plug 'scrooloose/nerdtree',         { 'on': ['NERDTreeTabsToggle', 'NERDTreeFind'] }
-Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': ['NERDTreeTabsToggle', 'NERDTreeFind'] }
+Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeTabsToggle', 'NERDTreeFind']}
+Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeTabsToggle', 'NERDTreeFind']}
 
 " Snippets
 Plug 'SirVer/ultisnips'               " snippet runner
@@ -71,6 +70,7 @@ Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && comp
 "Plug 'joonty/vim-phpqa'              " show code coverage
 "Plug 'kien/ctrlp.vim'                " substituted with FZF
 "Plug 'roxma/python-support.nvim'     " configured manually
+"Plug 'jistr/vim-nerdtree-tabs',      " no need with FZF
 
 call plug#end()
 

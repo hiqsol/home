@@ -4,6 +4,13 @@ command W :w !sudo tee > /dev/null %
 
 " FUNCTIONS
 
+function! ToggleLeft()
+    if exists(':NERDTreeClose')
+        NERDTreeClose
+    endif
+    call SignColumnToggle()
+endfunction
+
 function! SignColumnToggle()
     if &signcolumn == "yes"
         set signcolumn=no

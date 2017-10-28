@@ -30,9 +30,9 @@ nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
 nnoremap    <C-P>       :FZF<CR>
 nnoremap    <C-K>       :FZFMru<CR>
-nnoremap    \N          :NERDTreeTabsClose<CR>:SyntasticReset<CR>:call SignColumnToggle()<CR>
-nnoremap    \n          :NERDTreeTabsToggle<CR>
-nnoremap    \f          :NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
+nnoremap    \N          :call ToggleLeft()<CR>
+nnoremap    \n          :NERDTreeToggle<CR>
+nnoremap    \f          :NERDTreeFind<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    \u          :UndotreeToggle<CR>
 
