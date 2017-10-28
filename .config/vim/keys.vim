@@ -56,7 +56,7 @@ nnoremap    \w          :ArgWrap<CR>
 nnoremap    \k          :call LanguageClient_textDocument_hover()<CR>
 nnoremap    <C-]>       :call LanguageClient_textDocument_definition()<CR>
 nnoremap    <C-\>       :call LanguageClient_textDocument_documentSymbol()<CR>
-nnoremap    <F2>        :call LanguageClient_textDocument_rename()<CR>
+nnoremap    <S-F6>      :call LanguageClient_textDocument_rename()<CR>
 
 nnoremap    \e          :HTTPClientDoRequest<CR><C-W>W
 
