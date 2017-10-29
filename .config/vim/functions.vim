@@ -34,4 +34,9 @@ endfunction
 
 command! Only call OnlyAndNerdtree()
 
-command! VdebugRun python debugger.run()
+function! RunVdebug()
+    call plug#load('vdebug')
+    python debugger.run()
+endfunction
+
+command! VdebugRun call RunVdebug()

@@ -52,6 +52,7 @@ nnoremap    \cd         :call PhpDocSingle()<CR>
 vnoremap    \cd         :call PhpDocRange()<CR>
 nnoremap    \T          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
+nnoremap    <F5>        :VdebugRun<CR>
 
 nnoremap    \k          :call LanguageClient_textDocument_hover()<CR>
 nnoremap    <C-]>       :call LanguageClient_textDocument_definition()<CR>
