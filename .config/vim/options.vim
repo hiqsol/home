@@ -7,7 +7,7 @@ set shiftwidth=0                " number of spaces to use for each step of (auto
 set expandtab                   " use the appropriate number of spaces to insert a <Tab>
 set smarttab
 set bs=2                        " allow backspacing over everything in insert mode
-set textwidth=120
+set textwidth=160
 
 " save, undo & backup
 set autowrite
