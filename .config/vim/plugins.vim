@@ -50,7 +50,7 @@ Plug 'majutsushi/tagbar'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'roxma/nvim-completion-manager'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 
 " PHP plugins
 Plug 'alvan/vim-php-manual'
@@ -73,6 +73,7 @@ Plug 'lumiliet/vim-twig'
 "Plug 'kien/ctrlp.vim'                " substituted with FZF
 "Plug 'roxma/python-support.nvim'     " doesn't help, seems to make worse
 "Plug 'jistr/vim-nerdtree-tabs',      " no need with FZF
+"Plug 'scrooloose/syntastic'          " substituted with ALE
 
 call plug#end()
 
@@ -92,3 +93,4 @@ let g:lt_location_list_toggle_map = '<leader>l'
 let g:lt_quickfix_list_toggle_map = '<leader>q'
 let g:SuperTabDefaultCompletionType = '<C-N>'
 let g:SuperTabNoCompleteAfter = ['^', '\s', '"', "'", ',', '.', ':']
+let g:airline#extensions#ale#enabled = 1
