@@ -352,6 +352,11 @@
         <command>pkill -9 'chromium|chrome|firefox'</command>
       </action>
     </keybind>
+    <keybind key="W-c">
+      <action name="execute">
+        <command>/opt/google/chrome/chrome</command>
+      </action>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
