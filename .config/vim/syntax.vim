@@ -7,6 +7,7 @@ match   Todo /???/
 " GUI colors
 hi      Search          ctermbg=magenta ctermfg=white
 hi      StatusLine      ctermbg=gray  ctermfg=black
+hi      Folded          ctermbg=black ctermfg=darkcyan
 " hi    CursorLine      ctermbg=darkgray
 hi      TabLine         ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
