@@ -11,6 +11,7 @@ nnoremap    \R          :r! cat<CR>
 " Search keys
 nnoremap    *           *N
 nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
+nnoremap    \/          :nohlsearch<CR>
 
 " Input keys
 inoremap    <C-E>       <End>
