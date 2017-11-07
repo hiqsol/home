@@ -10,8 +10,10 @@ nnoremap    \R          :r! cat<CR>
 
 " Search keys
 nnoremap    *           *N
+nnoremap    <M-/>       /\c
 nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
-nnoremap    \/          :nohlsearch<CR>
+nnoremap    \\          /\<\><Left><Left>
+nnoremap <silent>   \/  :nohlsearch<CR>
 
 " Input keys
 inoremap    <C-E>       <End>
