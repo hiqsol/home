@@ -5,7 +5,7 @@ match   MyUnwantedChars /\t\+ \+\| \+\t\+\|\s\+$/
 match   Todo /???/
 
 " GUI colors
-hi      Search          ctermbg=magenta ctermfg=white
+hi      Search          ctermbg=208   ctermfg=white
 hi      StatusLine      ctermbg=gray  ctermfg=black
 hi      Folded          ctermbg=black ctermfg=darkcyan
 " hi    CursorLine      ctermbg=darkgray
