@@ -54,20 +54,27 @@ p() {
 }
 
 composer() {
-    if ! [ -x ~/sbin/composer ]; then
-        wget https://getcomposer.org/installer -O ~/tmp/composer-setup.php
-        php ~/tmp/composer-setup.php --install-dir=$HOME/sbin --filename=composer
-        rm ~/tmp/composer-setup.php
+    file="$HOME/sbin/composer"
+
+    if ! [ -x $file ]; then
+        tmp="~/tmp/composer-setup.php"
+        wget https://getcomposer.org/installer -O $tmp
+        php $tmp --install-dir=$HOME/sbin --filename=composer
+        rm $tmp
     fi
-    ~/sbin/composer $@
+
+    $file $@
 }
 
 certbot-auto() {
-    if ! [ -x ~/sbin/certbot-auto ]; then
-        wget https://dl.eff.org/certbot-auto -O ~/sbin/certbot-auto
-        chmod a+x ~/sbin/certbot-auto
+    file="~/sbin/certbot-auto"
+
+    if ! [ -x $file ]; then
+        wget https://dl.eff.org/certbot-auto -O $file
+        chmod a+x $file
     fi
-    ~/sbin/certbot-auto $@
+
+    $file $@
 }
 
 ydl() {
