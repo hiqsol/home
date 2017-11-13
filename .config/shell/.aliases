@@ -30,6 +30,7 @@ alias gir='grep -IR'
 alias girp='grep -IR --include=\*.php --exclude-dir=vendor'
 alias vpn="ovpn default"
 alias x509="openssl x509 -text -noout -in"
+alias ymp3="ydl --extract-audio --audio-format mp3"
 
 # no spelling correction on mv
 alias mv='nocorrect mv'

@@ -61,10 +61,22 @@ composer() {
     fi
     ~/sbin/composer $@
 }
+
 certbot-auto() {
     if ! [ -x ~/sbin/certbot-auto ]; then
         wget https://dl.eff.org/certbot-auto -O ~/sbin/certbot-auto
         chmod a+x ~/sbin/certbot-auto
     fi
     ~/sbin/certbot-auto $@
+}
+
+ydl() {
+    file="$HOME/sbin/youtube-dl"
+
+    if [ ! -e "$file" ]; then
+        wget https://yt-dl.org/downloads/latest/youtube-dl -O $file
+        chmod a+rx $file
+    fi
+
+    $file $@
 }
