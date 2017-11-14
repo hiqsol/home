@@ -16,10 +16,12 @@ nnoremap    \\          /\<\><Left><Left>
 nnoremap <silent>   \/  :nohlsearch<CR>
 
 " Input keys
-inoremap    <C-E>       <End>
 inoremap    <C-J>       <Down>
 inoremap    <C-K>       <Up>
 inoremap    <C-L>       <Right>
+
+" Movement keys
+noremap     <C-E>       <End>
 
 " HUD keys
 nnoremap    <C-S>       :update<CR>
