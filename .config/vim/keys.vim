@@ -15,6 +15,10 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 nnoremap    \\          /\<\><Left><Left>
 nnoremap <silent>   \/  :nohlsearch<CR>
 
+" General movement keys
+noremap     <C-A>       <Home>
+noremap     <C-E>       <End>
+
 " Input keys
 inoremap    <C-J>       <Down>
 inoremap    <C-K>       <Up>
@@ -40,6 +44,8 @@ nnoremap    \n          :NERDTreeToggle<CR>
 nnoremap    \f          :NERDTreeFind<CR>
 nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    \u          :UndotreeToggle<CR>
+nnoremap    ga          <C-A>
+nnoremap    gx          <C-X>
 
 " Fugitive keys
 nnoremap    gl          :Glog<CR>
