@@ -20,9 +20,9 @@ function! SignColumnToggle()
 endfunction
 
 function! WinPerform(command)
-  let currwin=winnr()
-  execute 'windo ' . a:command
-  execute currwin . 'wincmd w'
+    let currwin=winnr()
+    execute 'windo ' . a:command
+    execute currwin . 'wincmd w'
 endfunction
 com! -nargs=+ -complete=command Windo call WinPerform(<q-args>)
 
