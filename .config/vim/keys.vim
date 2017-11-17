@@ -24,12 +24,7 @@ inoremap    <C-J>       <Down>
 inoremap    <C-K>       <Up>
 inoremap    <C-L>       <Right>
 
-" Movement keys
-noremap     <C-E>       <End>
-
-" HUD keys
-nnoremap    <C-S>       :update<CR>
-nnoremap    <C-X>       :close<CR>
+" Windows/Tabs
 nnoremap    <C-W>a      :tabnew<Space>
 nnoremap    <C-W>e      :e<CR>
 nnoremap    <C-W>Q      :qa<CR>
@@ -37,12 +32,16 @@ nnoremap    <C-W>o      :Only<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
+
+" HUD keys
+nnoremap    <C-S>       :update<CR>
+nnoremap    <C-X>       :close<CR>
 nnoremap    <C-P>       :FZF<CR>
 nnoremap    <C-K>       :FZFMru<CR>
-nnoremap    \N          :call ToggleLeft()<CR>
+nnoremap    <C-G>       :echo expand('%:p')<CR>
+nnoremap    <C-F>       :call ToggleLeft()<CR>
+nnoremap    <C-N>       :NERDTreeFind<CR>
 nnoremap    \n          :NERDTreeToggle<CR>
-nnoremap    \f          :NERDTreeFind<CR>
-nnoremap    \g          :echo expand('%:p')<CR>
 nnoremap    \u          :UndotreeToggle<CR>
 nnoremap    ga          <C-A>
 nnoremap    gx          <C-X>
