@@ -22,7 +22,7 @@ cdls() {
 }
 
 rehash() {
-    source ~/.config/zsh/.zshrc
+    source $HOME/.config/zsh/.zshrc
     builtin rehash
 }
 
@@ -46,7 +46,7 @@ cdv() {
 
 p() {
     if [ -z "$1" ]; then
-        a=`cat ~/hostname`
+        a=`cat $HOME/hostname`
     else
         a=$1
     fi
@@ -57,7 +57,7 @@ composer() {
     file="$HOME/sbin/composer"
 
     if ! [ -x $file ]; then
-        tmp="~/tmp/composer-setup.php"
+        tmp="$HOME/tmp/composer-setup.php"
         wget https://getcomposer.org/installer -O $tmp
         php $tmp --install-dir=$HOME/sbin --filename=composer
         rm $tmp
@@ -67,7 +67,7 @@ composer() {
 }
 
 certbot-auto() {
-    file="~/sbin/certbot-auto"
+    file="$HOME/sbin/certbot-auto"
 
     if ! [ -x $file ]; then
         wget https://dl.eff.org/certbot-auto -O $file
