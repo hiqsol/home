@@ -38,8 +38,9 @@ nnoremap    <C-W>x      :tabclose<CR>
 " HUD keys
 nnoremap    <C-S>       :update<CR>
 nnoremap    <C-X>       :close<CR>
-nnoremap    <C-P>       :FZF<CR>
+nnoremap    <C-J>       :BLines<CR>
 nnoremap    <C-K>       :FZFMru<CR>
+nnoremap    <C-P>       :FZF<CR>
 nnoremap    <C-G>       :echo expand('%:p')<CR>
 nnoremap    <C-F>       :call ToggleLeft()<CR>
 nnoremap    <C-N>       :NERDTreeFind<CR>
