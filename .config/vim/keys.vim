@@ -20,6 +20,8 @@ noremap     <C-A>       <Home>
 noremap     <C-E>       <End>
 
 " Input keys
+inoremap    <C-A>       <Home>
+inoremap    <C-E>       <End>
 inoremap    <C-J>       <Down>
 inoremap    <C-K>       <Up>
 inoremap    <C-L>       <Right>
