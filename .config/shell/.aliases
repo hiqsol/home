@@ -48,6 +48,7 @@ alias tmux-ls="tmux list-panes -aF '#{session_name}:#{window_index}:#{pane_index
 alias quotes=~/prj/hiqsol/quotes/bin/quotes
 alias rehome=~/prj/hiqdev/rehome/rehome
 
+alias -- -='cd -'
 alias .='cd ..'
 alias ..='cd ../..'
 alias ...='cd ../../..'
