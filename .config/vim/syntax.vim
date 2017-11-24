@@ -13,6 +13,8 @@ hi      TabLine         ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineSel      ctermfg=white ctermbg=blue  cterm=NONE
 
+hi      ALEWarningSign  ctermbg=235 ctermfg=grey
+
 " vimdiff colors
 hi      DiffChange      ctermbg=brown
 hi      DiffText        ctermbg=red
@@ -72,3 +74,8 @@ hi      Error           ctermbg=red
 hi      Todo            ctermbg=darkred ctermfg=white
 hi      LineNr          ctermfg=darkgray
 
+"augroup DimInactiveWindows
+    "autocmd!
+    "autocmd WinEnter * hi CursorLine ctermbg=none
+    "autocmd WinLeave * hi CursorLine ctermbg=grey
+"augroup END
