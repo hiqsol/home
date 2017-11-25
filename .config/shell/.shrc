@@ -12,14 +12,15 @@ export BLOCKSIZE=K
 export CLICOLOR=1
 ### See later: https://github.com/trapd00r/LS_COLORS
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
-### Proper TERM
+### Proper 256-colors TERM
 export TERM=screen-256color
 
 ### LESS config TODO ???
 # export LESS=-S
 
-### Activate Russian locale and OS specific ls_options
+### Activate english UTF8 locale and OS specific ls_options
 ### first default settings
+    export LANGUAGE=en_US:en
     export LANG=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
     ls_options=''
