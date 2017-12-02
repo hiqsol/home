@@ -50,6 +50,9 @@ Plugin {
     Button {
       id=menu://applications/Internet/firefox.desktop
     }
+    Button {
+      id=chromium-browser.desktop
+    }
   }
 }
 Plugin {
@@ -110,11 +113,6 @@ Plugin {
 }
 Plugin {
   type=volumealsa
-  Config {
-  }
-}
-Plugin {
-  type=tray
   Config {
   }
 }
