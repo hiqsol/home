@@ -5,6 +5,11 @@ clone() {
     git clone git@github.com:$*;
 }
 
+lclone() {
+    echo git clone git@git.hiqdev.com:$*;
+    git clone git@git.hiqdev.com:$*;
+}
+
 pclone() {
     echo git clone ssh://git.solex.me:222/git/$*;
     git clone ssh://git.solex.me:222/git/$*;
