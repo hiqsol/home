@@ -1,0 +1,29 @@
+{
+    "name": "hiqsol/dotfiles",
+    "type": "project",
+    "description": "Sol's dotfiles",
+    "keywords": [
+        "sol",
+        "home",
+        "dotfiles"
+    ],
+    "homepage": "https://github.com/hiqsol/dotfiles",
+    "license": "MIT",
+    "support": {
+        "email": "sol@hiqdev.com",
+        "source": "https://github.com/hiqsol/dotfiles",
+        "issues": "https://github.com/hiqsol/dotfiles/issues",
+        "wiki": "https://github.com/hiqsol/dotfiles/wiki"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "email": "sol@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        }
+    ],
+    "require-dev": {
+        "hiqdev/hidev-php": "<2.0 || dev-master",
+        "hiqsol/hidev-hiqsol": "<2.0 || dev-master"
+    }
+}

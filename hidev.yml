@@ -4,11 +4,16 @@ package:
     title:          Sol's dotfiles
     keywords:       sol, home, dotfiles
     description:    |
-        I use [rehome] to setup and maintain my home:
+        I use no special tool to setup home, only a package manager.
 
-        ```sh
-        wget https://raw.githubusercontent.com/hiqdev/rehome/master/rehome; python rehome init hiqsol/dotfiles
-        ```
+        The whole home is comprised of the root package (holding private data)
+        and dependencies like this:
+
+            - hiqsol/home - private root package
+                - hiqsol/dotfiles - this package
+                - hiqsol/quotes
+
+        I use [composer] package manager to setup dependencies.
 
         Other tools I use:
 
@@ -16,8 +21,5 @@ package:
         - [rewatcher] to watch changes in repos
 
         [hidev]:        https://github.com/hiqdev/hidev
-        [rehome]:       https://github.com/hiqdev/rehome
         [rewatcher]:    https://github.com/hiqdev/rewatcher
-
-plugins:
-    hiqsol/hidev-hiqsol: "<2.0 || dev-master"
+        [composer]:     https://getcomposer.org/
