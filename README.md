@@ -13,7 +13,7 @@ and dependencies like this:
 
     - hiqsol/home - private root package
         - hiqsol/dotfiles - this package
-        - hiqsol/quotes
+        - [hiqsol/quotes]
 
 I use [composer] package manager to setup dependencies.
 
@@ -22,9 +22,10 @@ Other tools I use:
 - [hidev] to create and maintain packages
 - [rewatcher] to watch changes in repos
 
-[hidev]:        https://github.com/hiqdev/hidev
-[rewatcher]:    https://github.com/hiqdev/rewatcher
-[composer]:     https://getcomposer.org/
+[hidev]:            https://github.com/hiqdev/hidev
+[rewatcher]:        https://github.com/hiqdev/rewatcher
+[composer]:         https://getcomposer.org/
+[hiqsol/quotes]:    https://github.com/hiqsol/quotes
 
 ## Installation
 
