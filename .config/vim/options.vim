@@ -10,7 +10,8 @@ set bs=2                        " allow backspacing over everything in insert mo
 set textwidth=160
 
 " save, undo & backup
-set autowrite
+set autowriteall                " write file on file commands
+set updatetime=1000             " faster saving swap file
 set undofile                    " allows undo after reopen file
 set undodir=~/.vim/undo
 set nobackup                    " don't keep a backup file
