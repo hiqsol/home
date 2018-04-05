@@ -430,6 +430,11 @@
         <direction>down</direction>
       </action>
     </keybind>
+    <keybind key="W-L">
+        <action name="MoveResizeTo">
+            <monitor>next</monitor>
+        </action>
+    </keybind>
     <!-- Keybindings for window tiling -->
     <keybind key="W-Left">        # HalfLeftScreen
       <action name="UnmaximizeFull"/>
