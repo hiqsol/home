@@ -16,7 +16,6 @@ nnoremap    \\          /\<\><Left><Left>
 nnoremap <silent>   \/  :nohlsearch<CR>
 
 " General movement keys
-noremap     <C-A>       <Home>
 noremap     <C-E>       <End>
 
 " Input keys
