@@ -34,7 +34,7 @@ nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
 
 " HUD keys
-nnoremap    <C-S>       :update<CR>
+nnoremap    <C-S>       :wa<CR>
 nnoremap    <C-X>       :close<CR>
 nnoremap    <C-J>       :BLines<CR>
 nnoremap    <C-K>       :FZFMru<CR>
