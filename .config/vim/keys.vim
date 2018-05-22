@@ -16,7 +16,6 @@ nnoremap    \\          /\<\><Left><Left>
 nnoremap <silent>   \/  :nohlsearch<CR>
 
 " General movement keys
-noremap     <C-A>       <Home>
 noremap     <C-E>       <End>
 
 " Input keys
@@ -30,18 +29,18 @@ inoremap    <C-L>       <Right>
 nnoremap    <C-W>a      :tabnew<Space>
 nnoremap    <C-W>e      :e<CR>
 nnoremap    <C-W>Q      :qa<CR>
-nnoremap    <C-W>o      :Only<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
 
 " HUD keys
-nnoremap    <C-S>       :update<CR>
+nnoremap    <C-S>       :wa<CR>
 nnoremap    <C-X>       :close<CR>
 nnoremap    <C-J>       :BLines<CR>
 nnoremap    <C-K>       :FZFMru<CR>
 nnoremap    <C-P>       :FZF<CR>
 nnoremap    <C-G>       :echo expand('%:p')<CR>
+nnoremap    <C-L>       :GitGutterAll<CR><C-L>
 nnoremap    <C-F>       :call ToggleLeft()<CR>
 nnoremap    <C-N>       :NERDTreeFind<CR>
 nnoremap    \n          :NERDTreeToggle<CR>

@@ -39,12 +39,26 @@ z2() {
     bc <<< "scale=2;$@"
 }
 
+# cd to /home/user/prj/organization/project/vendor/organization/PROJECT
+cdvp() {
+    pts=(${(s:/:)PWD})
+    cd "/$pts[1]/$pts[2]/$pts[3]/$pts[4]/$pts[5]/$pts[6]/$pts[7]/$pts[8]"
+}
+
+# cd to /home/user/prj/organization/project/vendor/ORGANIZATION
+cdvo() {
+    pts=(${(s:/:)PWD})
+    cd "/$pts[1]/$pts[2]/$pts[3]/$pts[4]/$pts[5]/$pts[6]/$pts[7]"
+}
+
+# cd to /home/user/prj/organization/PROJECT
 cdp() {
     pts=(${(s:/:)PWD})
     cd "/$pts[1]/$pts[2]/$pts[3]/$pts[4]/$pts[5]"
 }
 
-cdv() {
+# cd to /home/user/prj/ORGANIZATION
+cdo() {
     pts=(${(s:/:)PWD})
     cd "/$pts[1]/$pts[2]/$pts[3]/$pts[4]"
 }
@@ -104,4 +118,8 @@ nvim() {
     fi
 
     $file $@
+}
+
+bashinto() {
+    docker exec -it $1 bash -c "stty cols $COLUMNS rows $LINES && bash";
 }
