@@ -128,7 +128,7 @@ Plugin {
   }
 }
 Plugin {
-  type=batt
+  type=tray
   Config {
   }
 }
