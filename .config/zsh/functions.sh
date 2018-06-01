@@ -123,3 +123,21 @@ nvim() {
 bashinto() {
     docker exec -it $1 bash -c "stty cols $COLUMNS rows $LINES && bash";
 }
+
+hub() {
+    file="/usr/local/bin/hub"
+
+    if [ ! -x $file ]; then
+        install_hub
+    fi
+
+    $file $@
+}
+
+install_hub() {
+    cd ~/tmp
+    wget https://github.com/github/hub/releases/download/v2.3.0/hub-linux-amd64-2.3.0.tgz
+    tar zvxvf hub-linux-amd64-2.3.0.tgz
+    sudo ./hub-linux-amd64-2.3.0/install
+    cp ./hub-linux-amd64-2.3.0/etc/hub.zsh_completion ~/.config/zsh/completion/_hub
+}
