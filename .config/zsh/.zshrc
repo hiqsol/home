@@ -8,8 +8,15 @@ source ~/.config/zsh/keys.zsh
 ### AUTOLOADS
 fpath=(~/.config/zsh/completion $fpath)
 autoload -U colors compinit promptinit zfinit zcalc edit-command-line select-word-style
-colors;compinit -i;promptinit;zfinit
 zle -N edit-command-line
+
+autoload -Uz url-quote-magic
+zle -N self-insert url-quote-magic
+
+autoload -Uz bracketed-paste-magic
+zle -N bracketed-paste bracketed-paste-magic
+
+colors;compinit -i;promptinit;zfinit
 select-word-style bash
 
 ### DIFFERENT OPTIONS
