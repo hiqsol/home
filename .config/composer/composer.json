@@ -6,7 +6,7 @@
         "hiqdev/rewatcher": "dev-master",
         "phpmd/phpmd": "^2.6",
         "friendsofphp/php-cs-fixer": "^2.0",
-        "phpunit/phpunit": "^5.7 || ^6.0",
+        "phpunit/phpunit": "^6.0 || ^7.0",
         "phploc/phploc": "^3.0"
     },
     "require-dev": {
