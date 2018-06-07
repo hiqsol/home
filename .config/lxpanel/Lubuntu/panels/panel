@@ -47,9 +47,6 @@ Plugin {
     Button {
       id=firefox.desktop
     }
-    Button {
-      id=chromium-browser.desktop
-    }
     FlatButton=0
     GroupedTasks=0
     UseSmallerIcons=-1
@@ -92,6 +89,7 @@ Plugin {
     ToggleOpt=grp:shift_caps_switch,grp:lctrl_lshift_toggle
     KeepSysLayouts=0
     FlagSize=2
+    PerWinLayout=1
   }
 }
 Plugin {
@@ -113,7 +111,7 @@ Plugin {
 Plugin {
   type=dclock
   Config {
-    ClockFmt=%R
+    ClockFmt=%a %x %R
     TooltipFmt=%A %x
     BoldFont=0
     IconOnly=0
