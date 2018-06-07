@@ -51,8 +51,11 @@ Plugin {
       id=chromium-browser.desktop
     }
     FlatButton=0
-    GroupedTasks=1
+    GroupedTasks=0
     UseSmallerIcons=-1
+    ShowAllDesks=0
+    tooltips=1
+    IconsOnly=0
   }
   expand=1
 }
@@ -87,11 +90,6 @@ Plugin {
     LayoutsList=us
     VariantsList=,
     ToggleOpt=grp:shift_caps_toggle
-  }
-}
-Plugin {
-  type=bluetooth
-  Config {
   }
 }
 Plugin {
