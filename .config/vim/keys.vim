@@ -74,3 +74,6 @@ nnoremap    <S-F6>      :call LanguageClient_textDocument_rename()<CR>
 
 nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
 
+" DBext keys
+nnoremap    \sx         :DBExecSQLUnderCursor<CR>
+
