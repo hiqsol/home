@@ -47,6 +47,7 @@ nnoremap    \n          :NERDTreeToggle<CR>
 nnoremap    \u          :UndotreeToggle<CR>
 nnoremap    ga          <C-A>
 nnoremap    gx          <C-X>
+nnoremap    \m          :Maps<CR>
 
 " Fugitive keys
 nnoremap    gl          :Glog<CR>
