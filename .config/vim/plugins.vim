@@ -39,6 +39,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'aquach/vim-http-client'
 Plug 'diepm/vim-rest-console'
 
+" DB
+Plug 'vim-scripts/dbext.vim'
+
 " Programming plugins
 Plug 'autozimu/LanguageClient-neovim',          {'do': ':UpdateRemotePlugins'}
 Plug 'joonty/vdebug',                           {'on': 'VdebugRun'}
