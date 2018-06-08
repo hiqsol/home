@@ -11,4 +11,8 @@ source ~/.vim/promptline.vim
 source ~/.vim/keys.vim
 source ~/.vim/functions.vim
 
+if filereadable(glob("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
+
 syntax on
