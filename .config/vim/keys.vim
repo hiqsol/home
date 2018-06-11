@@ -18,9 +18,6 @@ nnoremap <silent>   \/  :nohlsearch<CR>
 " General movement keys
 noremap     <C-E>       <End>
 
-" Selection
-nnoremap    <M-v>       (V)
-
 " Input keys
 inoremap    <C-A>       <Home>
 inoremap    <C-E>       <End>
