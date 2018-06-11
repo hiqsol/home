@@ -141,3 +141,9 @@ install_hub() {
     sudo ./hub-linux-amd64-2.3.0/install
     cp ./hub-linux-amd64-2.3.0/etc/hub.zsh_completion ~/.config/zsh/completion/_hub
 }
+
+# returns absolute path to file by given relative path
+# also consider `realpath`
+path() {
+    echo "$("cd" "$(dirname "$1")" && pwd)/$(basename "$1")"
+}
