@@ -98,9 +98,15 @@ let g:SuperTabDefaultCompletionType = '<C-N>'
 let g:SuperTabNoCompleteAfter = ['^', '\s', '"', "'", ',', '.', ':']
 let g:ale_sign_warning = '⇒ '
 let g:airline#extensions#ale#enabled = 1
+
+" Vdebug
 let g:vdebug_options = {
 \   'timeout': 60,
 \   'path_maps': {
 \       "/app": "/home/sol/prj/ahnames/sol-dev-hipanel.ahnames.com"
 \   }
 \}
+
+" UltiSnips
+let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+let g:UltiSnipsSnippetDirectories = ['UltiSnips']
