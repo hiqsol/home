@@ -1,0 +1,43 @@
+snippet c "PHP Class" b
+/**
+ * Class ${1:`!p snip.rv = snip.basename or "ClassName"`}.
+ * @author Andrii Vasyliev <sol@hiqdev.com>
+ */
+class ${2:$1}
+{
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet gsm "PHP Getter and Setter" b
+/** @var ${2:string} */
+protected $${1:value};
+
+/**
+ * Sets the value of $1.
+ * @param $2 $$1
+ * @return ${4:self}
+ */
+${5:public} function set${1/\w+\s*/\u$0/}(${7:$2 }$$1)
+{
+	$this->${8:$1} = $$1;
+	return $this;
+}
+
+/**
+ * Gets the value of ${9:$1}.
+ * @return ${10:$2}
+ */
+${11:$5} function get${1/\w+\s*/\u$0/}()
+{
+	return $this->${13:$1};
+}
+endsnippet
+
+snippet to "PHP TODO"
+/// TODO 
+endsnippet
+
+snippet x "PHP XXX"
+/// XXX 
+endsnippet
