@@ -14,23 +14,23 @@ snippet gsm "PHP Getter and Setter" b
 protected $${1:value};
 
 /**
- * Sets the value of $1.
+ * Sets the value of ${3:$1}.
  * @param $2 $$1
  * @return ${4:self}
  */
-${5:public} function set${1/\w+\s*/\u$0/}(${7:$2 }$$1)
+${5:public} function set${1/\w+\s*/\u$0/}(${7:$2 }$$1): $4
 {
 	$this->${8:$1} = $$1;
 	return $this;
 }
 
 /**
- * Gets the value of ${9:$1}.
+ * Gets the value of ${9:$3}.
  * @return ${10:$2}
  */
-${11:$5} function get${1/\w+\s*/\u$0/}()
+${11:$5} function get${1/\w+\s*/\u$0/}(): $2
 {
-	return $this->${13:$1};
+	return $this->$8;
 }
 endsnippet
 
