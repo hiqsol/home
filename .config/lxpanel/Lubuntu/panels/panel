@@ -47,6 +47,9 @@ Plugin {
     Button {
       id=firefox.desktop
     }
+    Button {
+      id=chromium-browser.desktop
+    }
     FlatButton=0
     GroupedTasks=0
     UseSmallerIcons=-1
