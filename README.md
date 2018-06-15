@@ -11,9 +11,9 @@ I use no special tool to setup home, only a package manager.
 The whole home is comprised of the root package (holding private data)
 and dependencies like this:
 
-    - hiqsol/home - private root package
-        - hiqsol/dotfiles - this package
-        - [hiqsol/quotes]
+- hiqsol/home - private root package
+    - hiqsol/dotfiles - this package
+    - [hiqsol/quotes]
 
 I use [composer] package manager to setup dependencies.
 
