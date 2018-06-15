@@ -1,0 +1,15 @@
+snippet sel "SELECT"
+SELECT		${3:*}
+FROM		${1:table}
+WHERE		${2:obj_id=1}
+;
+endsnippet
+
+snippet gr "SELECT count(*)"
+SELECT		${2:field}, ${4:count(*)}
+FROM		${1:table}
+WHERE		${3:TRUE}
+GROUP BY	$2
+ORDER BY	count DESC
+;
+endsnippet
