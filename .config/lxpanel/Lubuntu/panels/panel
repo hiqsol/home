@@ -89,7 +89,7 @@ Plugin {
     Model=pc105
     LayoutsList=us,ru,ua
     VariantsList=,,
-    ToggleOpt=grp:shift_caps_switch,grp:lctrl_lshift_toggle
+    ToggleOpt=grp:shift_caps_switch,grp:lalt_lshift_toggle
     KeepSysLayouts=0
     FlagSize=2
     PerWinLayout=1
