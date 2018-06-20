@@ -12,8 +12,8 @@ nnoremap    \R          :r! cat<CR>
 nnoremap    *           *N
 nnoremap    <M-/>       /\c
 nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
-nnoremap    \\          /\<\><Left><Left>
-nnoremap <silent>   \/  :nohlsearch<CR>
+nnoremap    \/          /\<\><Left><Left>
+nnoremap <silent>   \\  :nohlsearch<CR>
 
 " General movement keys
 noremap     <C-E>       <End>
