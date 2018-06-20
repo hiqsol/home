@@ -39,3 +39,5 @@ set hlsearch                    " highlight search
 if has('gui_running')
     source gui.vim
 endif
+
+let g:netrw_browsex_viewer="local-open"
