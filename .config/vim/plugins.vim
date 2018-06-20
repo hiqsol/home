@@ -115,3 +115,6 @@ let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
 " shumphrey/fugitive-gitlab.vim
 let g:fugitive_gitlab_domains = ['https://git.hiqdev.com']
+
+" DBext
+let g:dbext_default_prompt_for_parameters=0
