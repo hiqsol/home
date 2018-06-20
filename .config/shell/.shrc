@@ -34,6 +34,7 @@ fi
 export PAGER=less
 export EDITOR=nvim
 export VISUAL=nvim
+export BROWSER="local-open"
 
 ### Predictable SSH authentication socket location.
 SOCK="/tmp/ssh-agent-$USER-screen"

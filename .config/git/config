@@ -54,3 +54,7 @@
     default     = simple
 [core]
     autocrlf    = false
+[web]
+    browser     = local-open
+[browser "local-open"]
+    cmd         = local-open
