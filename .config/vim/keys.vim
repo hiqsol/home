@@ -76,6 +76,10 @@ nnoremap    <S-F6>      :call LanguageClient_textDocument_rename()<CR>
 
 nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
 
-" DBext keys
+" DB keys
 nnoremap    \sx         :DBExecSQLUnderCursor<CR>
+nnoremap    \sp         vip:DBExecRangeSQL<CR>
+" nnoremap    \sx         :DB g:dadbod_default<CR>
+" vnoremap    \sx         :DB g:dadbod_default<CR>
+" nnoremap    \sp         vip:DB g:dadbod_default<CR>
 

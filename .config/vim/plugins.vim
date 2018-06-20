@@ -42,6 +42,7 @@ Plug 'aquach/vim-http-client'
 Plug 'diepm/vim-rest-console'
 
 " DB
+" Plug 'tpope/vim-dadbod'
 Plug 'vim-scripts/dbext.vim'
 
 " Programming plugins
