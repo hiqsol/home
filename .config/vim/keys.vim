@@ -57,6 +57,8 @@ nnoremap    gc          :Gcommit --verbose<CR>
 nnoremap    gh          :Gpush<CR>
 nnoremap    go          :Gbrowse<CR>
 nnoremap    gO          :Gbrowse!<CR>
+vnoremap    go          :Gbrowse<CR>
+vnoremap    gO          :Gbrowse!<CR>
 nnoremap    gw          :Gwrite<CR>
 nnoremap    gr          :Gread<CR>
 
