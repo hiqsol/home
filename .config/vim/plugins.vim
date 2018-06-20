@@ -34,6 +34,8 @@ Plug 'rkitover/vimpager'
 " Git plugins
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'shumphrey/fugitive-gitlab.vim'
 
 " REST
 Plug 'aquach/vim-http-client'
@@ -110,3 +112,6 @@ let g:vdebug_options = {
 " UltiSnips
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
+
+" shumphrey/fugitive-gitlab.vim
+let g:fugitive_gitlab_domains = ['https://git.hiqdev.com']
