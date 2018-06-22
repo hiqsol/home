@@ -23,10 +23,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'mbbill/undotree'
 Plug 'pbogut/fzf-mru.vim'
 Plug 'valloric/listtoggle'
-
-" NerdTree
 Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
-Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
 " Shell helpers
 Plug 'edkolev/promptline.vim'
@@ -37,6 +34,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
 " REST
 Plug 'aquach/vim-http-client'
