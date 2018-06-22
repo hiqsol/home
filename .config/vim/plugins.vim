@@ -19,6 +19,7 @@ Plug 'bling/vim-airline'
 Plug 'ervandew/supertab'
 Plug 'junegunn/fzf',                            {'dir': '~/.config/fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-peekaboo'
 Plug 'mbbill/undotree'
 Plug 'pbogut/fzf-mru.vim'
 Plug 'valloric/listtoggle'
