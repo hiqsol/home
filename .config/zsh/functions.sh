@@ -1,23 +1,27 @@
 #!/usr/bin/env zsh
 
+GREEN="\033[1;32m"
+NOCOLOR="\033[0m"
+
+git_clone() {
+    echo git clone ${GREEN}$*${NOCOLOR}
+    git clone $*
+}
+
 clone() {
-    echo git clone git@github.com:$*;
-    git clone git@github.com:$*;
+    git_clone git@github.com:$*;
 }
 
 hclone() {
-    echo git clone git@github.com:hiqdev/$*
-    git clone git@github.com:hiqdev/$*
+    git_clone git@github.com:hiqdev/$*
 }
 
 lclone() {
-    echo git clone git@git.hiqdev.com:$*;
-    git clone git@git.hiqdev.com:$*;
+    git_clone git@git.hiqdev.com:$*;
 }
 
 pclone() {
-    echo git clone ssh://git.solex.me:222/git/$*;
-    git clone ssh://git.solex.me:222/git/$*;
+    git_clone ssh://git.solex.me:222/git/$*;
 }
 
 md() {
