@@ -19,8 +19,9 @@ let ok_git_status = {
     \'function_body': [
         \'function ok_git_status {',
         \'  local ok=$(__promptline_git_status)',
-        \'  if [[ $ok = "✔" ]]; then',
-        \'      printf "%s" $ok',
+        \'  local BR=$(git rev-parse --abbrev-ref HEAD)',
+        \'  if [[ $ok = "✔" ]] && [[ $BR = "master" ]]; then',
+        \'      printf "✔"',
         \'  fi',
         \'}']}
 let notok_git_status = {
@@ -28,18 +29,19 @@ let notok_git_status = {
     \'function_body': [
         \'function notok_git_status {',
         \'  local ok=$(__promptline_git_status)',
-        \'  if [[ $ok != "✔" ]]; then',
-        \'      printf "%s" $ok',
+        \'  local BR=$(git rev-parse --abbrev-ref HEAD)',
+        \'  if [[ $ok != "✔" ]] || [[ $BR != "master" ]]; then',
+        \'      printf " %s  %s" $BR $ok',
         \'  fi',
         \'}']}
 
 let g:promptline_theme = 'airline'
 let g:promptline_preset = {
-        \'a' : [ notsol_host ],
+        \'a' : [ notsol_host, promptline#slices#jobs() ],
         \'b' : [ sol_host ],
         \'c' : [ '%*' ],
         \'x' : [ '%~' ],
-        \'y' : [ promptline#slices#vcs_branch(), ok_git_status ],
+        \'y' : [ ok_git_status ],
         \'z' : [ notok_git_status ],
         \'warn' : [ promptline#slices#last_exit_code() ],
         \'options': {

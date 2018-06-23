@@ -23,6 +23,7 @@ function __promptline_ps1 {
   [ $is_prompt_empty -eq 1 ] && slice_prefix="$slice_empty_prefix"
   # section "a" slices
   __promptline_wrapper "$(notsol_host)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
+  __promptline_wrapper "$(__promptline_jobs)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
 
   # section "b" header
   slice_prefix="${b_bg}${sep}${b_fg}${b_bg}${space}" slice_suffix="$space${b_sep_fg}" slice_joiner="${b_fg}${b_bg}${alt_sep}${space}" slice_empty_prefix="${b_fg}${b_bg}${space}"
@@ -46,7 +47,6 @@ function __promptline_ps1 {
   slice_prefix="${y_bg}${sep}${y_fg}${y_bg}${space}" slice_suffix="$space${y_sep_fg}" slice_joiner="${y_fg}${y_bg}${alt_sep}${space}" slice_empty_prefix="${y_fg}${y_bg}${space}"
   [ $is_prompt_empty -eq 1 ] && slice_prefix="$slice_empty_prefix"
   # section "y" slices
-  __promptline_wrapper "$(__promptline_vcs_branch)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
   __promptline_wrapper "$(ok_git_status)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
 
   # section "z" header
@@ -64,19 +64,20 @@ function __promptline_ps1 {
   # close sections
   printf "%s" "${reset_bg}${sep}$reset$space"
 }
-function __promptline_vcs_branch {
-  local branch
-  local branch_symbol=" "
 
-  # git
-  if hash git 2>/dev/null; then
-    if branch=$( { git symbolic-ref --quiet HEAD || git rev-parse --short HEAD; } 2>/dev/null ); then
-      branch=${branch##*/}
-      printf "%s" "${branch_symbol}${branch:-unknown}"
-      return
+function __promptline_jobs {
+  local job_count=0
+
+  local IFS=$'\n'
+  for job in $(jobs); do
+    # count only lines starting with [
+    if [[ $job == \[* ]]; then
+      job_count=$(($job_count+1))
     fi
-  fi
-  return 1
+  done
+
+  [[ $job_count -gt 0 ]] || return 1;
+  printf "%s" "$job_count"
 }
 function __promptline_left_prompt {
   local slice_prefix slice_empty_prefix slice_joiner slice_suffix is_prompt_empty=1
@@ -86,6 +87,7 @@ function __promptline_left_prompt {
   [ $is_prompt_empty -eq 1 ] && slice_prefix="$slice_empty_prefix"
   # section "a" slices
   __promptline_wrapper "$(notsol_host)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
+  __promptline_wrapper "$(__promptline_jobs)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
 
   # section "b" header
   slice_prefix="${b_bg}${sep}${b_fg}${b_bg}${space}" slice_suffix="$space${b_sep_fg}" slice_joiner="${b_fg}${b_bg}${alt_sep}${space}" slice_empty_prefix="${b_fg}${b_bg}${space}"
@@ -120,14 +122,16 @@ function sol_host {
 }
 function ok_git_status {
   local ok=$(__promptline_git_status)
-  if [[ $ok = "✔" ]]; then
-      printf "%s" $ok
+  local BR=$(git rev-parse --abbrev-ref HEAD)
+  if [[ $ok = "✔" ]] && [[ $BR = "master" ]]; then
+      printf "✔"
   fi
 }
 function notok_git_status {
   local ok=$(__promptline_git_status)
-  if [[ $ok != "✔" ]]; then
-      printf "%s" $ok
+  local BR=$(git rev-parse --abbrev-ref HEAD)
+  if [[ $ok != "✔" ]] || [[ $BR != "master" ]]; then
+      printf " %s  %s" $BR $ok
   fi
 }
 function __promptline_right_prompt {
@@ -141,7 +145,6 @@ function __promptline_right_prompt {
   # section "y" header
   slice_prefix="${y_sep_fg}${rsep}${y_fg}${y_bg}${space}" slice_suffix="$space${y_sep_fg}" slice_joiner="${y_fg}${y_bg}${alt_rsep}${space}" slice_empty_prefix=""
   # section "y" slices
-  __promptline_wrapper "$(__promptline_vcs_branch)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; }
   __promptline_wrapper "$(ok_git_status)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; }
 
   # section "z" header
