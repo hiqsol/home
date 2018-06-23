@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
 " HUD plugins
+Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'
 Plug 'ervandew/supertab'
 Plug 'junegunn/vim-peekaboo'
@@ -118,3 +119,7 @@ let g:fugitive_gitlab_domains = ['https://git.hiqdev.com']
 
 " DBext
 let g:dbext_default_prompt_for_parameters=0
+
+" Ack
+let g:ackprg = 'ag --vimgrep'
+
