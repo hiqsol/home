@@ -32,8 +32,7 @@ nnoremap    <C-W>Q      :qa<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
-nnoremap    ,,          gt
-nnoremap    ,m          gT
+nnoremap    gh          gT
 
 " HUD keys
 nnoremap    <C-S>       :wa<CR>
