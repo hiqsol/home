@@ -17,17 +17,17 @@ Plug 'tpope/vim-unimpaired'
 " HUD plugins
 Plug 'bling/vim-airline'
 Plug 'ervandew/supertab'
+Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/fzf',                            {'dir': '~/.config/fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/vim-peekaboo'
-Plug 'mbbill/undotree'
 Plug 'pbogut/fzf-mru.vim'
+Plug 'mbbill/undotree',                         {'on': 'UndotreeToggle'}
 Plug 'valloric/listtoggle'
 Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
 " Shell helpers
-Plug 'edkolev/promptline.vim'
-Plug 'rkitover/vimpager'
+Plug 'edkolev/promptline.vim',                  {'on': 'PromptlineSnapshot'}
+Plug 'rkitover/vimpager',                       {'on': 'Never'}
 
 " Git plugins
 Plug 'airblade/vim-gitgutter'
@@ -37,34 +37,34 @@ Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
 " REST
-Plug 'aquach/vim-http-client'
-Plug 'diepm/vim-rest-console'
+Plug 'aquach/vim-http-client',                  {'for': 'rest'}
+Plug 'diepm/vim-rest-console',                  {'for': 'rest'}
 
 " DB
 " Plug 'tpope/vim-dadbod'
-Plug 'vim-scripts/dbext.vim'
+Plug 'vim-scripts/dbext.vim',                   {'for': ['sql', 'pgsql']}
 
 " Programming plugins
 Plug 'autozimu/LanguageClient-neovim',          {'do': ':UpdateRemotePlugins'}
 Plug 'joonty/vdebug',                           {'on': 'VdebugRun'}
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar',                       {'on': 'TagbarToggle'}
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'roxma/nvim-completion-manager'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0rp/ale'
 
 " PHP plugins
-Plug 'alvan/vim-php-manual'
-Plug 'everzet/phpfolding.vim'
-Plug 'StanAngeloff/php.vim'
-Plug 'vim-scripts/PDV--phpDocumentor-for-Vim'
-Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
+Plug 'alvan/vim-php-manual',                    {'for': 'php'}
+Plug 'everzet/phpfolding.vim',                  {'for': 'php'}
+Plug 'StanAngeloff/php.vim',                    {'for': 'php'}
+Plug 'vim-scripts/PDV--phpDocumentor-for-Vim',  {'for': 'php'}
+Plug 'roxma/LanguageServer-php-neovim',         {'for': 'php', 'do': 'composer install && composer run-script parse-stubs'}
 
 " Syntax highlighting plugins
-Plug 'elzr/vim-json'
-Plug 'hiqsol/pgsql.vim'
-Plug 'hiqsol/vim-markdown'
-Plug 'lumiliet/vim-twig'
+Plug 'elzr/vim-json',                           {'for': 'json'}
+Plug 'hiqsol/pgsql.vim',                        {'for': 'pgsql'}
+Plug 'hiqsol/vim-markdown',                     {'for': 'markdown'}
+Plug 'lumiliet/vim-twig',                       {'for': 'html.twig'}
 
 " Snippets
 Plug 'SirVer/ultisnips'               " snippet runner

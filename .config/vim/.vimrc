@@ -8,7 +8,6 @@ let myfiletypefile  = "~/.vim/filetype.vim"
 
 source ~/.vim/plugins.vim
 source ~/.vim/options.vim
-source ~/.vim/promptline.vim
 source ~/.vim/keys.vim
 source ~/.vim/functions.vim
 
