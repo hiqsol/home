@@ -14,8 +14,9 @@ nnoremap    <M-/>       /\c
 nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 nnoremap    \/          /\<\><Left><Left>
 nnoremap <silent>   \\  :nohlsearch<CR>
+nnoremap    gr          :Ack<Space>
 
-" General movement keys
+" Movement keys
 noremap     <C-E>       <End>
 
 " Input keys

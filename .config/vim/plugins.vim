@@ -15,7 +15,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
 " HUD plugins
-Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'
 Plug 'ervandew/supertab'
 Plug 'junegunn/vim-peekaboo'
@@ -25,6 +24,11 @@ Plug 'pbogut/fzf-mru.vim'
 Plug 'mbbill/undotree',                         {'on': 'UndotreeToggle'}
 Plug 'valloric/listtoggle'
 Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
+
+" Grep
+Plug 'dkprice/vim-easygrep'
+Plug 'mileszs/ack.vim'
+Plug 'blueyed/vim-qf_resize'
 
 " Shell helpers
 Plug 'edkolev/promptline.vim',                  {'on': 'PromptlineSnapshot'}
@@ -120,6 +124,16 @@ let g:fugitive_gitlab_domains = ['https://git.hiqdev.com']
 " DBext
 let g:dbext_default_prompt_for_parameters=0
 
-" Ack
-let g:ackprg = 'ag --vimgrep'
-
+" Grep
+if executable('rg')
+    set  grepprg=rg\ --vimgrep
+    let g:ackprg='rg --vimgrep'
+else
+    set  grepprg=grep\ -IR
+    let g:ackprg='grep -IR'
+endif
+"let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:qf_resize_max_height = 40
+let g:qf_resize_max_ratio  = 0.5
+let g:EasyGrepCommand = 1
+let g:EasyGrepRoot = 'search:\.'
