@@ -47,20 +47,19 @@ nnoremap    \n          :NERDTreeToggle<CR>
 nnoremap    \u          :UndotreeToggle<CR>
 nnoremap    \m          :Maps<CR>
 
-" Fugitive keys
+" Git keys
 nnoremap    gl          :Glog<CR>
 nnoremap    gb          :Gblame<CR>
 nnoremap    gd          :Gdiff<CR>
-nnoremap    ge          :Gedit<CR>
 nnoremap    gs          :Gstatus<CR>
 nnoremap    gc          :Gcommit --verbose<CR>
-nnoremap    gh          :Gpush<CR>
 nnoremap    go          :Gbrowse<CR>
 nnoremap    gO          :Gbrowse!<CR>
 vnoremap    go          :Gbrowse<CR>
 vnoremap    gO          :Gbrowse!<CR>
 nnoremap    gw          :Gwrite<CR>
-nnoremap    gr          :Gread<CR>
+nnoremap    gpb         :Gpull --rebase<CR>
+nnoremap    gph         :Gpush<CR>
 
 " Programming keys
 nnoremap    \cd         :call PhpDocSingle()<CR>
