@@ -83,6 +83,7 @@ nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
 
 " DB keys
 nnoremap    \sx         :DBExecSQLUnderCursor<CR>
+vnoremap    \sx         :DBExecRangeSQL<CR>
 nnoremap    \sp         vip:DBExecRangeSQL<CR>
 " nnoremap    \sx         :DB g:dadbod_default<CR>
 " vnoremap    \sx         :DB g:dadbod_default<CR>
