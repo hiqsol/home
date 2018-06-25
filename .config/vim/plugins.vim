@@ -38,6 +38,7 @@ Plug 'rkitover/vimpager',                       {'on': 'Never'}
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
