@@ -34,6 +34,11 @@ nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
 nnoremap    gh          gT
+nnoremap    <M-1>       1gt
+nnoremap    <M-2>       2gt
+nnoremap    <M-3>       3gt
+nnoremap    <M-4>       4gt
+nnoremap    <M-5>       5gt
 
 " HUD keys
 nnoremap    <C-S>       :wa<CR>
