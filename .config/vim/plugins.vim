@@ -92,11 +92,7 @@ call plug#end()
 let g:vimpager_passthrough = 1
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeIgnore = ['\~$', '\.pyc$', '\.swp$']
-let g:indentLine_color_term = 7
-let g:indentLine_char = '·' " ''  '︙'
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_max_files=0
 let g:LanguageClient_autoStart = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -106,6 +102,12 @@ let g:SuperTabDefaultCompletionType = '<C-N>'
 let g:SuperTabNoCompleteAfter = ['^', '\s', '"', "'", ',', '.', ':']
 let g:ale_sign_warning = '⇒ '
 let g:airline#extensions#ale#enabled = 1
+
+" Rejected plugins options
+" let g:indentLine_color_term = 7
+" let g:indentLine_char = '·' " ''  '︙'
+" let g:ctrlp_working_path_mode = 0
+" let g:ctrlp_max_files=0
 
 " Vdebug
 let g:vdebug_options = {
@@ -119,7 +121,7 @@ let g:vdebug_options = {
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
-" shumphrey/fugitive-gitlab.vim
+" Git
 let g:fugitive_gitlab_domains = ['https://git.hiqdev.com']
 
 " DBext
