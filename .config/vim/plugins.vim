@@ -22,8 +22,9 @@ Plug 'junegunn/fzf',                            {'dir': '~/.config/fzf', 'do': '
 Plug 'junegunn/fzf.vim'
 Plug 'pbogut/fzf-mru.vim'
 Plug 'mbbill/undotree',                         {'on': 'UndotreeToggle'}
-Plug 'valloric/listtoggle'
 Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
+Plug 'romainl/vim-qf'
+"Plug 'valloric/listtoggle'
 
 " Grep
 Plug 'dkprice/vim-easygrep'
