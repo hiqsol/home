@@ -4,24 +4,26 @@ GREEN="\033[1;32m"
 NOCOLOR="\033[0m"
 
 git_clone() {
-    echo git clone ${GREEN}$*${NOCOLOR}
-    git clone $*
+    src=$1; shift
+    prj=$1; shift
+    pts=(${(s:/:)prj})
+    if [[ -z $pts[2] ]]; then
+        prj="$(basename $PWD)/$pts[1]"
+    fi
+    echo git clone ${GREEN}$src$prj $*${NOCOLOR}
+    git clone $src$prj $*
 }
 
 clone() {
-    git_clone git@github.com:$*;
-}
-
-hclone() {
-    git_clone git@github.com:hiqdev/$*
+    git_clone git@github.com: $*
 }
 
 lclone() {
-    git_clone git@git.hiqdev.com:$*;
+    git_clone git@git.hiqdev.com: $*
 }
 
 pclone() {
-    git_clone ssh://git.solex.me:222/git/$*;
+    git_clone ssh://git.solex.me:222/git/ $*
 }
 
 md() {
