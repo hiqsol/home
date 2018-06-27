@@ -8,6 +8,8 @@ vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><
 " mouse paste without auto indenting
 nnoremap    \R          :r! cat<CR>
 
+nnoremap    Y           y$
+
 " Search keys
 nnoremap    *           *N
 nnoremap    <M-/>       /\c
