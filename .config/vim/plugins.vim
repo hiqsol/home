@@ -52,13 +52,15 @@ Plug 'diepm/vim-rest-console',                  {'for': 'rest'}
 Plug 'vim-scripts/dbext.vim',                   {'for': ['sql', 'pgsql']}
 
 " Programming plugins
-Plug 'autozimu/LanguageClient-neovim',          {'do': ':UpdateRemotePlugins'}
 Plug 'joonty/vdebug',                           {'on': 'VdebugRun'}
 Plug 'majutsushi/tagbar',                       {'on': 'TagbarToggle'}
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'roxma/nvim-completion-manager'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0rp/ale'
+if has('nvim')
+    Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
+endif
 
 " PHP plugins
 Plug 'alvan/vim-php-manual',                    {'for': 'php'}
