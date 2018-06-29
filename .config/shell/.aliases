@@ -11,6 +11,7 @@ alias cdd='cd ~/prj/hiqsol/dotfiles'
 
 alias -g G='| grep'
 alias -g Gi='| grep -i'
+alias -g H='| head'
 alias -g L='| less'
 alias -g R='| less -R'
 alias -g W='| wc'
