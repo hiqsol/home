@@ -12,5 +12,6 @@ while($str = fgets(STDIN)){
         $name = end($fs);
         $class = "$ns\\$name";
         echo "$class $path\n";
+        printf("%-80s %s", $class, $path);
     }
 }

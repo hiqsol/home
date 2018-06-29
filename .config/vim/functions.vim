@@ -47,3 +47,14 @@ command! -bang -nargs=* Rg
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+
+function! s:get_namespace(lines)
+    let s:full = split(join(a:lines), " ")[0]
+    let s:name = split(s:full, "\\")[-1]
+    return s:name . "\nuse " . s:full . ";\n"
+endfunction
+
+inoremap <expr> <C-]> fzf#complete({
+  \ 'source':   'cat ./namespaces.txt',
+  \ 'reducer':  function('<sid>get_namespace'),
+  \ 'down':     20})
