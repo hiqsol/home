@@ -77,6 +77,9 @@ vnoremap    \cd         :call PhpDocRange()<CR>
 nnoremap    \T          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
 nnoremap    <F5>        :VdebugRun<CR>
+nmap        ';          <Plug>(composer-use)
+nmap        '[          <Plug>(composer-find)
+nnoremap    co          :Composer<Space>
 
 nnoremap    \k          :call LanguageClient_textDocument_hover()<CR>
 nnoremap    <C-]>       :call LanguageClient_textDocument_definition()<CR>

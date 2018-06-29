@@ -68,6 +68,7 @@ Plug 'everzet/phpfolding.vim',                  {'for': 'php'}
 Plug 'StanAngeloff/php.vim',                    {'for': 'php'}
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim',  {'for': 'php'}
 Plug 'roxma/LanguageServer-php-neovim',         {'for': 'php', 'do': 'composer install && composer run-script parse-stubs'}
+Plug 'noahfrederick/vim-composer'
 
 " Syntax highlighting plugins
 Plug 'elzr/vim-json',                           {'for': 'json'}
