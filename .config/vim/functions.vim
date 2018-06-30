@@ -48,13 +48,73 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
-function! s:get_namespace(lines)
+function! s:add_namespace(lines)
     let s:full = split(join(a:lines), " ")[0]
     let s:name = split(s:full, "\\")[-1]
-    return s:name . "\nuse " . s:full . ";\n"
+
+    call s:append_use(0, s:full)
+    " call composer#namespace#use(0, s:full)
+
+    return s:name
 endfunction
 
-inoremap <expr> <C-]> fzf#complete({
-  \ 'source':   'cat ./namespaces.txt',
-  \ 'reducer':  function('<sid>get_namespace'),
-  \ 'down':     20})
+function! s:append_use(sort, ...) abort
+  let class = get(a:000, 0, '')
+  let alias = get(a:000, 1, '')
+  let sort = !empty(a:sort)
+
+  if !empty(composer#namespace#using(empty(alias) ? class : alias))
+    echohl WarningMsg
+    echomsg 'Use statement for ' . class . ' already exists'
+    echohl None
+    return
+  endif
+
+  call s:append_use_only(class, alias)
+
+  if sort
+    call composer#namespace#sort_uses()
+  endif
+
+  return ''
+endfunction
+
+function! s:append_use_only(class, alias)
+    let line = 'use ' . a:class
+    if !empty(a:alias)
+        let line .= ' as ' . a:alias
+    endif
+    let line .= ';'
+
+    let pos = search('^use\_s\_[[:alnum:][:blank:]\\,_]\+;', 'nwbe')
+    if pos > 0
+        call append(pos, line)
+        return ''
+    endif
+
+    let pos = search('^\s*namespace\_s\_[[:alnum:]\\_]\+;', 'nwbe')
+    if pos > 0
+        call append(pos+1, '')
+        call append(pos+1, line)
+        return ''
+    endif
+
+    let pos = search('<?\%(php\)\?', 'nwbe')
+    if pos > 0
+        call append(pos, '')
+        call append(pos, line)
+        return ''
+    endif
+
+    call append(line('.'), line)
+    return ''
+endfunction
+
+function! CompletePhpClass()
+    return fzf#complete({
+        \ 'source':   '/home/sol/bin/listGreppedClasses.php',
+        \ 'reducer':  function('s:add_namespace'),
+        \ 'down':     20})
+endfunction
+
+inoremap <expr> <C-]> CompletePhpClass()
