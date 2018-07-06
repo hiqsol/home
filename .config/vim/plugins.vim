@@ -97,7 +97,7 @@ let g:vimpager_passthrough = 1
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeIgnore = ['\~$', '\.pyc$', '\.swp$']
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
-let g:LanguageClient_autoStart = 1
+let g:LanguageClient_autoStart = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:lt_location_list_toggle_map = '<leader>l'
@@ -117,7 +117,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:vdebug_options = {
 \   'timeout': 60,
 \   'path_maps': {
-\       "/app": "/home/sol/prj/ahnames/sol-dev-hipanel.ahnames.com"
+\       "/app": "/home/sol/prj/hiqdev/file.api.hiqdev.com"
 \   }
 \}
 
