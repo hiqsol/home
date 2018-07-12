@@ -122,14 +122,14 @@ function sol_host {
 }
 function ok_git_status {
   local ok=$(__promptline_git_status)
-  local BR=$(git rev-parse --abbrev-ref HEAD)
+  local BR=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
   if [[ $ok = "✔" ]] && [[ $BR = "master" ]]; then
       printf "✔"
   fi
 }
 function notok_git_status {
   local ok=$(__promptline_git_status)
-  local BR=$(git rev-parse --abbrev-ref HEAD)
+  local BR=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
   if [[ $ok != "✔" ]] || [[ $BR != "master" ]]; then
       printf " %s  %s" $BR $ok
   fi
