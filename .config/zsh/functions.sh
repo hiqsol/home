@@ -9,9 +9,13 @@ git_clone() {
     pts=(${(s:/:)prj})
     if [[ -z $pts[2] ]]; then
         prj="$(basename $PWD)/$pts[1]"
+        dir=$pts[1]
+    else
+        dir=$pts[2]
     fi
     echo git clone ${GREEN}$src$prj $*${NOCOLOR}
     git clone $src$prj $*
+    cd $dir
 }
 
 clone() {
