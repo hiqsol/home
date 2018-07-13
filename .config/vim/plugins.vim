@@ -67,7 +67,7 @@ Plug 'alvan/vim-php-manual',                    {'for': 'php'}
 Plug 'everzet/phpfolding.vim',                  {'for': 'php'}
 Plug 'StanAngeloff/php.vim',                    {'for': 'php'}
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim',  {'for': 'php'}
-Plug 'roxma/LanguageServer-php-neovim',         {'for': 'php', 'do': 'composer install && composer run-script parse-stubs'}
+"Plug 'roxma/LanguageServer-php-neovim',         {'for': 'php', 'do': 'composer install && composer run-script parse-stubs'}
 Plug 'noahfrederick/vim-composer'
 
 " Syntax highlighting plugins
@@ -98,6 +98,7 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeIgnore = ['\~$', '\.pyc$', '\.swp$']
 let g:markdown_fenced_languages = ['php', 'python', 'sh', 'css', 'javascript', 'js=javascript', 'json=javascript', 'yaml', 'yml=yaml', 'xml']
 let g:LanguageClient_autoStart = 0
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:lt_location_list_toggle_map = '<leader>l'
