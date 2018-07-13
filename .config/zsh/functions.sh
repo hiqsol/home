@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 GREEN="\033[1;32m"
+YELLOW="\033[1;33m"
 NOCOLOR="\033[0m"
 
 git_clone() {
@@ -13,7 +14,7 @@ git_clone() {
     else
         dir=$pts[2]
     fi
-    echo git clone ${GREEN}$src$prj $*${NOCOLOR}
+    echo git clone ${GREEN}$src$prj ${YELLOW}$*${NOCOLOR}
     git clone $src$prj $*
     cd $dir
 }
