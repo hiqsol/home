@@ -10,7 +10,7 @@
 [alias]
     branch-name = "!git rev-parse --abbrev-ref HEAD"
     a           = add
-    ca          = commit --amend
+    ca          = commit -v --amend
     ci          = commit -v
     cu          = commit -am 'updated deps'
     cf          = commit -am csfixed
