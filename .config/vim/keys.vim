@@ -36,7 +36,7 @@ nnoremap    <C-W>Q      :qa<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
 nnoremap    <C-W>x      :tabclose<CR>
-nnoremap    gh          gT
+nnoremap    gv          gT
 nnoremap    <M-1>       1gt
 nnoremap    <M-2>       2gt
 nnoremap    <M-3>       3gt
