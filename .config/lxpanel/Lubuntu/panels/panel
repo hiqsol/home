@@ -47,9 +47,6 @@ Plugin {
     Button {
       id=firefox.desktop
     }
-    Button {
-      id=chromium-browser.desktop
-    }
     FlatButton=0
     GroupedTasks=0
     UseSmallerIcons=-1
@@ -98,6 +95,18 @@ Plugin {
 Plugin {
   type=tray
   Config {
+  }
+}
+Plugin {
+  type=thermal
+  Config {
+    NormalColor=#555555
+    Warning1Color=#fff000
+    Warning2Color=#ff0000
+    AutomaticLevels=0
+    Warning1Temp=70
+    Warning2Temp=90
+    AutomaticSensor=1
   }
 }
 Plugin {
