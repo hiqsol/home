@@ -10,6 +10,4 @@ au! BufNewFile,BufRead composer.lock            set filetype=json
 au FileType php let b:syntastic_php_phpmd_args =
     \ @% . ' text /home/sol/.vim/phpmd.xml'
 
-au FileType php LanguageClientStart
-
 au FileType tagbar,nerdtree setlocal signcolumn=no
