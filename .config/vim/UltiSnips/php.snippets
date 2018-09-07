@@ -13,6 +13,16 @@ snippet @a "PHP Author"
 @author Andrii Vasyliev <sol@hiqdev.com>
 endsnippet
 
+snippet @author "PHP Author"
+@author Andrii Vasyliev <sol@hiqdev.com>
+endsnippet
+
+snippet inh "PHPdoc inheritdoc"
+/**
+ * {@inheritdoc}
+ */
+endsnippet
+
 snippet gsm "PHP Getter and Setter" b
 /** @var ${2:string} */
 protected $${1:value};
@@ -58,4 +68,11 @@ snippet inh "PHP inheritdoc doc block"
 /**
  * {@inheritdoc}
  */
+endsnippet
+
+snippet try "PHP try"
+try {
+	$1
+} catch (\Exception $${2:e}) {
+}
 endsnippet
