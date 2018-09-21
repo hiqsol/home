@@ -9,7 +9,7 @@ class ${2:$1}
 }
 endsnippet
 
-snippet @a "PHP Author"
+snippet @author "PHP Author"
 @author Andrii Vasyliev <sol@hiqdev.com>
 endsnippet
 
@@ -32,7 +32,7 @@ protected $${1:value};
  * @param $2 $$1
  * @return ${4:self}
  */
-${5:public} function set${1/\w+\s*/\u$0/}(${7:$2 }$$1): $4
+${5:public} function set${1/_?(\w+\s*)/\u$1/}(${7:$2 }$$1): $4
 {
 	$this->${8:$1} = $$1;
 	return $this;
@@ -42,7 +42,7 @@ ${5:public} function set${1/\w+\s*/\u$0/}(${7:$2 }$$1): $4
  * Gets the value of ${9:$3}.
  * @return ${10:$2}
  */
-${11:$5} function get${1/\w+\s*/\u$0/}(): $2
+${11:$5} function get${1/_?(\w+\s*)/\u$1/}(): $2
 {
 	return $this->$8;
 }
