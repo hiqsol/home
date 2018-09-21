@@ -120,7 +120,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:vdebug_options = {
 \   'timeout': 60,
 \   'path_maps': {
-\       "/app": "/home/sol/prj/hiqdev/file.api.hiqdev.com"
+\       "/app": "/home/sol/prj/hiqsol/app-template.hiqdev.com"
 \   }
 \}
 
