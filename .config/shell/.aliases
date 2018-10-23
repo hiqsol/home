@@ -2,10 +2,10 @@
 
 alias grep='grep --color=auto'
 
-alias l="ls -lAF ${ls_options}"
-alias lh="ls -lF ${ls_options}"
-alias la="ls -laF ${ls_options}"
-alias ll="ls -lAF ${ls_options}"
+alias l="ls -lAFh ${ls_options}"
+alias lh="ls -lFh ${ls_options}"
+alias la="ls -laFh ${ls_options}"
+alias ll="ls -lAFh ${ls_options}"
 alias cd='cdls'
 alias cdd='cd ~/prj/hiqsol/dotfiles'
 
