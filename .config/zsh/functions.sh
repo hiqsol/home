@@ -123,7 +123,7 @@ ydl() {
     $file $@
 }
 
-bashinto() {
+dbash() {
     docker exec -it $1 bash -c "stty cols $COLUMNS rows $LINES && bash";
 }
 
