@@ -20,6 +20,7 @@ set history=999                 " keep given lines of command line history
 set hidden                      " required for operations modifying multiple buffers like rename
 
 " HUD
+set lazyredraw                  " really faster redrawing
 set ruler                       " show the cursor position all the time
 set norelativenumber            " don't show relative line numbers
 set nonumber                    " don't show absolute line
