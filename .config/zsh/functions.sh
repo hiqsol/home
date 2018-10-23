@@ -127,6 +127,10 @@ dbash() {
     docker exec -it $1 bash -c "stty cols $COLUMNS rows $LINES && bash";
 }
 
+dpsql() {
+    docker exec -it --user postgres $1 sh -c "stty cols $COLUMNS rows $LINES && psql $2";
+}
+
 hub() {
     file="/usr/local/bin/hub"
 
