@@ -10,6 +10,10 @@ nnoremap    \R          :r! cat<CR>
 
 nnoremap    Y           y$
 
+" decrease number
+nnoremap    <A-x>       <C-x>
+vnoremap    <A-x>       <C-x>
+
 " Search keys
 nnoremap    *           *N
 nnoremap    <M-/>       /\c
