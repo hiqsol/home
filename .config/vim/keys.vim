@@ -36,6 +36,7 @@ inoremap    <C-L>       <Right>
 " Windows/Tabs
 nnoremap    <C-W>a      :tabnew<Space>
 nnoremap    <C-W>e      :e<CR>
+nnoremap    <C-W>O      :tabonly<CR><C-W>o
 nnoremap    <C-W>Q      :qa<CR>
 nnoremap    <C-W>u      <C-W>t<C-W>l
 nnoremap    <C-W><Tab>  :tabnew<CR>
