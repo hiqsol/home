@@ -42,10 +42,10 @@ Plugin {
   type=launchtaskbar
   Config {
     Button {
-      id=menu://applications/Accessories/pcmanfm.desktop
+      id=firefox.desktop
     }
     Button {
-      id=firefox.desktop
+      id=menu://applications/Accessories/pcmanfm.desktop
     }
     FlatButton=0
     GroupedTasks=0
