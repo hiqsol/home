@@ -131,6 +131,14 @@ dpsql() {
     docker exec -it --user postgres $1 sh -c "stty cols $COLUMNS rows $LINES && psql $2";
 }
 
+dcbash() {
+    docker-compose exec $1 bash -c "stty cols $COLUMNS rows $LINES && bash";
+}
+
+dcpsql() {
+    docker-compose exec --user postgres pgsql sh -c "stty cols $COLUMNS rows $LINES && psql $@";
+}
+
 hub() {
     file="/usr/local/bin/hub"
 
