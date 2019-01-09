@@ -54,7 +54,8 @@ nnoremap    <C-J>       :BLines<CR>
 nnoremap    <C-K>       :FZFMru<CR>
 nnoremap    <C-P>       :FZF<CR>
 nnoremap    z8          :FZF -q <C-R><C-W><CR>
-nnoremap    <C-L>       :GitGutterAll<CR><C-L>:echo expand('%:p')<CR>
+nnoremap    <C-L>       :GitGutterAll<CR><C-L>
+nnoremap    <C-G>       :echo expand('%:p')<CR>
 nnoremap    <C-F>       :call ToggleLeft()<CR>
 nnoremap    <C-N>       :NERDTreeFind<CR>
 nnoremap    \n          :NERDTreeToggle<CR>
