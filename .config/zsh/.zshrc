@@ -49,7 +49,7 @@ source ~/.config/zsh/promptline.sh
 ### PLUGINS
 plugins=(
     ~/.fzf.zsh
-    ~/prj/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ~/.vim/plugged/zsh-autosuggestions/zsh-autosuggestions.zsh
     ~/.config/zsh/local.sh
 )
 

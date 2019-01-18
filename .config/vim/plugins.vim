@@ -82,6 +82,9 @@ Plug 'lumiliet/vim-twig',                       {'for': 'html.twig'}
 Plug 'SirVer/ultisnips'               " snippet runner
 Plug 'honza/vim-snippets'             " snippets library
 
+" ZSH plugins
+Plug 'zsh-users/zsh-autosuggestions'
+
 " Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
 "Plug 'Yggdroot/indentLine'           " show indent levels, slows down inteface
