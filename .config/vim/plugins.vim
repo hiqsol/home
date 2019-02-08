@@ -67,10 +67,10 @@ Plug 'vim-scripts/PDV--phpDocumentor-for-Vim',  {'for': 'php'}
 Plug 'noahfrederick/vim-composer'
 
 " Language server - disabled for the moment
-if has('nvim')
-    Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
-endif
-Plug 'roxma/LanguageServer-php-neovim',         {'for': 'php', 'do': 'composer install && composer run-script parse-stubs'}
+" if has('nvim')
+"     Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
+" endif
+" "Plug 'roxma/LanguageServer-php-neovim',         {'for': 'php', 'do': 'composer install && composer run-script parse-stubs'}
 
 " Syntax highlighting plugins
 Plug 'elzr/vim-json',                           {'for': 'json'}
