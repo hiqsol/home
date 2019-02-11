@@ -15,28 +15,30 @@ alias -g H='| head'
 alias -g L='| less'
 alias -g R='| less -R'
 alias -g W='| wc'
-alias apg='apg -M SNCL -m 12'
+
 alias c='composer'
-alias dc='docker-compose'
 alias g='git'
 alias h='hidev'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
 alias v='nvim'
-alias lo='local-open'
-alias vconfig='v ~/.vimrc'
-alias vimdiff='v -d'
-alias z='zc'
-alias zconfig='v ~/.config/zsh/.zshrc'
 alias Z='zcalc'
-alias gogh='wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh'
+
+alias d1='du -hd1'
+alias dc='docker-compose'
 alias gg='git grep'
 alias gr='rg'
+alias lo='local-open'
+
+alias apg='apg -M SNCL -m 12'
 alias gir='grep -IR'
 alias girp='grep -IR --include=\*.php --exclude-dir=vendor'
 alias vpn="ovpn default"
+alias gogh='wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh'
 alias x509="openssl x509 -text -noout -in"
 alias ymp3="ydl --extract-audio --audio-format mp3"
-alias d1='du -hd1'
+alias vconfig='v ~/.vimrc'
+alias vimdiff='v -d'
+alias zconfig='v ~/.config/zsh/.zshrc'
 
 # no spelling correction on mv
 alias mv='nocorrect mv'
