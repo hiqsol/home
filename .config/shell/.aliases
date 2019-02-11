@@ -17,6 +17,7 @@ alias -g R='| less -R'
 alias -g W='| wc'
 
 alias c='composer'
+alias d='docker'
 alias g='git'
 alias h='hidev'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
