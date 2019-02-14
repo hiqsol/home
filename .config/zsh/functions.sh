@@ -123,6 +123,14 @@ ydl() {
     $file $@
 }
 
+drun() {
+    docker run -it --rm --name run -v "$PWD":/app -w /app $@
+}
+
+dphp71() {
+    drun php:7.1-cli php $@
+}
+
 dbash() {
     docker exec -it $1 bash -c "stty cols $COLUMNS rows $LINES && bash";
 }
