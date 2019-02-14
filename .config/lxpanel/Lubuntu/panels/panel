@@ -42,6 +42,9 @@ Plugin {
   type=launchtaskbar
   Config {
     Button {
+      id=chromium-browser.desktop
+    }
+    Button {
       id=firefox.desktop
     }
     Button {
