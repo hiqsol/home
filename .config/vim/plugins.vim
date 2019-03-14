@@ -55,7 +55,7 @@ Plug 'vim-scripts/dbext.vim',                   {'for': ['sql', 'pgsql']}
 Plug 'joonty/vdebug',                           {'on': 'VdebugRun'}
 Plug 'majutsushi/tagbar',                       {'on': 'TagbarToggle'}
 Plug 'michaeljsmith/vim-indent-object'
-Plug 'roxma/nvim-completion-manager'
+"Plug 'roxma/nvim-completion-manager'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0rp/ale'
 
