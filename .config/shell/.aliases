@@ -37,6 +37,7 @@ alias vpn="ovpn default"
 alias gogh='wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh'
 alias x509="openssl x509 -text -noout -in"
 alias ymp3="ydl --extract-audio --audio-format mp3"
+alias ypl3="ydl --extract-audio --audio-format mp3 -w --no-post-overwrites --download-archive .archive.txt --ignore-errors -o '%(title)s.%(ext)s'"
 alias vconfig='v ~/.vimrc'
 alias vimdiff='v -d'
 alias zconfig='v ~/.config/zsh/.zshrc'
