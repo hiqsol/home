@@ -51,11 +51,17 @@ Plug 'diepm/vim-rest-console',                  {'for': 'rest'}
 " Plug 'tpope/vim-dadbod'
 Plug 'vim-scripts/dbext.vim',                   {'for': ['sql', 'pgsql']}
 
+" Completion
+Plug 'roxma/nvim-completion-manager'
+"Plug 'ncm2/ncm2'
+"Plug 'roxma/nvim-yarp'
+"Plug 'ncm2/ncm2-bufword'
+"Plug 'ncm2/ncm2-path'
+
 " Programming plugins
 Plug 'joonty/vdebug',                           {'on': 'VdebugRun'}
 Plug 'majutsushi/tagbar',                       {'on': 'TagbarToggle'}
 Plug 'michaeljsmith/vim-indent-object'
-"Plug 'roxma/nvim-completion-manager'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0rp/ale'
 
@@ -150,3 +156,7 @@ let g:qf_resize_max_height = 40
 let g:qf_resize_max_ratio  = 0.5
 let g:EasyGrepCommand = 1
 let g:EasyGrepRoot = 'search:\.'
+
+" ncm2
+"autocmd BufEnter * call ncm2#enable_for_buffer()
+"set completeopt=noinsert,menuone,noselect
