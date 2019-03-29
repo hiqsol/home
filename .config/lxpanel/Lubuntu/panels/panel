@@ -42,6 +42,9 @@ Plugin {
   type=launchtaskbar
   Config {
     Button {
+      id=menu://applications/Accessories/pcmanfm.desktop
+    }
+    Button {
       id=chromium-browser.desktop
     }
     Button {
@@ -75,7 +78,7 @@ Plugin {
 Plugin {
   type=space
   Config {
-    Size=3
+    Size=4
   }
 }
 Plugin {
@@ -89,10 +92,21 @@ Plugin {
     Model=pc105
     LayoutsList=us,ru,ua
     VariantsList=,,
-    ToggleOpt=grp:shift_caps_switch,grp:lalt_lshift_toggle
+    ToggleOpt=grp:shift_caps_switch,grp:alt_shift_toggle
+    PerWinLayout=1
     KeepSysLayouts=0
     FlagSize=2
-    PerWinLayout=1
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=4
+  }
+}
+Plugin {
+  type=bluetooth
+  Config {
   }
 }
 Plugin {
