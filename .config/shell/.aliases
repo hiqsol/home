@@ -6,8 +6,6 @@ alias l="ls -lAFh ${ls_options}"
 alias lh="ls -lFh ${ls_options}"
 alias la="ls -laFh ${ls_options}"
 alias ll="ls -lAFh ${ls_options}"
-alias cd='cdls'
-alias cdd='cd ~/prj/hiqsol/dotfiles'
 
 alias -g G='| grep'
 alias -g Gi='| grep -i'
@@ -58,6 +56,9 @@ alias tmux-ls="tmux list-panes -aF '#{session_name}:#{window_index}:#{pane_index
 alias quotes=~/prj/hiqsol/quotes/bin/quotes
 alias rehome=~/prj/hiqdev/rehome/rehome
 
+alias cd='cdls'
+alias cdc='cd core'
+alias cdd='cd ~/prj/hiqsol/dotfiles'
 alias -- -='cd -'
 alias .='cd ..'
 alias ..='cd ../..'
