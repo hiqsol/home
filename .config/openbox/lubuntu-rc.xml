@@ -157,7 +157,7 @@
 
 <resize>
   <!--  Lubuntu specific : Don't draw content on resize (too heavy).
-        <drawContents>no</drawContents>
+        <drawContents>no</drawContents> 
   -->
   <drawContents>no</drawContents>
   <popupShow>Nonpixel</popupShow>
@@ -267,7 +267,6 @@
   <!-- Keybindings for window switching -->
   <keybind key="A-Tab">
     <action name="NextWindow">
-      <dialog>icons</dialog>
       <finalactions>
         <action name="Focus"/>
         <action name="Raise"/>
@@ -440,7 +439,7 @@
   <!-- Lock the screen on Ctrl + Alt + l-->
   <keybind key="C-A-l">
     <action name="Execute">
-      <command>lxlock</command>
+      <command>lxsession-default lock</command>
     </action>
   </keybind>
 
@@ -559,10 +558,6 @@
   <keybind key="W-4">
     <action name="GoToDesktop"><to>4</to></action>
   </keybind>
-  <keybind key="W-d">
-    <action name="ToggleShowDesktop"/>
-  </keybind>
-
   <keybind key="W-5">
     <action name="GoToDesktop"><to>5</to></action>
   </keybind>
@@ -622,7 +617,7 @@
   </keybind>
 
   <!-- Move window to other monitor -->
-  <keybind key="W-L">
+  <keybind key="W-l">
       <action name="MoveResizeTo">
           <monitor>next</monitor>
       </action>
@@ -725,7 +720,7 @@
     </mousebind>
     <mousebind button="A-Right" action="Drag">
       <action name="Resize"/>
-    </mousebind>
+    </mousebind> 
 
     <mousebind button="A-Middle" action="Press">
       <action name="Lower"/>
@@ -977,7 +972,7 @@
     <!-- Menus -->
     <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
-    </mousebind>
+    </mousebind> 
     <mousebind button="Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
@@ -1043,7 +1038,7 @@
          groupclass="the window's _OB_APP_GROUP_CLASS property (see obxprop)"
                role="the window's _OB_APP_ROLE property (see obxprop)"
               title="the window's _OB_APP_TITLE property (see obxprop)"
-               type="the window's _OB_APP_TYPE property (see obxprop)..
+               type="the window's _OB_APP_TYPE property (see obxprob)..
                       (if unspecified, then it is 'dialog' for child windows)">
   # you may set only one of name/class/role/title/type, or you may use more
   # than one together to restrict your matches.
@@ -1059,7 +1054,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not
+    # each rule element can be left out or set to 'default' to specify to not 
     # change that attribute of the window
 
     <decor>yes</decor>
@@ -1125,13 +1120,14 @@
 
   # end of the example
 -->
+
   <!-- Option to maximize all normal window when launched-->
   <!--
   <application type="normal">
     <maximized>true</maximized>
   </application>
   -->
-  <!--
+  <!--    
         Lubuntu specific :
         Focus all applications launched
         Usefull when launching applications, like terminal from pcmanfm
