@@ -45,13 +45,10 @@ Plugin {
       id=menu://applications/Accessories/pcmanfm.desktop
     }
     Button {
-      id=chromium-browser.desktop
-    }
-    Button {
       id=firefox.desktop
     }
     Button {
-      id=menu://applications/Accessories/pcmanfm.desktop
+      id=chromium-browser.desktop
     }
     FlatButton=0
     GroupedTasks=0
