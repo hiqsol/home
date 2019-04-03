@@ -1,10 +1,7 @@
 #!/bin/sh
 
-alias grep='grep --color=auto'
-
-alias l="ls -lAFh ${ls_options}"
-alias lh="ls -lFh ${ls_options}"
 alias la="ls -laFh ${ls_options}"
+alias lh="ls -lFh  ${ls_options}"
 alias ll="ls -lAFh ${ls_options}"
 
 alias -g G='| grep'
@@ -18,6 +15,8 @@ alias c='composer'
 alias d='docker'
 alias g='git'
 alias h='hidev'
+alias l='ll'
+alias p='psql_default'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
 alias v='nvim'
 alias Z='zcalc'
@@ -31,6 +30,7 @@ alias lo='local-open'
 alias apg='apg -M SNCL -m 12'
 alias gir='grep -IR'
 alias girp='grep -IR --include=\*.php --exclude-dir=vendor'
+alias grep='grep --color=auto'
 alias vpn="ovpn default"
 alias gogh='wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh'
 alias x509="openssl x509 -text -noout -in"

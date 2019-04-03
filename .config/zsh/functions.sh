@@ -79,7 +79,7 @@ cdo() {
     cd "/$pts[1]/$pts[2]/$pts[3]/$pts[4]"
 }
 
-p() {
+psql_default() {
     if [ -z "$1" ]; then
         a=`cat $HOME/hostname`
     else
