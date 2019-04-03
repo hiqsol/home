@@ -602,7 +602,7 @@
   </keybind>
   <keybind key="W-k">
     <action name="execute">
-      <command>~/sbin/keepass</command>
+      <command>keepassxc</command>
     </action>
   </keybind>
   <keybind key="W-b">
