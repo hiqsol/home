@@ -543,9 +543,6 @@
   <keybind key="W-F11">
     <action name="Reconfigure"/>
   </keybind>
-  <keybind key="W-`">
-    <action name="GoToDesktop"><to>7</to></action>
-  </keybind>
   <keybind key="W-1">
     <action name="GoToDesktop"><to>1</to></action>
   </keybind>
@@ -599,6 +596,60 @@
   </keybind>
   <keybind key="W-y">
     <action name="GoToDesktop"><to>12</to></action>
+  </keybind>
+  <keybind key="C-W-1">
+    <action name="SendToDesktop"><to>1</to></action>
+  </keybind>
+  <keybind key="C-W-2">
+    <action name="SendToDesktop"><to>2</to></action>
+  </keybind>
+  <keybind key="C-W-3">
+    <action name="SendToDesktop"><to>3</to></action>
+  </keybind>
+  <keybind key="C-W-4">
+    <action name="SendToDesktop"><to>4</to></action>
+  </keybind>
+  <keybind key="C-W-5">
+    <action name="SendToDesktop"><to>5</to></action>
+  </keybind>
+  <keybind key="C-W-6">
+    <action name="SendToDesktop"><to>6</to></action>
+  </keybind>
+  <keybind key="C-W-7">
+    <action name="SendToDesktop"><to>7</to></action>
+  </keybind>
+  <keybind key="C-W-8">
+    <action name="SendToDesktop"><to>8</to></action>
+  </keybind>
+  <keybind key="C-W-9">
+    <action name="SendToDesktop"><to>9</to></action>
+  </keybind>
+  <keybind key="C-W-0">
+    <action name="SendToDesktop"><to>10</to></action>
+  </keybind>
+  <keybind key="C-W-minus">
+    <action name="SendToDesktop"><to>11</to></action>
+  </keybind>
+  <keybind key="C-W-grave">
+    <action name="SendToDesktop"><to>12</to></action>
+  </keybind>
+  <keybind key="C-W-q">
+    <action name="SendToDesktop"><to>7</to></action>
+  </keybind>
+  <keybind key="C-W-w">
+    <action name="SendToDesktop"><to>8</to></action>
+  </keybind>
+  <keybind key="C-W-e">
+    <action name="SendToDesktop"><to>9</to></action>
+  </keybind>
+  <keybind key="C-W-r">
+    <action name="SendToDesktop"><to>10</to></action>
+  </keybind>
+  <keybind key="C-W-t">
+    <action name="SendToDesktop"><to>11</to></action>
+  </keybind>
+  <keybind key="C-W-y">
+    <action name="SendToDesktop"><to>12</to></action>
   </keybind>
   <keybind key="W-k">
     <action name="execute">
