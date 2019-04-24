@@ -21,6 +21,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 nnoremap    \/          /\<\><Left><Left>
 nnoremap <silent>   \\  :nohlsearch<CR>
 nnoremap    gr          :Ack!<Space>
+nnoremap    g8          :Ack!<Space><C-R><C-W><CR>
 nmap        <M-8>       <Plug>EgMapGrepCurrentWord_v
 
 " Movement keys
