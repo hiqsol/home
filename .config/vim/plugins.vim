@@ -53,8 +53,8 @@ Plug 'vim-scripts/dbext.vim',                   {'for': ['sql', 'pgsql']}
 
 " Completion
 Plug 'roxma/nvim-completion-manager'
-"Plug 'ncm2/ncm2'
-"Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'                          " Yet Another Remote Plugin Framework for Neovim
 "Plug 'ncm2/ncm2-bufword'
 "Plug 'ncm2/ncm2-path'
 
@@ -86,10 +86,8 @@ Plug 'honza/vim-snippets'             " snippets library
 Plug 'zsh-users/zsh-autosuggestions'
 
 " Language server - disabled for the moment
-" if has('nvim')
-"     Plug 'autozimu/LanguageClient-neovim',      {'do': ':UpdateRemotePlugins'}
-" endif
-" Plug 'roxma/LanguageServer-php-neovim',         {'for': 'php', 'do': 'composer install && composer run-script parse-stubs'}
+Plug 'autozimu/LanguageClient-neovim',          {'branch': 'next', 'do': 'bash install.sh'}
+Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
 " Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support, didn't help

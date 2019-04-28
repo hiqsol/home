@@ -14,3 +14,5 @@ au FileType php let b:syntastic_php_phpmd_args =
 au FileType tagbar,nerdtree setlocal signcolumn=no
 
 au FileType yaml setlocal ts=2 sw=2 expandtab
+
+autocmd FileType php LanguageClientStart
