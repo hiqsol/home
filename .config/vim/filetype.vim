@@ -15,4 +15,4 @@ au FileType tagbar,nerdtree setlocal signcolumn=no
 
 au FileType yaml setlocal ts=2 sw=2 expandtab
 
-autocmd FileType php LanguageClientStart
+"autocmd FileType php LanguageClientStart
