@@ -26,6 +26,7 @@ alias dc='docker-compose'
 alias gg='git grep'
 alias gr='rg'
 alias lo='local-open'
+alias vc='vcat'
 alias vd='v -d'
 
 alias apg='apg -M SNCL -m 12'
