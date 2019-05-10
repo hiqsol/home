@@ -13,7 +13,7 @@ export CLICOLOR=1
 ### See later: https://github.com/trapd00r/LS_COLORS
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 ### Proper 256-colors TERM
-export TERM=tmux-256color
+export TERM=screen-256color
 
 ### LESS config TODO ???
 # export LESS=-S
