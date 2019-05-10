@@ -34,6 +34,16 @@ endfunction
 
 command! Only call OnlyAndNerdtree()
 
+function! NerdTreeToggleFind()
+    if exists("g:NERDTree") && g:NERDTree.IsOpen()
+        NERDTreeClose
+    elseif bufexists(expand('%'))
+        NERDTreeFind
+    else
+        NERDTree
+    endif
+endfunction
+
 function! RunVdebug()
     call plug#load('vdebug')
     python debugger.run()
