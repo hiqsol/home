@@ -37,7 +37,7 @@ command! Only call OnlyAndNerdtree()
 function! NerdTreeToggleFind()
     if exists("g:NERDTree") && g:NERDTree.IsOpen()
         NERDTreeClose
-    elseif bufexists(expand('%'))
+    elseif filereadable(expand('%'))
         NERDTreeFind
     else
         NERDTree
