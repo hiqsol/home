@@ -1,0 +1,6 @@
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+MAILTO=andrii.vasyliev@gmail.com
+DISPLAY=:0
+
+*     * * * * sleep 00;/usr/bin/xset r rate 200 40
+*     * * * * sleep 01;/usr/bin/crontab -l > /home/sol/.config/crontab/crontab.cron
