@@ -44,8 +44,8 @@ Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin',             {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 
 " REST
-Plug 'aquach/vim-http-client',                  {'for': 'rest'}
-Plug 'diepm/vim-rest-console',                  {'for': 'rest'}
+Plug 'aquach/vim-http-client'
+Plug 'diepm/vim-rest-console'
 
 " DB
 " Plug 'tpope/vim-dadbod'
