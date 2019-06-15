@@ -91,10 +91,8 @@ Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && comp
 
 " Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
-"Plug 'Yggdroot/indentLine'           " show indent levels, slows down inteface
 "Plug 'mkitt/tabline.vim'             " shows tab number, filename and [+], substituted with vim-airline
 "Plug 'joonty/vim-phpqa'              " show code coverage
-"Plug 'kien/ctrlp.vim'                " substituted with FZF
 "Plug 'roxma/python-support.nvim'     " doesn't help, seems to make worse
 "Plug 'jistr/vim-nerdtree-tabs',      " no need with FZF
 "Plug 'scrooloose/syntastic'          " substituted with ALE
@@ -116,12 +114,6 @@ let g:SuperTabDefaultCompletionType = '<C-N>'
 let g:SuperTabNoCompleteAfter = ['^', '\s', '"', "'", ',', '.', ':']
 let g:ale_sign_warning = '⇒ '
 let g:airline#extensions#ale#enabled = 1
-
-" Rejected plugins options
-" let g:indentLine_color_term = 7
-" let g:indentLine_char = '·' " ''  '︙'
-" let g:ctrlp_working_path_mode = 0
-" let g:ctrlp_max_files=0
 
 " Vdebug
 let g:vdebug_options = {
