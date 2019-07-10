@@ -23,6 +23,7 @@ alias Z='zcalc'
 
 alias d1='du -hd1'
 alias dc='docker-compose'
+alias dp='docker_psql_default'
 alias gg='git grep'
 alias gr='rg'
 alias lo='local-open'

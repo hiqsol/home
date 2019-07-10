@@ -94,6 +94,15 @@ psql_default() {
     command psql $a
 }
 
+docker_psql_default() {
+    if [ -z "$1" ]; then
+        a=pgsql
+    else
+        a=$1
+    fi
+    psql -h $a -U postgres postgres
+}
+
 composer() {
     file="$HOME/sbin/composer"
 
