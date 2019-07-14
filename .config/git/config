@@ -22,6 +22,7 @@
     pb          = pull --rebase
     ph          = push
     d           = diff -U0 --
+    dc          = diff --cached
     df          = diff
     vimdiff     = difftool
     br          = branch
