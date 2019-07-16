@@ -96,11 +96,18 @@ psql_default() {
 
 docker_psql_default() {
     if [ -z "$1" ]; then
-        a=pgsql
+        host=pgsql
     else
-        a=$1
+        host=$1
+        shift
     fi
-    psql -h $a -U postgres postgres
+    if [ -z "$1" ]; then
+        name=postgres
+    else
+        name=$1
+        shift
+    fi
+    psql -h $host -U postgres $name "$@"
 }
 
 composer() {
