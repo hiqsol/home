@@ -7,6 +7,11 @@ NOCOLOR="\033[0m"
 git_clone() {
     src=$1; shift
     prj=$1; shift
+    if [[ "$#" -ne 0 ]]; then
+        dst=$1; shift
+    else
+        dst=""
+    fi
     pts=(${(s:/:)prj})
     if [[ -z $pts[2] ]]; then
         prj="$(basename $PWD)/$pts[1]"
@@ -14,9 +19,12 @@ git_clone() {
     else
         dir=$pts[2]
     fi
-    echo git clone ${GREEN}$src$prj ${YELLOW}$*${NOCOLOR}
-    git clone $src$prj $*
-    cd $dir
+    echo git clone ${GREEN}$src$prj ${YELLOW}$dst $*${NOCOLOR}
+    git clone $src$prj $dst $*
+    if [[ -z $dst ]]; then
+        dst=$dir
+    fi
+    cd $dst
 }
 
 clone() {
