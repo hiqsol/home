@@ -120,6 +120,11 @@ function! s:append_use_only(class, alias)
     return ''
 endfunction
 
+function! ShowDbextSettings()
+    let name='g:dbext_default_profile_' . g:dbext_default_profile
+    execute 'echo g:dbext_default_profile . '' -> '' . ' . name
+endfunction
+
 function! CompletePhpClass()
     return fzf#complete({
         \ 'source':   '/home/sol/bin/listGreppedClasses.php',

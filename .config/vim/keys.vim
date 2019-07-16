@@ -97,6 +97,7 @@ nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
 nnoremap    \sx         :DBExecSQLUnderCursor<CR>
 vnoremap    \sx         :DBExecRangeSQL<CR>
 nnoremap    \sp         vip:DBExecRangeSQL<CR>
+nnoremap    \sh         :call ShowDbextSettings()<CR>
 " nnoremap    \sx         :DB g:dadbod_default<CR>
 " vnoremap    \sx         :DB g:dadbod_default<CR>
 " nnoremap    \sp         vip:DB g:dadbod_default<CR>
