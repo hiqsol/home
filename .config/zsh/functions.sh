@@ -123,6 +123,20 @@ composer() {
     $file $@
 }
 
+nginx-proxy-common() {
+    # cd ~/prj/vendor
+    # nginx-proxy-common start 1.2.3.4
+    # PROFIT
+    dir="$HOME/prj/hiqdev/nginx-proxy-common"
+    file="$dir/nginx-proxy-common"
+
+    if ! [ -d $dir ]; then
+        git clone git@github.com:hiqdev/nginx-proxy-common $dir
+    fi
+
+    $file $@
+}
+
 certbot-auto() {
     file="$HOME/sbin/certbot-auto"
 
