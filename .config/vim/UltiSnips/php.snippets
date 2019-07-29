@@ -57,11 +57,15 @@ snippet x "PHP XXX"
 endsnippet
 
 snippet vd "PHP var_dump & die"
-var_dump(__METHOD__, $${1:var});die;
+var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, $${1:res});die;
 endsnippet
 
 snippet dd "PHP die"
-die(__METHOD__);
+die(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__);
+endsnippet
+
+snippet dl "PHP dlog"
+dlog(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, $${1:res});
 endsnippet
 
 snippet try "PHP try"
