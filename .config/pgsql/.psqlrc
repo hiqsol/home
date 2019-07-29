@@ -1,6 +1,6 @@
 \timing on
 \pset null ◆
-\x auto
+\x off
 
 -- PROMPT
 \set PROMPT1 ' %[%033[0;32m%]%n@%/%R %[%033[0m%]%# '
