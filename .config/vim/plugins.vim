@@ -86,8 +86,9 @@ Plug 'honza/vim-snippets'             " snippets library
 Plug 'zsh-users/zsh-autosuggestions'
 
 " Language server - disabled for the moment
-Plug 'autozimu/LanguageClient-neovim',          {'branch': 'next', 'do': 'bash install.sh'}
-Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'autozimu/LanguageClient-neovim',          {'branch': 'next', 'do': 'bash install.sh'}
+"Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
 " Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
