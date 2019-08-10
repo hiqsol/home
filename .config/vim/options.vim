@@ -1,3 +1,7 @@
+" Configuration
+set exrc                        " per-project configuration file
+set secure                      " disable unsafe commands
+
 " Indending
 set autoindent
 set smartindent
