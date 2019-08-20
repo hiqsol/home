@@ -1,29 +1,14 @@
 {
     "shell": "zsh",
     "repos": {
-        ".": "hiqsol/dotfiles",
-        ".shadow-home": "ssh://sol@git.solex.me:222/git/sol/shadow-home",
-        "prj/joeyh/myrepos": "git://myrepos.branchable.com/",
-        "prj/hiqsol/quotes": "hiqsol/quotes",
-        "prj/hiqdev/rehome": "hiqdev/rehome"
+        "vendor/hiqsol/quotes": "hiqsol/quotes",
+        "vendor/hiqdev/rehome": "hiqdev/rehome"
     },
     "installs": {
-        "shadow-home": [
-            "chmod -R og-rwx .shadow-home .ssh .zsh",
-            "ln -sf .shadow-home/.calendar ~",
-            "ln -sf .shadow-home/src ~",
-            "cd ~/bin;ln -sf ../.shadow-home/bin/* ~/bin",
-            "cd ~/.ssh;ln -sf ../.shadow-home/.ssh/* ~/.ssh"
-        ],
         "checks": [
             "which zsh || echo apt-get install zsh",
             "which vim || echo apt-get install vim",
             "which tmux || echo apt-get install tmux"
-        ],
-        "vim-plugins": "vim +PlugInstall +qall",
-        "certbot-auto": [
-            "wget https://dl.eff.org/certbot-auto -O ~/bin/certbot-auto",
-            "chmod a+x ~/bin/certbot-auto"
         ],
         "bin/composer": [
             "wget https://getcomposer.org/installer -O composer-setup.php",
@@ -33,7 +18,6 @@
         ]
     },
     "updates": {
-        "vim-plugins": "vim +PlugUpdate +qall",
         "bin/composer": [
             "bin/composer self-update",
             "bin/composer global update"
