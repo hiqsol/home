@@ -4,23 +4,24 @@
         "vendor/hiqsol/quotes": "hiqsol/quotes",
         "vendor/hiqdev/rehome": "hiqdev/rehome"
     },
+    "php": [
+        "mbstring",
+        "xml"
+    ],
     "installs": {
         "checks": [
             "which zsh || echo apt-get install zsh",
             "which vim || echo apt-get install vim",
             "which tmux || echo apt-get install tmux"
         ],
-        "bin/composer": [
-            "wget https://getcomposer.org/installer -O composer-setup.php",
-            "php composer-setup.php --install-dir=bin --filename=composer",
-            "rm composer-setup.php",
-            "bin/composer global install"
+        "composer": [
+            "composer global install"
         ]
     },
     "updates": {
-        "bin/composer": [
-            "bin/composer self-update",
-            "bin/composer global update"
+        "composer": [
+            "composer self-update",
+            "composer global update"
         ]
     }
 }
