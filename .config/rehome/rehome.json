@@ -4,16 +4,16 @@
         "vendor/hiqsol/quotes": "hiqsol/quotes",
         "vendor/hiqdev/rehome": "hiqdev/rehome"
     },
+    "checks": {
+        "zsh":   "apt-get install zsh",
+        "vim":   "apt-get install vim",
+        "tmux":  "apt-get install tmux"
+    },
     "php": [
         "mbstring",
         "xml"
     ],
     "installs": {
-        "checks": [
-            "which zsh || echo apt-get install zsh",
-            "which vim || echo apt-get install vim",
-            "which tmux || echo apt-get install tmux"
-        ],
         "composer": [
             "composer global install"
         ]
