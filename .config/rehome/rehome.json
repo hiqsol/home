@@ -1,9 +1,5 @@
 {
     "shell": "zsh",
-    "repos": {
-        "vendor/hiqsol/quotes": "hiqsol/quotes",
-        "vendor/hiqdev/rehome": "hiqdev/rehome"
-    },
     "checks": {
         "zsh":   "apt-get install zsh",
         "vim":   "apt-get install vim",
