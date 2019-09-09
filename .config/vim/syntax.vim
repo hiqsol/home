@@ -11,6 +11,8 @@ hi      TabLine         ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineSel      ctermfg=white ctermbg=blue  cterm=NONE
 
+hi      Pmenu           ctermbg=white ctermfg=black
+
 hi      ALEWarningSign  ctermbg=235 ctermfg=grey
 
 " vimdiff colors
