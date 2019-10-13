@@ -171,6 +171,10 @@ drun() {
     docker run -it --rm --name run -v "$PWD":/app -w /app $@
 }
 
+dphp54() {
+    drun php:5.4-cli php $@
+}
+
 dphp71() {
     drun php:7.1-cli php $@
 }
