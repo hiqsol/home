@@ -228,3 +228,11 @@ install_ripgrep() {
     curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.10.0/ripgrep_0.10.0_amd64.deb
     sudo dpkg -i ripgrep_0.10.0_amd64.deb && rm ripgrep_0.10.0_amd64.deb
 }
+
+install_php_modules() {
+    ver=$1
+    if [[ -z $ver ]]; then
+        ver="7.3"
+    fi
+    sudo apt install -y "php$ver-bcmath" "php$ver-curl" "php$ver-dom" "php$ver-imap" "php$ver-mbstring" "php$ver-soap"
+}
