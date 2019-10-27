@@ -28,7 +28,7 @@ if [ `uname` = "Linux" ]; then
 fi
 
 ### Set default PAGER && EDITOR && VISUAL
-export PAGER=less
+export PAGER="less -S"
 export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER="x-www-browser:local-open"

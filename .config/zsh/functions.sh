@@ -236,3 +236,10 @@ install_php_modules() {
     fi
     sudo apt install -y "php$ver-bcmath" "php$ver-curl" "php$ver-dom" "php$ver-imap" "php$ver-mbstring" "php$ver-soap"
 }
+
+linux_version() {
+    command -v lsb_version && lsb_version -a
+    cat /etc/*release
+    cat /etc/issue*
+    cat /proc/version
+}
