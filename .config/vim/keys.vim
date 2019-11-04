@@ -94,7 +94,7 @@ nnoremap    <S-F6>      :call LanguageClient_textDocument_rename()<CR>
 nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
 
 " coc
-nnoremap    <C-]>       :call CocAction('jumpDefinition')<CR>
+nnoremap <silent> <C-]> :call CocAction('jumpDefinition')<CR>
 
 " DB keys
 nnoremap    \sx         :DBExecSQLUnderCursor<CR>
