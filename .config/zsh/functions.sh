@@ -234,7 +234,7 @@ install_php_modules() {
     if [[ -z $ver ]]; then
         ver="7.3"
     fi
-    sudo apt install -y "php$ver-bcmath" "php$ver-curl" "php$ver-dom" "php$ver-imap" "php$ver-intl" "php$ver-mbstring" "php$ver-soap"
+    sudo apt install -y "php$ver-bcmath" "php$ver-curl" "php$ver-dom" "php$ver-imap" "php$ver-intl" "php$ver-mbstring" "php$ver-soap" "php$ver-zip"
 }
 
 linux_version() {
