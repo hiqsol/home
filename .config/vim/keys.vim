@@ -63,7 +63,7 @@ nnoremap    \u          :UndotreeToggle<CR>
 nnoremap    \m          :Maps<CR>
 
 " Git keys
-nnoremap    gl          :Glog<CR>
+nnoremap    gl          :0Glog<CR>
 nnoremap    gb          :Gblame<CR>
 nnoremap    gd          :Gdiff<CR>
 nnoremap    gs          :Gstatus<CR>
