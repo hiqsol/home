@@ -61,6 +61,10 @@ nnoremap    <C-F>       :call ToggleLeft()<CR>
 nnoremap    <C-N>       :call NerdTreeToggleFind()<CR>
 nnoremap    \u          :UndotreeToggle<CR>
 nnoremap    \m          :Maps<CR>
+nnoremap    zr          zR
+nnoremap    zR          zr
+nnoremap    zm          zM
+nnoremap    zM          zm
 
 " Git keys
 nnoremap    gl          :0Glog<CR>
