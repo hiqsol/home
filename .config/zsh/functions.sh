@@ -229,12 +229,43 @@ install_ripgrep() {
     sudo dpkg -i ripgrep_0.10.0_amd64.deb && rm ripgrep_0.10.0_amd64.deb
 }
 
-install_php_modules() {
-    ver=$1
-    if [[ -z $ver ]]; then
-        ver="7.3"
+get_php_version() {
+    ver=`php -v`
+    echo ${ver:4:3}
+}
+
+apt_php_modules() {
+    cmd=$1
+    ver=$2
+    if [[ -z $cmd ]]; then
+        cmd="install"
     fi
-    sudo apt install -y "php$ver-bcmath" "php$ver-curl" "php$ver-dom" "php$ver-imap" "php$ver-intl" "php$ver-mbstring" "php$ver-soap" "php$ver-zip"
+    if [[ -z $ver ]]; then
+        ver=$(get_php_version)
+    fi
+
+    if [[ $ver = "7.4" ]]; then
+        opcache=""
+    else
+        opcache="php$ver-opcache"
+    fi
+    if [[ $ver = "7.4" ]]; then
+        dom=""
+    else
+        dom="php$ver-opcache"
+    fi
+    sudo apt $cmd -y "php$ver-bcmath" "php$ver-cli" "php$ver-common" \
+        "php$ver-curl" $dom "php$ver-imap" "php$ver-intl" \
+        "php$ver-json" "php$ver-mbstring" $opcache \
+        "php$ver-readline" "php$ver-soap" "php$ver-xml" "php$ver-zip"
+}
+
+install_php_modules() {
+    apt_php_modules install $@
+}
+
+remove_php_modules() {
+    apt_php_modules remove $@
 }
 
 linux_version() {
