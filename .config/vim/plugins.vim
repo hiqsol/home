@@ -85,10 +85,13 @@ Plug 'honza/vim-snippets'             " snippets library
 " ZSH plugins
 Plug 'zsh-users/zsh-autosuggestions'
 
-" Language server - disabled for the moment
+" Language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'autozimu/LanguageClient-neovim',          {'branch': 'next', 'do': 'bash install.sh'}
 "Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
+
+" Other
+Plug 'vimwiki/vimwiki'
 
 " Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
@@ -147,6 +150,9 @@ let g:qf_resize_max_height = 40
 let g:qf_resize_max_ratio  = 0.5
 let g:EasyGrepCommand = 1
 let g:EasyGrepRoot = 'search:\.'
+
+" VimWiki
+let g:vimwiki_list = [{'path': '~/src/memo/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " ncm2
 "autocmd BufEnter * call ncm2#enable_for_buffer()
