@@ -65,6 +65,7 @@ nnoremap    zr          zR
 nnoremap    zR          zr
 nnoremap    zm          zM
 nnoremap    zM          zm
+nnoremap    \ps         vip:!sort<CR>
 
 " Git keys
 nnoremap    gl          :0Glog<CR>
