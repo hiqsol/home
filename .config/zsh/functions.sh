@@ -243,6 +243,7 @@ apt_php_modules() {
     if [[ -z $ver ]]; then
         ver=$(get_php_version)
     fi
+    echo "PHP $ver"
 
     if [[ $ver = "7.4" ]]; then
         opcache=""
@@ -252,11 +253,13 @@ apt_php_modules() {
     if [[ $ver = "7.4" ]]; then
         dom=""
     else
-        dom="php$ver-opcache"
+        dom="php$ver-dom"
     fi
     sudo apt $cmd -y "php$ver-bcmath" "php$ver-cli" "php$ver-common" \
-        "php$ver-curl" $dom "php$ver-imap" "php$ver-intl" \
-        "php$ver-json" "php$ver-mbstring" $opcache \
+        $dom $opcache \
+        "php$ver-imap" "php$ver-mailparse" \
+        "php$ver-curl" "php$ver-imap" "php$ver-intl" \
+        "php$ver-json" "php$ver-mbstring" \
         "php$ver-readline" "php$ver-soap" "php$ver-xml" "php$ver-zip"
 }
 
