@@ -40,7 +40,7 @@ function! NerdTreeToggleFind()
     elseif filereadable(expand('%'))
         NERDTreeFind
     else
-        NERDTree
+        NERDTreeToggle
     endif
 endfunction
 
