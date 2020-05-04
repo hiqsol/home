@@ -95,11 +95,12 @@ cdo() {
 
 psql_default() {
     if [ -z "$1" ]; then
-        a=`cat $HOME/hostname`
+        name=`cat $HOME/hostname`
     else
-        a=$1
+        name=$1
+        shift
     fi
-    command psql $a
+    command psql $name "$@"
 }
 
 docker_psql_default() {
