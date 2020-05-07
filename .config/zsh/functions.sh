@@ -169,7 +169,7 @@ ydl() {
 }
 
 drun() {
-    docker run -it --rm --name run -v "$PWD":/app -w /app $@
+    docker run -it --rm --name run -v "$HOME":"$HOME" -w "$PWD" $@
 }
 
 dphp54() {
