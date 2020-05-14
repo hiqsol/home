@@ -17,7 +17,8 @@
     cm          = commit -am minor
     co          = checkout
     s           = status
-    st          = status
+    st          = stash
+    sp          = stash pop
     sh          = show -U0
     pb          = pull --rebase
     ph          = push
