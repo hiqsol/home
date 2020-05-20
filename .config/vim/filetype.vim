@@ -10,7 +10,7 @@ au! BufNewFile,BufRead docker-compose.yml.*     set filetype=yaml
 au! BufNewFile,BufRead .env.*                   set filetype=sh
 
 au FileType php let b:syntastic_php_phpmd_args =
-    \ @% . ' text /home/sol/.vim/phpmd.xml'
+    \ @% . ' text /home/sol/.vim/php/phpmd.xml'
 
 au FileType tagbar,nerdtree setlocal signcolumn=no
 
