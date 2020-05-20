@@ -71,6 +71,7 @@ Plug 'everzet/phpfolding.vim',                  {'for': 'php'}
 Plug 'StanAngeloff/php.vim',                    {'for': 'php'}
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim',  {'for': 'php'}
 Plug 'noahfrederick/vim-composer'
+Plug 'stephpy/vim-php-cs-fixer',                {'for': 'php'}
 
 " Syntax highlighting plugins
 Plug 'elzr/vim-json',                           {'for': 'json'}
@@ -119,6 +120,8 @@ let g:SuperTabDefaultCompletionType = '<C-N>'
 let g:SuperTabNoCompleteAfter = ['^', '\s', '"', "'", ',', '.', ':']
 let g:ale_sign_warning = '⇒ '
 let g:airline#extensions#ale#enabled = 1
+let g:php_cs_fixer_rules = "@PSR2"
+let g:php_cs_fixer_config_file = '/home/sol/.vim/php/php_cs.php'
 
 " Vdebug
 let g:vdebug_options = {
