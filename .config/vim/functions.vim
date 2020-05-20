@@ -131,5 +131,3 @@ function! CompletePhpClass()
         \ 'reducer':  function('s:add_namespace'),
         \ 'down':     20})
 endfunction
-
-inoremap <expr> <C-]> CompletePhpClass()

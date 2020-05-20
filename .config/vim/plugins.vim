@@ -92,6 +92,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Other
 Plug 'vimwiki/vimwiki'
+Plug 'voldikss/vim-translator'
 
 " Rejected plugins
 "Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
@@ -153,6 +154,9 @@ let g:EasyGrepRoot = 'search:\.'
 
 " VimWiki
 let g:vimwiki_list = [{'path': '~/src/memo/', 'syntax': 'markdown', 'ext': '.md'}]
+
+" Translator
+let g:translator_target_lang = 'ru'
 
 " ncm2
 "autocmd BufEnter * call ncm2#enable_for_buffer()

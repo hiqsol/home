@@ -7,8 +7,8 @@ let myfiletypefile  = "~/.vim/filetype.vim"
 
 source ~/.vim/plugins.vim
 source ~/.vim/options.vim
-source ~/.vim/keys.vim
 source ~/.vim/functions.vim
+source ~/.vim/keys.vim
 
 let mainlocalconfig = "~/.vim/local.vim"
 if filereadable(glob(mainlocalconfig))

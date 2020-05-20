@@ -90,6 +90,7 @@ nnoremap    <F5>        :VdebugRun<CR>
 nmap        ';          <Plug>(composer-use)
 nmap        '[          <Plug>(composer-find)
 nnoremap    co          :Composer<Space>
+inoremap <expr> <C-]>   CompletePhpClass()
 
 nnoremap    \k          :call LanguageClient_textDocument_hover()<CR>
 "nnoremap    <C-]>       :call LanguageClient_textDocument_definition()<CR>
@@ -97,6 +98,9 @@ nnoremap    <C-\>       :call LanguageClient_textDocument_documentSymbol()<CR>
 nnoremap    <S-F6>      :call LanguageClient_textDocument_rename()<CR>
 
 nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
+"unmap      \tt
+nmap        't          <Plug>TranslateW
+vmap        't          <Plug>TranslateWV
 
 " coc
 nnoremap <silent> <C-]> :call CocAction('jumpDefinition')<CR>
@@ -109,4 +113,3 @@ nnoremap    \sh         :call ShowDbextSettings()<CR>
 " nnoremap    \sx         :DB g:dadbod_default<CR>
 " vnoremap    \sx         :DB g:dadbod_default<CR>
 " nnoremap    \sp         vip:DB g:dadbod_default<CR>
-
