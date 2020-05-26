@@ -52,9 +52,9 @@ Plug 'diepm/vim-rest-console'
 Plug 'vim-scripts/dbext.vim',                   {'for': ['sql', 'pgsql']}
 
 " Completion
-Plug 'roxma/nvim-completion-manager'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'                          " Yet Another Remote Plugin Framework for Neovim
+"Plug 'roxma/nvim-completion-manager'
+"Plug 'ncm2/ncm2'
+"Plug 'roxma/nvim-yarp'                          " Yet Another Remote Plugin Framework for Neovim
 "Plug 'ncm2/ncm2-bufword'
 "Plug 'ncm2/ncm2-path'
 
@@ -70,7 +70,6 @@ Plug 'alvan/vim-php-manual',                    {'for': 'php'}
 Plug 'everzet/phpfolding.vim',                  {'for': 'php'}
 Plug 'StanAngeloff/php.vim',                    {'for': 'php'}
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim',  {'for': 'php'}
-Plug 'noahfrederick/vim-composer'
 Plug 'stephpy/vim-php-cs-fixer',                {'for': 'php'}
 
 " Syntax highlighting plugins
@@ -102,6 +101,7 @@ Plug 'voldikss/vim-translator'
 "Plug 'roxma/python-support.nvim'     " doesn't help, seems to make worse
 "Plug 'jistr/vim-nerdtree-tabs',      " no need with FZF
 "Plug 'scrooloose/syntastic'          " substituted with ALE
+"Plug 'noahfrederick/vim-composer'    " didn't use it
 
 call plug#end()
 
