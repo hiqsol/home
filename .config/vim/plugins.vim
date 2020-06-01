@@ -71,6 +71,7 @@ Plug 'everzet/phpfolding.vim',                  {'for': 'php'}
 Plug 'StanAngeloff/php.vim',                    {'for': 'php'}
 Plug 'vim-scripts/PDV--phpDocumentor-for-Vim',  {'for': 'php'}
 Plug 'stephpy/vim-php-cs-fixer',                {'for': 'php'}
+Plug 'noahfrederick/vim-composer',              {'for': 'php'}
 
 " Syntax highlighting plugins
 Plug 'elzr/vim-json',                           {'for': 'json'}
@@ -101,7 +102,6 @@ Plug 'voldikss/vim-translator'
 "Plug 'roxma/python-support.nvim'     " doesn't help, seems to make worse
 "Plug 'jistr/vim-nerdtree-tabs',      " no need with FZF
 "Plug 'scrooloose/syntastic'          " substituted with ALE
-"Plug 'noahfrederick/vim-composer'    " didn't use it
 
 call plug#end()
 
