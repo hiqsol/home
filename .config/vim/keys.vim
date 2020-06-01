@@ -89,14 +89,12 @@ nnoremap    \w          :ArgWrap<CR>
 nnoremap    <F5>        :VdebugRun<CR>
 nnoremap    co          :Composer<Space>
 inoremap <expr> <C-]>   CompletePhpClass()
+nnoremap <silent> <C-]> :call CocActionAsync('jumpDefinition')<CR>
+nnoremap <silent> <C-\> :call CocActionAsync('jumpReferences')<CR>
 
 nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
-"unmap      \tt
 nmap        't          <Plug>TranslateW
 vmap        't          <Plug>TranslateWV
-
-" coc
-nnoremap <silent> <C-]> :call CocAction('jumpDefinition')<CR>
 
 " DB keys
 nnoremap    \sx         :DBExecSQLUnderCursor<CR>
