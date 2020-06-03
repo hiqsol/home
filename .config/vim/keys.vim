@@ -10,9 +10,12 @@ nnoremap    \R          :r! cat<CR>
 
 nnoremap    Y           y$
 
-" decrease number
-nnoremap    <A-x>       <C-x>
-vnoremap    <A-x>       <C-x>
+" Remap increase/decrease number to free C-A, C-X
+nnoremap    <A-a>       <C-A>
+vnoremap    <A-a>       <C-A>
+nnoremap    <A-x>       <C-X>
+vnoremap    <A-x>       <C-X>
+vnoremap    <A-x>       <C-X>
 
 " Search keys
 nnoremap    *           *N
@@ -24,10 +27,9 @@ nnoremap    gr          :Ack!<Space>
 nnoremap    g8          :Ack!<Space><C-R><C-W><CR>
 nmap        <M-8>       <Plug>EgMapGrepCurrentWord_v
 
-" Movement keys
+" Movement keys like in shell
+noremap     <C-A>       <Home>
 noremap     <C-E>       <End>
-
-" Input keys
 inoremap    <C-A>       <Home>
 inoremap    <C-E>       <End>
 inoremap    <C-J>       <Down>
