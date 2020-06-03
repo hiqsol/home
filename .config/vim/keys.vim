@@ -24,6 +24,7 @@ nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 nnoremap    \/          /\<\><Left><Left>
 nnoremap <silent>   \\  :nohlsearch<CR>
 nnoremap    gr          :Ack!<Space>
+nnoremap    gp          :Ack!<Space>--type php<Space>
 nnoremap    g8          :Ack!<Space><C-R><C-W><CR>
 nmap        <M-8>       <Plug>EgMapGrepCurrentWord_v
 
@@ -80,8 +81,8 @@ nnoremap    gO          :Gbrowse!<CR>
 vnoremap    go          :Gbrowse<CR>
 vnoremap    gO          :Gbrowse!<CR>
 nnoremap    gw          :Gwrite<CR>
-nnoremap    gpb         :Gpull --rebase<CR>
-nnoremap    gph         :Gpush<CR>
+nnoremap    gub         :Gpull --rebase<CR>
+nnoremap    guh         :Gpush<CR>
 
 " Programming keys
 nnoremap    \cd         :call PhpDocSingle()<CR>
