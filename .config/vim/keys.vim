@@ -1,5 +1,5 @@
 " KEYS. Available ctrls for later use: <C-N>
-" unusable: CTRL-[, CTRL-H, CTRL-M
+" unusable: CTRL-[, CTRL-H, CTRL-M (Esc, Backspace, Enter)
 " see `:help keycodes` and `:help map-which-keys`
 
 " Make p in Visual mode replace the selected text with the "" register.
@@ -8,7 +8,17 @@ vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><
 " mouse paste without auto indenting
 nnoremap    \R          :r! cat<CR>
 
+" different editing
+nnoremap    zr          zR
+nnoremap    zR          zr
+nnoremap    zm          zM
+nnoremap    zM          zm
+nnoremap    \ps         vip:!sort<CR>
 nnoremap    Y           y$
+nnoremap    <A-p>       gp
+nnoremap    <A-P>       gP
+nnoremap    <M-p>       gp
+nnoremap    <M-P>       gP
 
 " Remap increase/decrease number to free C-A, C-X
 nnoremap    <A-a>       <C-A>
@@ -64,11 +74,6 @@ nnoremap    <C-F>       :call ToggleLeft()<CR>
 nnoremap    <C-N>       :call NerdTreeToggleFind()<CR>
 nnoremap    \u          :UndotreeToggle<CR>
 nnoremap    \m          :Maps<CR>
-nnoremap    zr          zR
-nnoremap    zR          zr
-nnoremap    zm          zM
-nnoremap    zM          zm
-nnoremap    \ps         vip:!sort<CR>
 
 " Git keys
 nnoremap    gl          :0Glog<CR>
@@ -95,10 +100,6 @@ inoremap <expr> <C-]>   CompletePhpClass()
 nnoremap <silent> <C-]> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <silent> <C-\> :call CocActionAsync('jumpReferences')<CR>
 
-nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
-nmap        't          <Plug>TranslateW
-vmap        't          <Plug>TranslateWV
-
 " DB keys
 nnoremap    \sx         :DBExecSQLUnderCursor<CR>
 vnoremap    \sx         :DBExecRangeSQL<CR>
@@ -107,3 +108,8 @@ nnoremap    \sh         :call ShowDbextSettings()<CR>
 " nnoremap    \sx         :DB g:dadbod_default<CR>
 " vnoremap    \sx         :DB g:dadbod_default<CR>
 " nnoremap    \sp         vip:DB g:dadbod_default<CR>
+
+" etc plugins
+nnoremap    \r          :HTTPClientDoRequest<CR><C-W>W
+nmap        't          <Plug>TranslateW
+vmap        't          <Plug>TranslateWV
