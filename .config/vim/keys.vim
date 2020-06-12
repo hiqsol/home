@@ -74,6 +74,8 @@ nnoremap    <C-F>       :call ToggleLeft()<CR>
 nnoremap    <C-N>       :call NerdTreeToggleFind()<CR>
 nnoremap    \u          :UndotreeToggle<CR>
 nnoremap    \m          :Maps<CR>
+nmap        <silent>    'q      <Plug>(qf_qf_toggle)
+nmap        <silent>    'l      <Plug>(qf_loc_toggle)
 
 " Git keys
 nnoremap    gl          :0Glog<CR>
