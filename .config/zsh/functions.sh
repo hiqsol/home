@@ -201,6 +201,24 @@ dcpsql() {
     docker-compose exec --user postgres pgsql sh -c "stty cols $COLUMNS rows $LINES && psql $@";
 }
 
+vim8() {
+    file="/home/sol/bin/vim8"
+
+    if [ ! -x $file ]; then
+        wget https://github.com/vim/vim-appimage/releases/download/v8.2.0979/GVim-v8.2.0979.glibc2.15-x86_64.AppImage -O $file
+        chmod a+x $file
+    fi
+
+    $file $@
+}
+
+install_vim() {
+    cd ~/tmp
+    tar zvxvf hub-linux-amd64-2.3.0.tgz
+    sudo ./hub-linux-amd64-2.3.0/install
+    cp ./hub-linux-amd64-2.3.0/etc/hub.zsh_completion ~/.config/zsh/completion/_hub
+}
+
 hub() {
     file="/usr/local/bin/hub"
 

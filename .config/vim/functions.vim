@@ -1,6 +1,7 @@
 " Alias to save file with sudo
 " cmap w!! w !sudo tee > /dev/null %
-" command W :w !sudo tee > /dev/null %
+
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 " FUNCTIONS
 

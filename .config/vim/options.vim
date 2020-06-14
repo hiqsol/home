@@ -34,6 +34,7 @@ set laststatus=2                " always show status line
 set scrolloff=2                 " keep 2 lines before scroll
 set sidescrolloff=5             " keep 5 columns before horizontal scroll
 set diffopt+=vertical           " allows vertical diff
+set shortmess+=c                " don't pass messages to ins-completion-menu
 
 " Search
 set path+=**                    " `:find` down into subfolders
