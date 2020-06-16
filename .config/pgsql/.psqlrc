@@ -13,7 +13,7 @@
 -- \set VERBOSITY verbose
 
 -- Use a separate history file per-database.
-\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTFILE ~/.config/pgsql/.psql_history- :DBNAME
 
 -- Store commands once in history
 \set HISTCONTROL ignoredups
