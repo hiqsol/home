@@ -201,6 +201,17 @@ dcpsql() {
     docker-compose exec --user postgres pgsql sh -c "stty cols $COLUMNS rows $LINES && psql $@";
 }
 
+nvim() {
+    file="$HOME/bin/nvim"
+
+    if [ ! -x $file ]; then
+        curl -L https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -o $file
+        chmod a+x $file
+    fi
+
+    $file $@
+}
+
 vim8() {
     file="$HOME/bin/vim8"
 
