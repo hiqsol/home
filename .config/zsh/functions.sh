@@ -212,13 +212,6 @@ vim8() {
     $file $@
 }
 
-install_vim() {
-    cd ~/tmp
-    tar zvxvf hub-linux-amd64-2.3.0.tgz
-    sudo ./hub-linux-amd64-2.3.0/install
-    cp ./hub-linux-amd64-2.3.0/etc/hub.zsh_completion ~/.config/zsh/completion/_hub
-}
-
 hub() {
     file="/usr/local/bin/hub"
 
