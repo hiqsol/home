@@ -8,6 +8,7 @@
         "friendsofphp/php-cs-fixer": "^2.0",
         "phpstan/phpstan": "*",
         "phpunit/phpunit": "^6.0 || ^7.0",
+        "behat/behat": "^3.7",
         "phploc/phploc": "^3.0"
     },
     "require-dev": {
