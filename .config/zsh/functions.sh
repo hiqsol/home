@@ -202,10 +202,11 @@ dcpsql() {
 }
 
 vim8() {
-    file="/home/sol/bin/vim8"
+    file="$HOME/bin/vim8"
 
     if [ ! -x $file ]; then
-        wget https://github.com/vim/vim-appimage/releases/download/v8.2.0979/GVim-v8.2.0979.glibc2.15-x86_64.AppImage -O $file
+        url=`curl --silent "https://api.github.com/repos/vim/vim-appimage/releases/latest" | jq -r 'first(.assets[].browser_download_url)'`
+        curl -L $url -o $file
         chmod a+x $file
     fi
 
