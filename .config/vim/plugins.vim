@@ -51,14 +51,8 @@ Plug 'diepm/vim-rest-console'
 " Plug 'tpope/vim-dadbod'
 Plug 'vim-scripts/dbext.vim',                   {'for': ['sql', 'pgsql']}
 
-" Completion
-"Plug 'roxma/nvim-completion-manager'
-"Plug 'ncm2/ncm2'
-"Plug 'roxma/nvim-yarp'                          " Yet Another Remote Plugin Framework for Neovim
-"Plug 'ncm2/ncm2-bufword'
-"Plug 'ncm2/ncm2-path'
-
 " Programming plugins
+Plug 'neoclide/coc.nvim',                       {'branch': 'release'}
 Plug 'joonty/vdebug',                           {'on': 'VdebugRun'}
 Plug 'majutsushi/tagbar',                       {'on': 'TagbarToggle'}
 Plug 'michaeljsmith/vim-indent-object'
@@ -80,28 +74,34 @@ Plug 'hiqsol/vim-markdown',                     {'for': 'markdown'}
 Plug 'lumiliet/vim-twig',                       {'for': 'html.twig'}
 
 " Snippets
-Plug 'SirVer/ultisnips'               " snippet runner
-Plug 'honza/vim-snippets'             " snippets library
+Plug 'SirVer/ultisnips'                         " snippet runner
+Plug 'honza/vim-snippets'                       " snippets library
 
 " ZSH plugins
 Plug 'zsh-users/zsh-autosuggestions'
-
-" Language server
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'autozimu/LanguageClient-neovim',          {'branch': 'next', 'do': 'bash install.sh'}
-"Plug 'roxma/LanguageServer-php-neovim',         {'do': 'composer install && composer run-script parse-stubs'}
 
 " Other
 Plug 'vimwiki/vimwiki'
 Plug 'voldikss/vim-translator'
 
 " Rejected plugins
-"Plug 'vim-scripts/LargeFile'         " better large files support, didn't help
-"Plug 'mkitt/tabline.vim'             " shows tab number, filename and [+], substituted with vim-airline
-"Plug 'joonty/vim-phpqa'              " show code coverage
-"Plug 'roxma/python-support.nvim'     " doesn't help, seems to make worse
-"Plug 'jistr/vim-nerdtree-tabs',      " no need with FZF
-"Plug 'scrooloose/syntastic'          " substituted with ALE
+"Plug 'vim-scripts/LargeFile'                   " better large files support, didn't help
+"Plug 'mkitt/tabline.vim'                       " shows tab number, filename and [+], substituted with vim-airline
+"Plug 'joonty/vim-phpqa'                        " show code coverage
+"Plug 'roxma/python-support.nvim'               " doesn't help, seems to make worse
+"Plug 'jistr/vim-nerdtree-tabs',                " no need with FZF
+"Plug 'scrooloose/syntastic'                    " substituted with ALE
+
+" Language server
+"Plug 'autozimu/LanguageClient-neovim',         {'branch': 'next', 'do': 'bash install.sh'}
+"Plug 'roxma/LanguageServer-php-neovim',        {'do': 'composer install && composer run-script parse-stubs'}
+
+" NCM Completion
+"Plug 'roxma/nvim-completion-manager'
+"Plug 'ncm2/ncm2'
+"Plug 'roxma/nvim-yarp'                          " Yet Another Remote Plugin Framework for Neovim
+"Plug 'ncm2/ncm2-bufword'
+"Plug 'ncm2/ncm2-path'
 
 call plug#end()
 
@@ -132,23 +132,23 @@ let g:vdebug_options = {
 \}
 
 " UltiSnips
-let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
 " Git
 let g:fugitive_gitlab_domains = ['https://git.hiqdev.com']
 
 " DBext
-let g:dbext_default_prompt_for_parameters=0
+let g:dbext_default_prompt_for_parameters = 0
 let g:dbext_default_history_file = '~/.vim/dbext_sql_history.txt'
 
 " Grep
 if executable('rg')
-    set  grepprg=rg\ --vimgrep
-    let g:ackprg='rg --vimgrep'
+    let &grepprg = 'rg --vimgrep'
+    let g:ackprg = 'rg --vimgrep'
 else
-    set  grepprg=grep\ -IR
-    let g:ackprg='grep -IR'
+    let &grepprg = 'grep -IR'
+    let g:ackprg = 'grep -IR'
 endif
 "let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:qf_resize_max_height = 40
@@ -167,4 +167,4 @@ let g:AutoPairsShortcutToggle = ''
 
 " ncm2
 "autocmd BufEnter * call ncm2#enable_for_buffer()
-"set completeopt=noinsert,menuone,noselect
+"set completeopt = noinsert,menuone,noselect
