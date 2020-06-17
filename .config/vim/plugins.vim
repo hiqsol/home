@@ -140,6 +140,7 @@ let g:fugitive_gitlab_domains = ['https://git.hiqdev.com']
 
 " DBext
 let g:dbext_default_prompt_for_parameters=0
+let g:dbext_default_history_file = '~/.vim/dbext_sql_history.txt'
 
 " Grep
 if executable('rg')
