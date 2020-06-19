@@ -4,8 +4,7 @@ alias la="ls -laFh ${ls_options}"
 alias lh="ls -lFh  ${ls_options}"
 alias ll="ls -lAFh ${ls_options}"
 
-alias -g G='| grep'
-alias -g Gi='| grep -i'
+alias -g G='| rg'
 alias -g H='| head'
 alias -g L='| less'
 alias -g R='| less -R'
