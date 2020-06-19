@@ -12,8 +12,8 @@
     a           = add
     ca          = commit -v --amend
     ci          = commit -v
-    cu          = commit -am 'updated deps'
-    cf          = commit -am csfixed
+    cu          = commit -am 'update deps'
+    cf          = commit -am csfix
     cm          = commit -am minor
     co          = checkout
     s           = status
