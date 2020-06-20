@@ -6,7 +6,6 @@
 
 # local config
 /.env
-/hidev-local.yml
 
 # IDE & OS files
 .*.swp
@@ -20,13 +19,13 @@ nbproject
 
 # composer internals
 /composer.lock
-/vendor
 
-# php-cs-fixer cache
+# dynamic files
 .php_cs.cache
-
-# phpunit generated files
 coverage.clover
+
+# dependencies
+/vendor
 
 # Binaries
 chkipper.phar
@@ -35,5 +34,6 @@ ocular.phar
 php-cs-fixer.phar
 phpunit-skelgen.phar
 phpunit.phar
-/bin/vim8
+/bin/keepassxc
 /bin/nvim
+/bin/vim8
