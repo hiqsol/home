@@ -31,6 +31,17 @@ $GSETKEY/custom3/ name "Gnome Terminal"
 $GSETKEY/custom3/ command "x-terminal-emulator"
 $GSETKEY/custom3/ binding "<Ctrl><Alt>T"
 
+# Switch to Workspace
+gsettings set org.gnome.shell.keybindings switch-to-application-1 "['<Super>F1']"
+gsettings set org.gnome.shell.keybindings switch-to-application-2 "['<Super>F2']"
+gsettings set org.gnome.shell.keybindings switch-to-application-3 "['<Super>F3']"
+gsettings set org.gnome.shell.keybindings switch-to-application-4 "['<Super>F4']"
+gsettings set org.gnome.shell.keybindings switch-to-application-5 "['<Super>F5']"
+gsettings set org.gnome.shell.keybindings switch-to-application-6 "['<Super>F6']"
+gsettings set org.gnome.shell.keybindings switch-to-application-7 "['<Super>F7']"
+gsettings set org.gnome.shell.keybindings switch-to-application-8 "['<Super>F8']"
+gsettings set org.gnome.shell.keybindings switch-to-application-9 "['<Super>F9']"
+
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>3']"
