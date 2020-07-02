@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Keyboard rate
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 35
+gsettings set org.gnome.desktop.peripherals.keyboard delay 200
+
+# Switch layout
+gsettings set org.gnome.desktop.input-sources xkb-options "['grp:shift_caps_switch','grp:alt_shift_toggle']"
+
 GSETKEY="gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
 
 KEY_PATH="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
