@@ -9,6 +9,7 @@ vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><
 nnoremap    \R          :r! cat<CR>
 
 " different editing
+nnoremap    ci<         cit
 nnoremap    zr          zR
 nnoremap    zR          zr
 nnoremap    zm          zM
