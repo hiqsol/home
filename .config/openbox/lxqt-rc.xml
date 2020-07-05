@@ -254,6 +254,9 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
 
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
