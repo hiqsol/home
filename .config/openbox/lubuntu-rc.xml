@@ -454,12 +454,12 @@
     <!-- Keybinding for terminal button-->
     <keybind key="XF86WWW">
       <action name="Execute">
-        <command>lxsession-default terminal</command>
+        <command>x-terminal-emulator</command>
       </action>
     </keybind>
     <keybind key="XF86Terminal">
       <action name="Execute">
-        <command>lxsession-default terminal</command>
+        <command>x-terminal-emulator</command>
       </action>
     </keybind>
 
@@ -652,7 +652,7 @@
     </keybind>
     <keybind key="W-c">
       <action name="execute">
-        <command>/opt/google/chrome/chrome</command>
+        <command>google-chrome</command>
       </action>
     </keybind>
 
