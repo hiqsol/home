@@ -165,7 +165,7 @@ ydl() {
         chmod a+rx $file
     fi
 
-    $file $@
+    $file --add-metadata $@
 }
 
 drun() {
