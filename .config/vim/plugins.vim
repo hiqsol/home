@@ -9,7 +9,7 @@ call plug#begin('~/.vim/plugged')
 
 " Editing plugins
 Plug 'foosoft/vim-argwrap'
-Plug 'jiangmiao/auto-pairs'
+Plug 'vim-scripts/auto-pairs-gentle'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -85,6 +85,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'voldikss/vim-translator'
 
 " Rejected plugins
+"Plug 'jiangmiao/auto-pairs'
 "Plug 'vim-scripts/LargeFile'                   " better large files support, didn't help
 "Plug 'mkitt/tabline.vim'                       " shows tab number, filename and [+], substituted with vim-airline
 "Plug 'joonty/vim-phpqa'                        " show code coverage
