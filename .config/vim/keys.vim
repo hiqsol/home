@@ -2,6 +2,8 @@
 " unusable: CTRL-[, CTRL-H, CTRL-M (Esc, Backspace, Enter)
 " see `:help keycodes` and `:help map-which-keys`
 
+let mapleader="\\"
+
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap    p           <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 

@@ -24,7 +24,7 @@ Plug 'pbogut/fzf-mru.vim'
 Plug 'mbbill/undotree',                         {'on': 'UndotreeToggle'}
 Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 Plug 'romainl/vim-qf'
-"Plug 'valloric/listtoggle'
+Plug 'valloric/listtoggle'
 
 " Grep
 Plug 'dkprice/vim-easygrep'
@@ -115,8 +115,8 @@ let g:LanguageClient_autoStart = 0
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:lt_location_list_toggle_map = '<leader>l'
-let g:lt_quickfix_list_toggle_map = '<leader>q'
+let g:lt_location_list_toggle_map = '\l'
+let g:lt_quickfix_list_toggle_map = '\q'
 let g:SuperTabDefaultCompletionType = '<C-N>'
 let g:SuperTabNoCompleteAfter = ['^', '\s', '"', "'", ',', '.', ':']
 let g:ale_sign_warning = '⇒ '
