@@ -650,7 +650,7 @@
     </keybind>
     <keybind key="W-b">
       <action name="execute">
-        <command>pkill -9 'chromium|chrome|firefox'</command>
+        <command>pkill -9 -f 'chromium|chrome|firefox'</command>
       </action>
     </keybind>
     <keybind key="W-c">
