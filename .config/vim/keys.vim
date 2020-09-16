@@ -22,6 +22,8 @@ nnoremap    <A-p>       gp
 nnoremap    <A-P>       gP
 nnoremap    <M-p>       gp
 nnoremap    <M-P>       gP
+vmap        ga          <Plug>(EasyAlign)
+nmap        ga          <Plug>(EasyAlign)
 
 " Remap increase/decrease number to free C-A, C-X
 nnoremap    <A-a>       <C-A>

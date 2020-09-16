@@ -13,6 +13,7 @@ Plug 'vim-scripts/auto-pairs-gentle'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'junegunn/vim-easy-align'
 
 " HUD plugins
 Plug 'bling/vim-airline'
