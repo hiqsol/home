@@ -254,10 +254,11 @@ hub() {
 
 install_hub() {
     cd ~/tmp
-    wget https://github.com/github/hub/releases/download/v2.3.0/hub-linux-amd64-2.3.0.tgz
-    tar zvxvf hub-linux-amd64-2.3.0.tgz
-    sudo ./hub-linux-amd64-2.3.0/install
-    cp ./hub-linux-amd64-2.3.0/etc/hub.zsh_completion ~/.config/zsh/completion/_hub
+    wget https://github.com/github/hub/releases/download/v2.14.2/hub-linux-amd64-2.14.2.tgz
+    tar zvxvf hub-linux-amd64-2.14.2.tgz
+    sudo ./hub-linux-amd64-2.14.2/install
+    cp ./hub-linux-amd64-2.14.2/etc/hub.zsh_completion ~/.config/zsh/completion/_hub
+    cd -
 }
 
 # returns absolute path to file by given relative path
