@@ -99,6 +99,8 @@ nnoremap    gub         :Gpull --rebase<CR>
 nnoremap    guh         :Gpush<CR>
 
 " Programming keys
+nmap        <C-C>       <Plug>NERDCommenterToggle
+vmap        <C-C>       <Plug>NERDCommenterToggle
 nnoremap    \cd         :call PhpDocSingle()<CR>
 vnoremap    \cd         :call PhpDocRange()<CR>
 nnoremap    \T          :TagbarToggle<CR>
