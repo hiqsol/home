@@ -106,7 +106,7 @@ vnoremap    \cd         :call PhpDocRange()<CR>
 nnoremap    \T          :TagbarToggle<CR>
 nnoremap    \w          :ArgWrap<CR>
 nnoremap    <F5>        :VdebugRun<CR>
-nnoremap    co          :Composer<Space>
+"nnoremap    co          :Composer<Space>
 inoremap <expr> <C-]>   CompletePhpClass()
 nnoremap <silent> <C-]> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <silent> <C-\> :call CocActionAsync('jumpReferences')<CR>
