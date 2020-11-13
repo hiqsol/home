@@ -471,12 +471,12 @@
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>lxsession-default screenshot</command>
+        <command>screengrab</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>lxsession-default screenshot window</command>
+        <command>screengrab --region</command>
       </action>
     </keybind>
     <!-- Launch logout when push on the shutdown button -->
