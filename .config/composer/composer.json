@@ -1,6 +1,5 @@
 {
     "require": {
-        "hirak/prestissimo": "*",
         "hiqdev/chkipper": "dev-master",
         "hiqdev/hidev": "dev-master",
         "hiqdev/rewatcher": "dev-master",
