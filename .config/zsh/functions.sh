@@ -298,7 +298,8 @@ apt_php_modules() {
     else
         dom="php$ver-dom"
     fi
-    sudo apt $cmd -y "php$ver-bcmath" "php$ver-cli" "php$ver-common" \
+    sudo apt $cmd -y "php$ver-cli" "php$ver-common" \
+        "php$ver-bcmath" "php$ver-gmp" \
         $dom $opcache \
         "php$ver-imap" "php$ver-mailparse" \
         "php$ver-curl" "php$ver-imap" "php$ver-intl" \
