@@ -354,6 +354,36 @@
         <height>50%</height>
       </action>
     </keybind>
+    <!-- # One Third Upper Screen -->
+    <keybind key="W-S-I">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>33%</height>
+      </action>
+    </keybind>
+    <!-- # One Third Center Screen -->
+    <keybind key="W-S-K">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>33%</y>
+        <width>100%</width>
+        <height>34%</height>
+      </action>
+    </keybind>
+    <!-- # One Third Lower Screen -->
+    <keybind key="W-S-comma">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>33%</height>
+      </action>
+    </keybind>
     <!-- Keybindings for running file manager on Win + F -->
     <keybind key="W-f">
       <action name="Execute">
