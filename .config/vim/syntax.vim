@@ -14,7 +14,7 @@ hi      TabLineSel      ctermfg=white ctermbg=blue  cterm=NONE
 
 hi      Pmenu           ctermbg=white ctermfg=black
 
-hi      ALEWarningSign  ctermbg=235 ctermfg=grey
+hi      ALEWarningSign  ctermbg=235 ctermfg=gray
 
 " vimdiff colors
 hi      DiffAdd          ctermbg=235  ctermfg=108  guibg=#262626 guifg=#87af87 cterm=reverse        gui=reverse
@@ -80,5 +80,5 @@ hi      LineNr          ctermfg=darkgray
 "augroup DimInactiveWindows
     "autocmd!
     "autocmd WinEnter * hi CursorLine ctermbg=none
-    "autocmd WinLeave * hi CursorLine ctermbg=grey
+    "autocmd WinLeave * hi CursorLine ctermbg=gray
 "augroup END
