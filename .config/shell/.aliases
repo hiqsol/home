@@ -34,6 +34,7 @@ alias vd='v -d'
 alias apg='apg -M SNCL -m 12'
 alias bat='batcat'
 alias gir='grep -IR'
+alias grn='rg --no-line-number --no-filename'
 alias girp='grep -IR --include=\*.php --exclude-dir=vendor'
 alias grep='grep --color=auto'
 alias vpn="ovpn default"
