@@ -125,7 +125,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>12</number>
+    <number>10</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>[01]</name>
@@ -138,8 +138,6 @@
       <name>[08]</name>
       <name>[09]</name>
       <name>[10]</name>
-      <name>[11]</name>
-      <name>[12]</name>
     </names>
     <popupTime>500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -583,44 +581,34 @@
         <to>10</to>
       </action>
     </keybind>
-    <keybind key="W-minus">
-      <action name="GoToDesktop">
-        <to>11</to>
-      </action>
-    </keybind>
     <keybind key="W-grave">
-      <action name="GoToDesktop">
-        <to>12</to>
-      </action>
-    </keybind>
-    <keybind key="W-q">
-      <action name="GoToDesktop">
-        <to>7</to>
-      </action>
-    </keybind>
-    <keybind key="W-w">
-      <action name="GoToDesktop">
-        <to>8</to>
-      </action>
-    </keybind>
-    <keybind key="W-e">
-      <action name="GoToDesktop">
-        <to>9</to>
-      </action>
-    </keybind>
-    <keybind key="W-r">
       <action name="GoToDesktop">
         <to>10</to>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="W-q">
       <action name="GoToDesktop">
-        <to>11</to>
+        <to>6</to>
       </action>
     </keybind>
-    <keybind key="W-y">
+    <keybind key="W-w">
       <action name="GoToDesktop">
-        <to>12</to>
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="GoToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="W-r">
+      <action name="GoToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="W-t">
+      <action name="GoToDesktop">
+        <to>10</to>
       </action>
     </keybind>
     <keybind key="C-W-1">
@@ -673,11 +661,6 @@
         <to>10</to>
       </action>
     </keybind>
-    <keybind key="C-W-minus">
-      <action name="SendToDesktop">
-        <to>11</to>
-      </action>
-    </keybind>
     <keybind key="C-W-grave">
       <action name="SendToDesktop">
         <to>12</to>
@@ -685,32 +668,27 @@
     </keybind>
     <keybind key="C-W-q">
       <action name="SendToDesktop">
-        <to>7</to>
+        <to>6</to>
       </action>
     </keybind>
     <keybind key="C-W-w">
       <action name="SendToDesktop">
-        <to>8</to>
+        <to>7</to>
       </action>
     </keybind>
     <keybind key="C-W-e">
       <action name="SendToDesktop">
-        <to>9</to>
+        <to>8</to>
       </action>
     </keybind>
     <keybind key="C-W-r">
       <action name="SendToDesktop">
-        <to>10</to>
+        <to>9</to>
       </action>
     </keybind>
     <keybind key="C-W-t">
       <action name="SendToDesktop">
-        <to>11</to>
-      </action>
-    </keybind>
-    <keybind key="C-W-y">
-      <action name="SendToDesktop">
-        <to>12</to>
+        <to>10</to>
       </action>
     </keybind>
     <keybind key="W-k">
