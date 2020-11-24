@@ -3,8 +3,9 @@ hi      MyUnwantedChars ctermbg=red   guibg=red
 match   MyUnwantedChars /\t\+ \+\| \+\t\+\|\s\+$/
 
 " GUI colors
-hi      SignColumn      ctermbg=black
-hi      Search          ctermbg=208   ctermfg=white
+hi      SignColumn      ctermbg=16
+hi      Search          ctermbg=166   ctermfg=white
+hi link QuickFixLine    Search
 hi      StatusLine      ctermbg=gray  ctermfg=black
 hi      Folded          ctermbg=black ctermfg=darkcyan
 " hi    CursorLine      ctermbg=darkgray
