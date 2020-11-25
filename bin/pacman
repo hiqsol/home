@@ -10,13 +10,23 @@ initializeANSI()
 {
  esc=""
 
-  blackf="${esc}[30m";   redf="${esc}[31m";    greenf="${esc}[32m"
-  yellowf="${esc}[33m"   bluef="${esc}[34m";   purplef="${esc}[35m"
-  cyanf="${esc}[36m";    whitef="${esc}[37m"
+  color0="${esc}[30m"; # Foreground BLACK
+  color1="${esc}[31m"; # Foreground RED
+  color2="${esc}[32m"; # Foreground GREEN
+  color3="${esc}[33m"; # Foreground YELLOW
+  color4="${esc}[34m"; # Foreground BLUE
+  color5="${esc}[35m"; # Foreground PURPLE
+  color6="${esc}[36m"; # Foreground CYAN
+  color7="${esc}[37m"; # Foreground WHITE
 
-  blackb="${esc}[40m";   redb="${esc}[41m";    greenb="${esc}[42m"
-  yellowb="${esc}[43m"   blueb="${esc}[44m";   purpleb="${esc}[45m"
-  cyanb="${esc}[46m";    whiteb="${esc}[47m"
+  blackb="${esc}[40m";
+  redb="${esc}[41m";
+  greenb="${esc}[42m";
+  yellowb="${esc}[43m";
+  blueb="${esc}[44m";
+  purpleb="${esc}[45m";
+  cyanb="${esc}[46m";
+  whiteb="${esc}[47m"
 
   boldon="${esc}[1m";    boldoff="${esc}[22m"
   italicson="${esc}[3m"; italicsoff="${esc}[23m"
@@ -26,26 +36,34 @@ initializeANSI()
   reset="${esc}[0m"
 }
 
-# note in this first use that switching colors doesn't require a reset
-# first - the new color overrides the old one.
-
 initializeANSI
 
-cat << EOF
-    YELLOW         RED          GREEN          BLUE         MAGENTA       CYAN
+c1() { echo -n " $1  ▄███████▄  "; }
+c2() { echo -n " $1▄█████████▀▀ "; }
+c3() { echo -n " $1███████▀     "; }
+c4() { echo -n " $1███████▄     "; }
+c5() { echo -n " $1▀█████████▄▄ "; }
+c6() { echo -n " $1  ▀███████▀  "; }
 
- ${yellowf}  ▄███████▄${reset}   ${redf}  ▄██████▄${reset}    ${greenf}  ▄██████▄${reset}    ${bluef}  ▄██████▄${reset}    ${purplef}  ▄██████▄${reset}    ${cyanf}  ▄██████▄${reset}
- ${yellowf}▄█████████▀▀${reset}  ${redf}▄${whitef}█▀█${redf}██${whitef}█▀█${redf}██▄${reset}  ${greenf}▄${whitef}█▀█${greenf}██${whitef}█▀█${greenf}██▄${reset}  ${bluef}▄${whitef}█▀█${bluef}██${whitef}█▀█${bluef}██▄${reset}  ${purplef}▄${whitef}█▀█${purplef}██${whitef}█▀█${purplef}██▄${reset}  ${cyanf}▄${whitef}█▀█${cyanf}██${whitef}█▀█${cyanf}██▄${reset}
- ${yellowf}███████▀${reset}      ${redf}█${whitef}▄▄█${redf}██${whitef}▄▄█${redf}███${reset}  ${greenf}█${whitef}▄▄█${greenf}██${whitef}▄▄█${greenf}███${reset}  ${bluef}█${whitef}▄▄█${bluef}██${whitef}▄▄█${bluef}███${reset}  ${purplef}█${whitef}▄▄█${purplef}██${whitef}▄▄█${purplef}███${reset}  ${cyanf}█${whitef}▄▄█${cyanf}██${whitef}▄▄█${cyanf}███${reset}
- ${yellowf}███████▄${reset}      ${redf}████████████${reset}  ${greenf}████████████${reset}  ${bluef}████████████${reset}  ${purplef}████████████${reset}  ${cyanf}████████████${reset}
- ${yellowf}▀█████████▄▄${reset}  ${redf}██▀██▀▀██▀██${reset}  ${greenf}██▀██▀▀██▀██${reset}  ${bluef}██▀██▀▀██▀██${reset}  ${purplef}██▀██▀▀██▀██${reset}  ${cyanf}██▀██▀▀██▀██${reset}
- ${yellowf}  ▀███████▀${reset}   ${redf}▀   ▀  ▀   ▀${reset}  ${greenf}▀   ▀  ▀   ▀${reset}  ${bluef}▀   ▀  ▀   ▀${reset}  ${purplef}▀   ▀  ▀   ▀${reset}  ${cyanf}▀   ▀  ▀   ▀${reset}
+p1() { echo -n " $1  ▄██████▄   "; }
+p2() { echo -n " $1▄${color7}█▀█$1██${color7}█▀█$1██▄ "; }
+p3() { echo -n " $1█${color7}▄▄█$1██${color7}▄▄█$1███ "; }
+p4() { echo -n " $1████████████ "; }
+p5() { echo -n " $1██▀██▀▀██▀██ "; }
+p6() { echo -n " $1▀   ▀  ▀   ▀ "; }
 
- ${boldon}${yellowf}  ▄███████▄   ${redf}  ▄██████▄    ${greenf}  ▄██████▄    ${bluef}  ▄██████▄    ${purplef}  ▄██████▄    ${cyanf}  ▄██████▄${reset}
- ${boldon}${yellowf}▄█████████▀▀  ${redf}▄${whitef}█▀█${redf}██${whitef}█▀█${redf}██▄  ${greenf}▄${whitef}█▀█${greenf}██${whitef}█▀█${greenf}██▄  ${bluef}▄${whitef}█▀█${bluef}██${whitef}█▀█${bluef}██▄  ${purplef}▄${whitef}█▀█${purplef}██${whitef}█▀█${purplef}██▄  ${cyanf}▄${whitef}█▀█${cyanf}██${whitef}█▀█${cyanf}██▄${reset}
- ${boldon}${yellowf}███████▀      ${redf}█${whitef}▄▄█${redf}██${whitef}▄▄█${redf}███  ${greenf}█${whitef}▄▄█${greenf}██${whitef}▄▄█${greenf}███  ${bluef}█${whitef}▄▄█${bluef}██${whitef}▄▄█${bluef}███  ${purplef}█${whitef}▄▄█${purplef}██${whitef}▄▄█${purplef}███  ${cyanf}█${whitef}▄▄█${cyanf}██${whitef}▄▄█${cyanf}███${reset}
- ${boldon}${yellowf}███████▄      ${redf}████████████  ${greenf}████████████  ${bluef}████████████  ${purplef}████████████  ${cyanf}████████████${reset}
- ${boldon}${yellowf}▀█████████▄▄  ${redf}██▀██▀▀██▀██  ${greenf}██▀██▀▀██▀██  ${bluef}██▀██▀▀██▀██  ${purplef}██▀██▀▀██▀██  ${cyanf}██▀██▀▀██▀██${reset}
- ${boldon}${yellowf}  ▀███████▀   ${redf}▀   ▀  ▀   ▀  ${greenf}▀   ▀  ▀   ▀  ${bluef}▀   ▀  ▀   ▀  ${purplef}▀   ▀  ▀   ▀  ${cyanf}▀   ▀  ▀   ▀${reset}
-
-EOF
+echo "    BLACK          RED          GREEN         YELLOW         BLUE         PURPLE         CYAN "
+p1 $color0;p1 $color1;p1 $color2;c1 $color3;p1 $color4;p1 $color5;p1 $color6;echo
+p2 $color0;p2 $color1;p2 $color2;c2 $color3;p2 $color4;p2 $color5;p2 $color6;echo
+p3 $color0;p3 $color1;p3 $color2;c3 $color3;p3 $color4;p3 $color5;p3 $color6;echo
+p4 $color0;p4 $color1;p4 $color2;c4 $color3;p4 $color4;p4 $color5;p4 $color6;echo
+p5 $color0;p5 $color1;p5 $color2;c5 $color3;p5 $color4;p5 $color5;p5 $color6;echo
+p6 $color0;p6 $color1;p6 $color2;c6 $color3;p6 $color4;p6 $color5;p6 $color6;echo
+echo -n $color0 $boldon;
+echo "    color0        color1        color2        color3       color4        color5        color6"
+p1 $color0;p1 $color1;p1 $color2;c1 $color3;p1 $color4;p1 $color5;p1 $color6;echo
+p2 $color0;p2 $color1;p2 $color2;c2 $color3;p2 $color4;p2 $color5;p2 $color6;echo
+p3 $color0;p3 $color1;p3 $color2;c3 $color3;p3 $color4;p3 $color5;p3 $color6;echo
+p4 $color0;p4 $color1;p4 $color2;c4 $color3;p4 $color4;p4 $color5;p4 $color6;echo
+p5 $color0;p5 $color1;p5 $color2;c5 $color3;p5 $color4;p5 $color5;p5 $color6;echo
+p6 $color0;p6 $color1;p6 $color2;c6 $color3;p6 $color4;p6 $color5;p6 $color6;echo
