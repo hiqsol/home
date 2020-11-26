@@ -38,32 +38,34 @@ initializeANSI()
 
 initializeANSI
 
-c1() { echo -n " $1  ▄███████▄  "; }
-c2() { echo -n " $1▄█████████▀▀ "; }
-c3() { echo -n " $1███████▀     "; }
-c4() { echo -n " $1███████▄     "; }
-c5() { echo -n " $1▀█████████▄▄ "; }
-c6() { echo -n " $1  ▀███████▀  "; }
+# p - pacman, g - ghost
 
-p1() { echo -n " $1  ▄██████▄   "; }
-p2() { echo -n " $1▄${color7}█▀█$1██${color7}█▀█$1██▄ "; }
-p3() { echo -n " $1█${color7}▄▄█$1██${color7}▄▄█$1███ "; }
-p4() { echo -n " $1████████████ "; }
-p5() { echo -n " $1██▀██▀▀██▀██ "; }
-p6() { echo -n " $1▀   ▀  ▀   ▀ "; }
+p1() { echo -n " $1  ▄███████▄  "; }
+p2() { echo -n " $1▄█████▄███▀▀ "; }
+p3() { echo -n " $1███████▀     "; }
+p4() { echo -n " $1███████▄     "; }
+p5() { echo -n " $1▀█████████▄▄ "; }
+p6() { echo -n " $1  ▀███████▀  "; }
+
+g1() { echo -n " $1  ▄██████▄   "; }
+g2() { echo -n " $1▄${color7}█▀█$1██${color7}█▀█$1██▄ "; }
+g3() { echo -n " $1█${color7}▄▄█$1██${color7}▄▄█$1███ "; }
+g4() { echo -n " $1████████████ "; }
+g5() { echo -n " $1██▀██▀▀██▀██ "; }
+g6() { echo -n " $1▀   ▀  ▀   ▀ "; }
 
 echo "    BLACK          RED          GREEN         YELLOW         BLUE         PURPLE         CYAN "
-p1 $color0;p1 $color1;p1 $color2;c1 $color3;p1 $color4;p1 $color5;p1 $color6;echo
-p2 $color0;p2 $color1;p2 $color2;c2 $color3;p2 $color4;p2 $color5;p2 $color6;echo
-p3 $color0;p3 $color1;p3 $color2;c3 $color3;p3 $color4;p3 $color5;p3 $color6;echo
-p4 $color0;p4 $color1;p4 $color2;c4 $color3;p4 $color4;p4 $color5;p4 $color6;echo
-p5 $color0;p5 $color1;p5 $color2;c5 $color3;p5 $color4;p5 $color5;p5 $color6;echo
-p6 $color0;p6 $color1;p6 $color2;c6 $color3;p6 $color4;p6 $color5;p6 $color6;echo
+g1 $color0;g1 $color1;g1 $color2;p1 $color3;g1 $color4;g1 $color5;g1 $color6;echo
+g2 $color0;g2 $color1;g2 $color2;p2 $color3;g2 $color4;g2 $color5;g2 $color6;echo
+g3 $color0;g3 $color1;g3 $color2;p3 $color3;g3 $color4;g3 $color5;g3 $color6;echo
+g4 $color0;g4 $color1;g4 $color2;p4 $color3;g4 $color4;g4 $color5;g4 $color6;echo
+g5 $color0;g5 $color1;g5 $color2;p5 $color3;g5 $color4;g5 $color5;g5 $color6;echo
+g6 $color0;g6 $color1;g6 $color2;p6 $color3;g6 $color4;g6 $color5;g6 $color6;echo
 echo -n $color0 $boldon;
 echo "    color0        color1        color2        color3       color4        color5        color6"
-p1 $color0;p1 $color1;p1 $color2;c1 $color3;p1 $color4;p1 $color5;p1 $color6;echo
-p2 $color0;p2 $color1;p2 $color2;c2 $color3;p2 $color4;p2 $color5;p2 $color6;echo
-p3 $color0;p3 $color1;p3 $color2;c3 $color3;p3 $color4;p3 $color5;p3 $color6;echo
-p4 $color0;p4 $color1;p4 $color2;c4 $color3;p4 $color4;p4 $color5;p4 $color6;echo
-p5 $color0;p5 $color1;p5 $color2;c5 $color3;p5 $color4;p5 $color5;p5 $color6;echo
-p6 $color0;p6 $color1;p6 $color2;c6 $color3;p6 $color4;p6 $color5;p6 $color6;echo
+g1 $color0;g1 $color1;g1 $color2;p1 $color3;g1 $color4;g1 $color5;g1 $color6;echo
+g2 $color0;g2 $color1;g2 $color2;p2 $color3;g2 $color4;g2 $color5;g2 $color6;echo
+g3 $color0;g3 $color1;g3 $color2;p3 $color3;g3 $color4;g3 $color5;g3 $color6;echo
+g4 $color0;g4 $color1;g4 $color2;p4 $color3;g4 $color4;g4 $color5;g4 $color6;echo
+g5 $color0;g5 $color1;g5 $color2;p5 $color3;g5 $color4;g5 $color5;g5 $color6;echo
+g6 $color0;g6 $color1;g6 $color2;p6 $color3;g6 $color4;g6 $color5;g6 $color6;echo
