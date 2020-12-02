@@ -300,8 +300,15 @@ remove_php_modules() {
 
 install_desktop() {
     sudo apt install konsole openssh-server \
-        rhythmbox \
-        qt5-style-kvantum arandr
+        arandr rhythmbox qt5-style-kvantum
+    sudo snap install --classic telegram-desktop skype slack
+}
+
+install_chrome() {
+    cd ~/tmp
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo dpkg -i google-chrome-stable_current_amd64.deb
+    cd -
 }
 
 linux_version() {
