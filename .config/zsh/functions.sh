@@ -315,6 +315,12 @@ remove_php_modules() {
     apt_php_modules remove $@
 }
 
+install_desktop() {
+    sudo apt install konsole openssh-server \
+        rhythmbox \
+        qt5-style-kvantum arandr
+}
+
 linux_version() {
     command -v lsb_version && lsb_version -a
     cat /etc/*release
