@@ -1,23 +1,21 @@
 {
     "shell": "zsh",
-    "checks": {
-        "zsh":   "apt-get install zsh",
-        "vim":   "apt-get install vim",
-        "tmux":  "apt-get install tmux"
+    "repos": {
+        "prj/hiqsol/dotfiles": "hiqsol/dotfiles",
+        "prj/hiqsol/quotes": "hiqsol/quotes"
     },
-    "php": [
-        "mbstring",
-        "xml"
-    ],
     "installs": {
-        "composer": [
-            "composer global install"
-        ]
-    },
-    "updates": {
-        "composer": [
-            "composer self-update",
-            "composer global update"
-        ]
+        "curl":         "system",
+        "jq":           "system",
+        "zsh":          "system",
+        "tmux":         "system",
+        "vim":          "system",
+        "php":          "system",
+        "nodejs":       "system",
+        "ripgrep":      "system",
+        "keepassxc":    "system",
+            "pip":              "todo",
+            "python neovim":    "todo",
+        "composer":     "composer global install"
     }
 }
