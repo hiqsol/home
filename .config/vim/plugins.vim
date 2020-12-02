@@ -161,6 +161,7 @@ let g:EasyGrepRoot = 'search:\.'
 
 " VimWiki
 let g:vimwiki_list = [{'path': '~/src/memo/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_table_mappings=0
 
 " Translator
 let g:translator_target_lang = 'ru'
