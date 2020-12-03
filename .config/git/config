@@ -55,6 +55,8 @@
     tool        = vimdiff2
 [difftool]
     prompt      = false
+[pull]
+    rebase      = false
 [push]
     default     = simple
 [core]
