@@ -55,14 +55,6 @@ rehash() {
     builtin rehash
 }
 
-zc() {
-    bc <<< "scale=5;$@"
-}
-
-z2() {
-    bc <<< "scale=2;$@"
-}
-
 # cd to /home/user/prj/organization/project/vendor/organization/PROJECT
 cdvp() {
     pts=(${(s:/:)PWD})
