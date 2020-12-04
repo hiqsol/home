@@ -750,22 +750,17 @@
     </keybind>
     <keybind key="KP_Up">
       <action name="Execute">
-        <command>amixer -q sset Master 3%+ unmute</command>
+        <command>amixer -D pulse -q sset Master 3%+ unmute</command>
       </action>
     </keybind>
     <keybind key="KP_Down">
       <action name="Execute">
-        <command>amixer -q sset Master 3%- unmute</command>
+        <command>amixer -D pulse -q sset Master 3%- unmute</command>
       </action>
     </keybind>
     <keybind key="KP_Delete">
       <action name="Execute">
-        <command>amixer -q sset Master toggle</command>
-      </action>
-    </keybind>
-    <keybind key="XF86Tools">
-      <action name="Execute">
-        <command>amixer -q sset Master toggle</command>
+        <command>amixer -D pulse -q sset Master toggle</command>
       </action>
     </keybind>
   </keyboard>
