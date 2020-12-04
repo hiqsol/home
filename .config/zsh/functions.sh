@@ -300,8 +300,23 @@ remove_php_modules() {
 
 install_desktop() {
     sudo apt install konsole openssh-server \
-        arandr rhythmbox qt5-style-kvantum
-    sudo snap install --classic telegram-desktop skype slack
+        arandr rhythmbox qt5-style-kvantum \
+        fonts-terminus gnome-font-viewer
+    sudo snap install --classic skype
+    sudo snap install --classic slack
+    sudo snap install --classic telegram-desktop
+    add_startup_apps
+    add_screenlayout
+
+    install_chrome
+}
+
+add_startup_apps() {
+    # snap run skype
+}
+
+add_screenlayout() {
+    # /usr/share/sddm/scripts/Xsetup
 }
 
 install_chrome() {
@@ -309,6 +324,13 @@ install_chrome() {
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     sudo dpkg -i google-chrome-stable_current_amd64.deb
     cd -
+}
+
+install_dropbox() {
+    cd ~
+    wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+    cd -
+    ~/.dropbox-dist/dropboxd &
 }
 
 linux_version() {
