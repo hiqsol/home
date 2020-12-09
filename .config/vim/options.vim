@@ -17,8 +17,10 @@ set textwidth=160
 set autowriteall                " write file on file commands
 set updatetime=1000             " faster saving swap file
 set undofile                    " allows undo after reopen file
-set undodir=~/.vim/undo
-set nobackup                    " don't keep a backup file
+set undodir=~/.vim/undo//
+set backup                      " keep a backup file
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
 set viminfo='20,\"50            " read/write a .viminfo file, don't store >50 lines of registers
 set viminfo+=n~/.vim/viminfo    " viminfo file path
 set history=999                 " keep given lines of command line history
