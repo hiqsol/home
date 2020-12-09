@@ -168,7 +168,3 @@ let g:translator_target_lang = 'ru'
 
 " Auto-pairs
 let g:AutoPairsShortcutToggle = ''
-
-" ncm2
-"autocmd BufEnter * call ncm2#enable_for_buffer()
-"set completeopt = noinsert,menuone,noselect
