@@ -299,9 +299,9 @@ remove_php_modules() {
 }
 
 install_desktop() {
-    sudo apt install konsole openssh-server \
+    sudo apt install konsole openvpn openssh-server \
         arandr rhythmbox qt5-style-kvantum \
-        fonts-terminus gnome-font-viewer
+        fonts-terminus gnome-font-viewer fbreader
     sudo snap install --classic skype
     sudo snap install --classic slack
     sudo snap install --classic telegram-desktop
@@ -309,6 +309,8 @@ install_desktop() {
     add_screenlayout
 
     install_chrome
+    install_dropbox
+    install_zoom
 }
 
 add_startup_apps() {
@@ -320,10 +322,8 @@ add_screenlayout() {
 }
 
 install_chrome() {
-    cd ~/tmp
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    sudo dpkg -i google-chrome-stable_current_amd64.deb
-    cd -
+    wget -c -O ~/tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo dpkg -i ~/tmp/chrome.deb
 }
 
 install_dropbox() {
@@ -331,6 +331,12 @@ install_dropbox() {
     wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
     cd -
     ~/.dropbox-dist/dropboxd &
+}
+
+install_zoom() {
+	sudo apt install -y libegl1-mesa libgl1-mesa-glx libxcb-xtest0
+    wget -c -O ~/tmp/zoom.deb https://zoom.us/client/latest/zoom_amd64.deb
+	sudo dpkg -i ~/tmp/zoom.deb
 }
 
 linux_version() {
