@@ -30,7 +30,6 @@ nnoremap    <A-a>       <C-A>
 vnoremap    <A-a>       <C-A>
 nnoremap    <A-x>       <C-X>
 vnoremap    <A-x>       <C-X>
-vnoremap    <A-x>       <C-X>
 
 " Search keys
 nnoremap    *           *N
