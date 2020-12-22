@@ -34,8 +34,7 @@ vnoremap    <A-x>       <C-X>
 
 " Search keys
 nnoremap    *           *N
-nnoremap    /           /\c
-nnoremap    <M-/>       /
+nnoremap    <M-/>       /\c
 nnoremap    \<Space>    /\t\+ \+\\| \+\t\+\\|\s\+$/<CR>
 nnoremap    \/          /\<\><Left><Left>
 nnoremap <silent>   \\  :nohlsearch<CR>

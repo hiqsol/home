@@ -43,6 +43,8 @@ set shortmess+=c                " don't pass messages to ins-completion-menu
 set path+=**                    " `:find` down into subfolders
 set wildmenu                    " command-line completion with menu
 set wildmode=longest:full,full
+set ignorecase
+set smartcase
 set hlsearch                    " highlight search
 
 if has('gui_running')
