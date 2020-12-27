@@ -3,6 +3,7 @@ hi      MyUnwantedChars ctermbg=red   guibg=red
 match   MyUnwantedChars /\t\+ \+\| \+\t\+\|\s\+$/
 
 " GUI colors
+hi      ColorColumn     ctermbg=234
 hi      SignColumn      ctermbg=16
 hi      Search          ctermbg=166   ctermfg=white
 hi link QuickFixLine    Search

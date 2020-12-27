@@ -26,6 +26,7 @@ Plug 'mbbill/undotree',                         {'on': 'UndotreeToggle'}
 Plug 'scrooloose/nerdtree',                     {'on': ['NERDTreeToggle', 'NERDTreeFind']}
 Plug 'romainl/vim-qf'
 Plug 'valloric/listtoggle'
+Plug 'blueyed/vim-diminactive'
 
 " Grep
 Plug 'dkprice/vim-easygrep'
