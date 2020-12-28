@@ -130,6 +130,20 @@ composer() {
     $file $@
 }
 
+composer2() {
+    file="$HOME/sbin/composer2"
+
+    if ! [ -x $file ]; then
+        tmp="$HOME/tmp/composer-setup.php"
+        wget https://getcomposer.org/installer -O $tmp
+        php $tmp --install-dir=$HOME/sbin --filename=composer2
+        rm $tmp
+        $file self --2
+    fi
+
+    $file $@
+}
+
 nginx-proxy-common() {
     # cd ~/prj/vendor
     # nginx-proxy-common start 1.2.3.4
