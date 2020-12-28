@@ -8,7 +8,7 @@ hi      SignColumn      ctermbg=16
 hi      Search          ctermbg=166   ctermfg=white
 hi link QuickFixLine    Search
 hi      StatusLine      ctermbg=gray  ctermfg=black
-hi      Folded          ctermbg=black ctermfg=darkcyan
+hi      Folded          ctermbg=234   ctermfg=darkcyan
 " hi    CursorLine      ctermbg=darkgray
 hi      TabLine         ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
