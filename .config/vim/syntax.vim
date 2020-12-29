@@ -9,6 +9,7 @@ hi      Search          ctermbg=166   ctermfg=white
 hi link QuickFixLine    Search
 hi      StatusLine      ctermbg=gray  ctermfg=black
 hi      Folded          ctermbg=234   ctermfg=darkcyan
+hi      LineNr          ctermfg=darkgray
 " hi    CursorLine      ctermbg=darkgray
 hi      TabLine         ctermfg=black ctermbg=white cterm=NONE
 hi      TabLineFill     ctermfg=black ctermbg=white cterm=NONE
@@ -41,35 +42,35 @@ hi      htmlLink        ctermfg=green
 
 " programming languages syntax colors
 hi      Normal          ctermfg=252
-hi      Comment         ctermfg=red
+hi      Comment         ctermfg=darkgray
     hi  phpDocTags      ctermfg=darkcyan
-    hi  phpDocParam     ctermfg=green
-hi      Constant        ctermfg=darkmagenta
-    hi  Boolean         ctermfg=magenta
-    hi  Number          ctermfg=magenta
-    hi  Float           ctermfg=magenta
-    hi  SpecialChar     ctermfg=red
-    hi  Character       ctermfg=yellow
+    hi  phpDocParam     ctermfg=darkgreen
+hi      Constant        ctermfg=brown
     hi  String          ctermfg=yellow
+    hi  Character       ctermfg=yellow
+    hi  Number          ctermfg=magenta
+    hi  Boolean         ctermfg=magenta
+    hi  Float           ctermfg=magenta
 hi      Identifier      ctermfg=white
     hi  Function        ctermfg=cyan
 hi      Statement       ctermfg=darkcyan
-    hi  Conditional     ctermfg=darkcyan
+    hi  Conditional     ctermfg=cyan
     hi  Repeat          ctermfg=darkcyan
     hi  Label           ctermfg=darkcyan
-    hi  Operator        ctermfg=white
+    hi  Operator        ctermfg=darkcyan
     hi  Keyword         ctermfg=darkcyan
     hi  Exception       ctermfg=cyan
-hi      PreProc         ctermfg=darkcyan
-    hi  Include         ctermfg=darkcyan
-    hi  Define          ctermfg=darkcyan
-    hi  Macro           ctermfg=darkcyan
-    hi  PreCondit       ctermfg=darkcyan
+hi      PreProc         ctermfg=darkblue
+    hi  Include         ctermfg=blue
+    hi  Define          ctermfg=blue
+    hi  Macro           ctermfg=blue
+    hi  PreCondit       ctermfg=blue
 hi      Type            ctermfg=green
     hi  StorageClass    ctermfg=darkgreen
     hi  Structure       ctermfg=darkgreen
     hi  Typedef         ctermfg=darkgreen
-hi      Special         ctermfg=white
+hi      Special         ctermfg=red
+    hi  SpecialChar     ctermfg=red
     hi  Tag             ctermfg=red
     hi  Delimiter       ctermfg=darkred
     hi  SpecialComment  ctermfg=red
@@ -77,7 +78,6 @@ hi      Special         ctermfg=white
 hi      Ignore          ctermfg=darkgray
 hi      Error           ctermbg=red
 hi      Todo            ctermbg=darkred ctermfg=white
-hi      LineNr          ctermfg=darkgray
 
 "augroup DimInactiveWindows
     "autocmd!
