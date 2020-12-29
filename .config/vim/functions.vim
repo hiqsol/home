@@ -132,3 +132,17 @@ function! CompletePhpClass()
         \ 'reducer':  function('s:add_namespace'),
         \ 'down':     20})
 endfunction
+
+" usage :echo GetHighlight('Underlined')
+function! GetHighlight(group)
+  let output = execute('hi ' . a:group)
+  let list = split(output, '\s\+')
+  let dict = {}
+  for item in list
+    if match(item, '=') > 0
+      let splited = split(item, '=')
+      let dict[splited[0]] = splited[1]
+    endif
+  endfor
+  return dict
+endfunction
