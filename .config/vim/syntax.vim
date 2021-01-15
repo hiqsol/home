@@ -75,7 +75,7 @@ hi      Special         ctermfg=red
     hi  Delimiter       ctermfg=darkred
     hi  SpecialComment  ctermfg=red
     hi  Debug           ctermfg=red
-hi      Ignore          ctermfg=darkgray
+hi      Ignore          ctermfg=black
 hi      Error           ctermbg=red
 hi      Todo            ctermbg=darkred ctermfg=white
 
