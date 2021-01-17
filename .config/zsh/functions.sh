@@ -125,6 +125,7 @@ composer() {
         wget https://getcomposer.org/installer -O $tmp
         php $tmp --install-dir=$HOME/sbin --filename=composer
         rm $tmp
+        $file self --1
     fi
 
     $file $@
