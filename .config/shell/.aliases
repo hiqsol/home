@@ -13,11 +13,11 @@ alias -g W='| wc'
 
 alias c='composer'
 alias d='docker'
-alias g='git'
+alias g='regit'
 alias h='hidev'
 alias l='ll'
 alias p='psql_default'
-alias r='regit'
+alias r='regit all'
 alias s='chmod -R og-rwx ~/.ssh;ssh'
 alias v='nvim'
 alias Z='zcalc'
@@ -65,6 +65,7 @@ alias set-rate='xset r rate 200 40'
 alias set-xkbmap='setxkbmap -model pc105 -layout us,ru,ua -option grp:shift_caps_switch,grp:lalt_lshift_toggle'
 alias CapsLock='xdotool key Caps_Lock'
 
+alias regit=~/prj/hiqsol/regit/regit
 alias quotes=~/prj/hiqsol/quotes/bin/quotes
 alias rehome=~/prj/hiqdev/rehome/rehome
 
