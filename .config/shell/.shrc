@@ -39,13 +39,13 @@ export RIPGREP_CONFIG_PATH=~/.config/ripgrep/.ripgreprc
 if [ -z $SSH_AUTH_SOCK ]; then
     eval `ssh-agent`
 fi
-### Predictable SSH authentication socket location.
-#SOCK="/home/sol/.ssh/auth.sock"
-#if [ $SSH_AUTH_SOCK != $SOCK ]; then
-#    rm -f $SOCK
-#    ln -sf $SSH_AUTH_SOCK $SOCK
-#    export SSH_AUTH_SOCK=$SOCK
-#fi
+### Predictable SSH authentication socket location
+SOCK="/home/sol/.ssh/ssh-agent.sock"
+if [ ! -z $SSH_AUTH_SOCK ] && [ $SSH_AUTH_SOCK != $SOCK ]; then
+    rm -f $SOCK
+    ln -sf $SSH_AUTH_SOCK $SOCK
+    export SSH_AUTH_SOCK=$SOCK
+fi
 
 ### less config
 export LESS='-i -x4 -M -R -F -X'
