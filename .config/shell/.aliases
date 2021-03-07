@@ -30,6 +30,7 @@ alias gg='git grep'
 alias gr='rg'
 alias gp='rg --type php'
 alias lo='local-open'
+alias sl='ssh-add -l'
 alias vc='vcat'
 alias vd='v -d'
 
