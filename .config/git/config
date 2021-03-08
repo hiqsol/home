@@ -35,7 +35,7 @@
     l           = "!git lf -n 30"
     lp          = "!git lf --patch"
     ls          = "!git ls-tree -r --name-only $(git branch-name)"
-    ll          = !ls -lAF --color=auto `git ls`
+    ll          = !ls -lAFd --color=auto `git ls`
     li          = ls-files . --ignored --exclude-standard --others
     ls-all      = "!git log --pretty=format: --name-status | cut -f2- | sort -u"
     publish     = "!git push -u origin $(git branch-name)"
