@@ -32,6 +32,7 @@
     ib          = init --bare --shared=group
     lc          = rev-list --all --count
     lf          = log --graph --format=format:'%C(red)%h%C(reset) %C(green)%ai%C(reset) %C(blue)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    lt          = log --no-walk --tags --format=format:'%C(red)%h%C(reset) %C(green)%ai%C(reset) %C(blue)%aN%C(reset) %s %C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
     l           = "!git lf -n 30"
     lp          = "!git lf --patch"
     ls          = "!git ls-tree -r --name-only $(git branch-name)"
