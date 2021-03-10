@@ -1,0 +1,6 @@
+[known-repos]
+    dotfiles        = git@github.com:hiqsol/dotfiles
+    hiqolor         = git@github.com:hiqsol/hiqolor
+    quotes          = git@github.com:hiqsol/quotes
+    regit           = git@github.com:hiqsol/regit
+    rehome          = git@github.com:hiqdev/rehome

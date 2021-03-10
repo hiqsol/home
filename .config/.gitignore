@@ -1,1 +1,16 @@
+# ignore everything by default
 *
+
+# git
+!/.gitignore
+!/git/
+!/git/*
+!/regit/
+!/regit/*
+
+# shell
+!/zsh/
+!/zsh/*
+/zsh/.zcalc_history
+!/shell/
+!/shell/*
