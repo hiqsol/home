@@ -1,39 +1,5 @@
-# hidev internals
-/.hidev/composer.json
-/.hidev/composer.lock
-/.hidev/runtime
-/.hidev/vendor
-
 # local config
 /.env
 
 # IDE & OS files
 .*.swp
-.DS_Store
-.buildpath
-.idea
-.project
-.settings
-Thumbs.db
-nbproject
-
-# composer internals
-/composer.lock
-
-# dynamic files
-.php_cs.cache
-coverage.clover
-
-# dependencies
-/vendor
-
-# Binaries
-chkipper.phar
-composer.phar
-ocular.phar
-php-cs-fixer.phar
-phpunit-skelgen.phar
-phpunit.phar
-/bin/keepassxc
-/bin/nvim
-/bin/vim8
