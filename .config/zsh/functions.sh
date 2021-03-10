@@ -215,7 +215,7 @@ dcpsql() {
 }
 
 nvim() {
-    file="$HOME/bin/nvim"
+    file="$HOME/sbin/nvim"
 
     if [ ! -x $file ]; then
         curl -L https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -o $file
@@ -226,7 +226,7 @@ nvim() {
 }
 
 vim8() {
-    file="$HOME/bin/vim8"
+    file="$HOME/sbin/vim8"
 
     if [ ! -x $file ]; then
         url=`curl --silent "https://api.github.com/repos/vim/vim-appimage/releases/latest" | jq -r 'first(.assets[].browser_download_url)'`
