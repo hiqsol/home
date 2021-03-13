@@ -4,41 +4,6 @@ GREEN="\033[1;32m"
 YELLOW="\033[1;33m"
 NOCOLOR="\033[0m"
 
-git_clone() {
-    src=$1; shift
-    prj=$1; shift
-    if [[ "$#" -ne 0 ]]; then
-        dst=$1; shift
-    else
-        dst=""
-    fi
-    pts=(${(s:/:)prj})
-    if [[ -z $pts[2] ]]; then
-        prj="$(basename $PWD)/$pts[1]"
-        dir=$pts[1]
-    else
-        dir=$pts[2]
-    fi
-    echo git clone ${GREEN}$src$prj ${YELLOW}$dst $*${NOCOLOR}
-    git clone $src$prj $dst $*
-    if [[ -z $dst ]]; then
-        dst=$dir
-    fi
-    cd $dst
-}
-
-clone() {
-    git_clone git@github.com: $*
-}
-
-lclone() {
-    git_clone git@git.hiqdev.com: $*
-}
-
-pclone() {
-    git_clone ssh://git.solex.me:222/git/ $*
-}
-
 md() {
     mkdir -p "$@" && cd "$@"
 }
