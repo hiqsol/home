@@ -2,8 +2,10 @@
 
 source ~/.shrc
 source ~/.aliases
-source ~/.config/zsh/functions.sh
 source ~/.config/zsh/keys.zsh
+source ~/.config/zsh/console.sh
+source ~/.config/zsh/desktop.sh
+source ~/.config/zsh/functions.sh
 
 ### AUTOLOADS
 fpath=(~/.config/zsh/completion $fpath)
