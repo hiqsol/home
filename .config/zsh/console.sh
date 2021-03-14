@@ -1,3 +1,9 @@
+install_console() {
+    sudo apt install \
+        curl ripgrep \
+        zsh tmux \
+        npm python3-pip
+}
 
 composer() {
     file="$HOME/sbin/composer"
