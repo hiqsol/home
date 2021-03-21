@@ -87,7 +87,7 @@ nnoremap    gl          :0Glog<CR>
 nnoremap    gb          :Gblame<CR>
 nnoremap    gd          :Gdiff<CR>
 nnoremap    gs          :Gstatus<CR>
-nnoremap    gc          :Gcommit --verbose<CR>
+nnoremap    gc          :Git commit --verbose<CR>
 nnoremap    go          :Gbrowse<CR>
 nnoremap    gO          :Gbrowse!<CR>
 vnoremap    go          :Gbrowse<CR>
