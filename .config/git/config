@@ -46,11 +46,6 @@
     test        = "!f() { sh -c 'ls -la '$1; }; f"
 
     cfg         = "!$EDITOR ~/prj/hiqsol/dotfiles/.config/git/config"
-
-    # submodule aliases
-    sum         = submodule foreach git co master
-    sup         = submodule foreach git pull --rebase
-    up          = "!git sum;git sup"
 [diff]
     tool        = vimdiff
 [merge]
