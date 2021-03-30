@@ -8,3 +8,5 @@
     8bitgalaxy      = git@github.com:hiqsol/8bitgalaxy
 
     nginx-redirect  = git@git.hiqdev.com:infrastructure/nginx-redirect
+
+    cdn.hiqdev.com  = git@git.hiqdev.com:hiqdev/cdn.hiqdev.com
