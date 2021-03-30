@@ -21,7 +21,7 @@
     sp          = stash pop
     sh          = show -U0
     pb          = pull --rebase
-    ph          = "!git pb && git push"
+    ph          = push
     d           = diff -U0 --
     dc          = diff --cached
     df          = diff
