@@ -712,9 +712,19 @@
         <monitor>next</monitor>
       </action>
     </keybind>
-    <!-- Keybindings to toggle maximize -->
+    <!-- Toggle maximize window -->
     <keybind key="W-m">
       <action name="ToggleMaximize"/>
+    </keybind>
+    <!-- Maximize window to all monitors -->
+    <keybind key="W-S-m">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>3760</width>
+        <height>2560</height>
+      </action>
     </keybind>
     <!-- Suspend -->
     <keybind key="XF86Explorer">
