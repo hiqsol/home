@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+# Converts
+# - Prefix: First line
+# - Prefix: Second line
+# - Other: Third line
+# - Other: Fourth line
+#
+# To
+# - Prefix:
+#     - First line
+#     - Second line
+# - Other:
+#     - Third line
+#     - Fourth line
+
+import sys
+
+prefix = ''
+for line in sys.stdin:
+    ps = line.strip().split(' ')
+    pf = ps.pop(0)
+    if pf == '-':
+        pf = ps.pop(0)
+    if pf != prefix:
+        prefix = pf
+        print "- " + prefix
+    print "\t- " + ' '.join(ps)
