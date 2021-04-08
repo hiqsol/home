@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Converts
 # - Prefix: First line
@@ -24,5 +24,5 @@ for line in sys.stdin:
         pf = ps.pop(0)
     if pf != prefix:
         prefix = pf
-        print "- " + prefix
-    print "\t- " + ' '.join(ps)
+        print("- " + prefix)
+    print("\t- " + ' '.join(ps))
