@@ -22,6 +22,7 @@
     sh          = show -U0
     pb          = pull --rebase
     ph          = push
+    pbh         = "!git pb && git push"
     d           = diff -U0 --
     dc          = diff --cached
     df          = diff
