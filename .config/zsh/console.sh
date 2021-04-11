@@ -5,29 +5,17 @@ install_console() {
         npm python3-pip
 }
 
-composer() {
-    file="$HOME/sbin/composer"
+composerX() {
+    version=$1
+    shift
+    file="$HOME/sbin/composer$version"
 
     if ! [ -x $file ]; then
         tmp="$HOME/tmp/composer-setup.php"
         wget https://getcomposer.org/installer -O $tmp
-        php $tmp --install-dir=$HOME/sbin --filename=composer
+        php $tmp --install-dir=$HOME/sbin --filename=composer$version
         rm $tmp
-        $file self --1
-    fi
-
-    $file $@
-}
-
-composer2() {
-    file="$HOME/sbin/composer2"
-
-    if ! [ -x $file ]; then
-        tmp="$HOME/tmp/composer-setup.php"
-        wget https://getcomposer.org/installer -O $tmp
-        php $tmp --install-dir=$HOME/sbin --filename=composer2
-        rm $tmp
-        $file self --2
+        $file self --$version
     fi
 
     $file $@
