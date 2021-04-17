@@ -63,3 +63,5 @@
     browser     = local-open
 [browser "local-open"]
     cmd         = local-open
+[init]
+	defaultBranch = master
