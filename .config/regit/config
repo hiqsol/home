@@ -1,12 +1,17 @@
+[includes]
+    local           = ~/.regit
+
+[known-sources]
+    github          = git@github.com:
+    hiqsol          = git@github.com:hiqsol/
+    hiqdev          = git@github.com:hiqdev/
+    yiisoft         = git@github.com:yiisoft/
+
 [known-repos]
-    dotfiles        = git@github.com:hiqsol/dotfiles
-    hiqolor         = git@github.com:hiqsol/hiqolor
-    quotes          = git@github.com:hiqsol/quotes
-    regit           = git@github.com:hiqsol/regit
-    rehome          = git@github.com:hiqdev/rehome
-    rewatcher       = git@github.com:hiqdev/rewatcher
-    8bitgalaxy      = git@github.com:hiqsol/8bitgalaxy
-
-    nginx-redirect  = git@git.hiqdev.com:infrastructure/nginx-redirect
-
-    cdn.hiqdev.com  = git@git.hiqdev.com:hiqdev/cdn.hiqdev.com
+    dotfiles        = hiqsol:dotfiles
+    hiqolor         = hiqsol:hiqolor
+    quotes          = hiqsol:quotes
+    regit           = hiqsol:regit
+    rehome          = hiqdev:rehome
+    rewatcher       = hiqdev:rewatcher
+    8bitgalaxy      = hiqsol:8bitgalaxy
