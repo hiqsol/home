@@ -70,7 +70,8 @@ Plug 'stephpy/vim-php-cs-fixer',                {'for': 'php'}
 Plug 'noahfrederick/vim-composer',              {'for': 'php'}
 
 " Syntax highlighting plugins
-Plug 'lifepillar/pgsql.vim',                     {'for': 'pgsql'}
+Plug 'lifepillar/pgsql.vim',                    {'for': 'pgsql'}
+Plug 'aklt/plantuml-syntax',                    {'for': 'plantuml'}
 "Plug 'sheerun/vim-polyglot'
 "Plug 'elzr/vim-json',                           {'for': 'json'}
 "Plug 'hiqsol/pgsql.vim',                        {'for': 'pgsql'}
