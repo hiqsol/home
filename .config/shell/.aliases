@@ -74,6 +74,7 @@ alias rehome=~/prj/hiqdev/rehome/rehome
 alias cd='cdls'
 alias cdd='cd ~/prj/hiqsol/dotfiles'
 alias cdh='cd ~/prj/hiqdev'
+alias cdi='cd ~/prj/instockcom'
 alias cdq='cd ~/prj/hiqsol/quotes/src'
 alias cdr='cd ~/prj/hiqsol/regit'
 alias -- -='cd -'
