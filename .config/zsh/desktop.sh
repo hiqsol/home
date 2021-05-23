@@ -32,8 +32,20 @@ install_slack() {
     sudo snap install --classic slack
 }
 
+Telegram() {
+    file="$HOME/sbin/Telegram/Telegram"
+    if ! [ -x $file ]; then
+        install_telegram
+    fi
+
+    $file $@
+}
+
 install_telegram() {
-    sudo snap install --classic telegram-desktop
+    cd ~/sbin
+    wget -c https://telegram.org/dl/desktop/linux
+    tar xf tsetup.*.tar.xz
+    cd -
 }
 
 install_chrome() {
