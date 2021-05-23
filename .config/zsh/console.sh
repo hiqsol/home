@@ -81,7 +81,7 @@ vim8() {
 }
 
 hub() {
-    file="/usr/local/bin/hub"
+    file="/usr/local/sbin/hub"
 
     if [ ! -x $file ]; then
         cd ~/tmp
