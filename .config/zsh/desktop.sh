@@ -25,7 +25,13 @@ add_screenlayout() {
 }
 
 install_skype() {
-    sudo snap install --classic skype
+    tmp="$HOME/Downloads/skypeforlinux-64.deb"
+    if ! [ -x $tmp ]; then
+        # XXX wget -c doesn't work at their server :-/
+        wget https://go.skype.com/skypeforlinux-64.deb -O $tmp
+    fi
+    sudo dpkg -i $tmp
+    rm $tmp
 }
 
 install_slack() {
