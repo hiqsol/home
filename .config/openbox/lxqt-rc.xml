@@ -703,7 +703,7 @@
     </keybind>
     <keybind key="W-c">
       <action name="execute">
-        <command>google-chrome</command>
+        <command>sensible-browser</command>
       </action>
     </keybind>
     <!-- Move window to other monitor -->
