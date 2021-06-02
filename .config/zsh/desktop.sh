@@ -21,7 +21,8 @@ add_startup_apps() {
 }
 
 add_screenlayout() {
-    # /usr/share/sddm/scripts/Xsetup
+    # FROM ~/.config/screenlayout
+    # TO /usr/share/sddm/scripts/Xsetup
 }
 
 install_skype() {
