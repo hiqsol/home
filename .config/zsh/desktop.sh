@@ -17,7 +17,10 @@ install_desktop() {
 }
 
 add_startup_apps() {
-    # snap run skype
+    # keepassxc
+    # skype
+    # slack
+    # telegram
 }
 
 add_screenlayout() {
@@ -36,7 +39,8 @@ install_skype() {
 }
 
 install_slack() {
-    sudo snap install --classic slack
+    # wget from slack.com/download
+    # sudo dpkg -i
 }
 
 Telegram() {
