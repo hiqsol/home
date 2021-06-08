@@ -83,18 +83,18 @@ nmap        <silent>    'q      <Plug>(qf_qf_toggle)
 nmap        <silent>    'l      <Plug>(qf_loc_toggle)
 
 " Git keys
-nnoremap    gl          :0Glog<CR>
-nnoremap    gb          :Gblame<CR>
-nnoremap    gd          :Gdiff<CR>
-nnoremap    gs          :Gstatus<CR>
+nnoremap    gl          :0Gclog<CR>
+nnoremap    gb          :Git blame<CR>
+nnoremap    gd          :Git diff<CR>
+nnoremap    gs          :Git status<CR>
 nnoremap    gc          :Git commit --verbose<CR>
-nnoremap    go          :Gbrowse<CR>
-nnoremap    gO          :Gbrowse!<CR>
-vnoremap    go          :Gbrowse<CR>
-vnoremap    gO          :Gbrowse!<CR>
-nnoremap    gw          :Gwrite<CR>
-nnoremap    gub         :Gpull --rebase<CR>
-nnoremap    guh         :Gpush<CR>
+nnoremap    go          :Git browse<CR>
+nnoremap    gO          :Git browse!<CR>
+vnoremap    go          :Git browse<CR>
+vnoremap    gO          :Git browse!<CR>
+nnoremap    gw          :Git write<CR>
+nnoremap    gub         :Git pull --rebase<CR>
+nnoremap    guh         :Git push<CR>
 
 " Programming keys
 nmap        <C-C>       <Plug>NERDCommenterToggle
