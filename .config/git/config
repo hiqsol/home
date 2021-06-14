@@ -65,3 +65,5 @@
     cmd         = local-open
 [init]
 	defaultBranch = master
+[url "git@github.com:instockcom"]
+	insteadOf = https://github.com/instockcom
