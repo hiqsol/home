@@ -85,7 +85,8 @@ nmap        <silent>    'l      <Plug>(qf_loc_toggle)
 " Git keys
 nnoremap    gl          :0Gclog<CR>
 nnoremap    gb          :Git blame<CR>
-nnoremap    gd          :Git diff<CR>
+nnoremap    gD          :Git diff<CR>
+nnoremap    gd          :Gdiffsplit<CR>
 nnoremap    gs          :Git status<CR>
 nnoremap    gc          :Git commit --verbose<CR>
 nnoremap    go          :Git browse<CR>
