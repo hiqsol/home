@@ -93,7 +93,7 @@ nnoremap    go          :Git browse<CR>
 nnoremap    gO          :Git browse!<CR>
 vnoremap    go          :Git browse<CR>
 vnoremap    gO          :Git browse!<CR>
-nnoremap    gw          :Git write<CR>
+nnoremap    gw          :Gwrite<CR>
 nnoremap    gub         :Git pull --rebase<CR>
 nnoremap    guh         :Git push<CR>
 
