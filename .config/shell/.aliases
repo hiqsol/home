@@ -50,6 +50,7 @@ alias miniv='nvim -u ~/.vim/mini.vim'
 alias vconfig='v ~/.vimrc'
 alias vimdiff='v -d'
 alias zconfig='v ~/.config/zsh/.zshrc'
+alias threemer='~/prj/instockcom/threemer/dist/linux-amd64/threemer serve -d ~/prj/instockcom/threemer/dist/site -s ticks-site'
 
 # no spelling correction on mv
 alias mv='nocorrect mv'
