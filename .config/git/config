@@ -49,6 +49,9 @@
     cfg         = "!$EDITOR ~/prj/hiqsol/dotfiles/.config/git/config"
 [diff]
     tool        = vimdiff
+    algorithm   = histogram
+    colormoved  = default
+    colormovedws= allow-indentation-change
 [merge]
     tool        = vimdiff2
 [difftool]
